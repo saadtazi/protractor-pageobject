@@ -1,0 +1,40 @@
+{
+  "name": "protractor-pageobject",
+  "version": "2.0.0",
+  "description": "Page object pattern implementation for protractor and webdriverjs.",
+  "homepage": "https://github.com/saadtazi/protractor-po",
+  "main": "./lib/index.js",
+  "keywords": [
+    "pageobject",
+    "protractor",
+    "test",
+    "testing",
+    "webdriver",
+    "webdriverjs",
+    "selenium"
+  ],
+  "author": "Saad Tazi <saad@saadtazi.com>",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "chai-as-promised": "^5.0.0",
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.10.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-protractor": "^1.0.0",
+    "protractor": "^2.0.0"
+  },
+  "dependencies": {
+    "class-extend": "^0.1.1",
+    "lodash": "^3.8.0",
+    "object-extend": "^0.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/saadtazi/protractor-pageobject.git"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/gulp test",
+    "gulp": "node_modules/.bin/gulp"
+  },
+  "license": "MIT"
+}

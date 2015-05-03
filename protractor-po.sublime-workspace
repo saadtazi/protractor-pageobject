@@ -1,0 +1,3181 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ori",
+				"originalLimit"
+			],
+			[
+				"accou",
+				"accountsWithoutCollections"
+			],
+			[
+				"acti",
+				"actiavteWebShrinker"
+			],
+			[
+				"new",
+				"newQuery"
+			],
+			[
+				"upd",
+				"updateQueryInput"
+			],
+			[
+				"ui",
+				"uiElement"
+			],
+			[
+				"trigge",
+				"triggeredEvent"
+			],
+			[
+				"sto",
+				"stormpathHelpers"
+			],
+			[
+				"storm",
+				"stormpathGroup"
+			],
+			[
+				"to",
+				"toStormpath"
+			],
+			[
+				"start",
+				"startupEvent"
+			],
+			[
+				"teamm",
+				"teammatesController"
+			],
+			[
+				"g",
+				"getBrowserInfo"
+			],
+			[
+				"get",
+				"getOption"
+			],
+			[
+				"share",
+				"shareUtils"
+			],
+			[
+				"notificatio",
+				"notificationTypes"
+			],
+			[
+				"teamn",
+				"teamNameField"
+			],
+			[
+				"remo",
+				"removeFromGroups"
+			],
+			[
+				"stri",
+				"stringHelpers"
+			],
+			[
+				"addF",
+				"addFieldButton"
+			],
+			[
+				"va",
+				"validationError"
+			],
+			[
+				"avi",
+				"availableVersions"
+			],
+			[
+				"_",
+				"_resetBrowserSessionSingleton"
+			],
+			[
+				"xpi",
+				"xpiFile"
+			],
+			[
+				"user",
+				"userPrefs"
+			],
+			[
+				"prof",
+				"profileDirectory"
+			],
+			[
+				"EXPANDED_NO",
+				"EXPANDED_NODES_FOR_PRODUCT"
+			],
+			[
+				"gr",
+				"graph_data"
+			],
+			[
+				"de",
+				"description_rpa"
+			],
+			[
+				"bac",
+				"background	background-color: hex"
+			],
+			[
+				"Boo",
+				"BookmarkView"
+			],
+			[
+				"book",
+				"bookmarks"
+			],
+			[
+				"color",
+				"color: color: hex"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/saadtazi/Projects/test-protractor/TODO.md",
+			"settings":
+			{
+				"buffer_size": 833,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/item-list.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/page.js",
+			"settings":
+			{
+				"buffer_size": 612,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 30,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 8572 files for \"noop\"\n\n/Users/saadtazi/Projects/test-protractor/node_modules/chai/History.md:\n  114:  * Merge pull request #306 from chaijs/revert-297-noopchainfunc\n  120:  * Merge pull request #297 from prodatakey/noopchainfunc\n  126:  * Add docs for function style NOOP asserts\n  127:  * Make the NOOP function a shared constant\n  471:   * add `that` chain noop\n\n/Users/saadtazi/Projects/test-protractor/node_modules/chai/ReleaseNotes.md:\n  112: the `addChainableNoop`. This change has been reverted.\n  114: Any plugins using `addChainableNoop` should cease to do so.\n  153:   - Review `addChainableNoop` notes below.\n  157: ### Noop Function for Terminating Assertion Properties\n  213: of using `addProperty` to register terminating assertions, simply use `addChainableNoop`\n\n/Users/saadtazi/Projects/test-protractor/node_modules/chai/node_modules/deep-eql/node_modules/type-detect/package.json:\n   56:   \"readme\": \"# type-detect [![Build Status](https://travis-ci.org/chaijs/type-detect.png?branch=master)](https://travis-ci.org/chaijs/type-detect) [![Coverage Status](https://coveralls.io/repos/chaijs/type-detect/badge.png?branch=master)](https://coveralls.io/r/chaijs/type-detect?branch=master)\\n\\n> Improved typeof detection for node.js and the browser.\\n\\n## Installation\\n\\n### Node.js\\n\\n`type-detect` is available on [npm](http://npmjs.org).\\n\\n    $ npm install type-detect\\n\\n### Component\\n\\n`type-detect` is available as a [component](https://github.com/component/component).\\n\\n    $ component install chaijs/type-detect\\n\\n## Usage\\n\\n### Primary\\n\\nThe primary export of `type-detect` is function that can server as a replacement for \\n`typeof`. The results of this function will be more specific than that of native `typeof`.\\n\\n```js\\nvar type = require('type-detect');\\n```\\n\\n#### array\\n\\n```js\\nassert('array' === type([]));\\nassert('array' === type(new Array()));\\n```\\n\\n#### regexp\\n\\n```js\\nassert('regexp' === type(/a-z/gi));\\nassert('regexp' === type(new RegExp('a-z')));\\n```\\n\\n#### function\\n\\n```js\\nassert('function' === type(function () {}));\\n```\\n\\n#### arguments\\n\\n```js\\n(function () {\\n  assert('arguments' === type(arguments));\\n})();\\n```\\n\\n#### date\\n\\n```js\\nassert('date' === type(new Date));\\n```\\n\\n#### number\\n\\n```js\\nassert('number' === type(1));\\nassert('number' === type(1.234));\\nassert('number' === type(-1));\\nassert('number' === type(-1.234));\\nassert('number' === type(Infinity));\\nassert('number' === type(NaN));\\n```\\n\\n#### string\\n\\n```js\\nassert('string' === type('hello world'));\\n```\\n\\n#### null\\n\\n```js\\nassert('null' === type(null));\\nassert('null' !== type(undefined));\\n```\\n\\n#### undefined\\n\\n```js\\nassert('undefined' === type(undefined));\\nassert('undefined' !== type(null));\\n```\\n\\n#### object\\n\\n```js\\nvar Noop = function () {};\\nassert('object' === type({}));\\nassert('object' !== type(Noop));\\nassert('object' === type(new Noop));\\nassert('object' === type(new Object));\\nassert('object' === type(new String('hello')));\\n```\\n\\n### Library\\n\\nA `Library` is a small constructed repository for custom type detections.\\n\\n```js\\nvar lib = new type.Library;\\n```\\n\\n#### .of (obj)\\n\\n* **@param** _{Mixed}_ object to test\\n* **@return** _{String}_  type\\n\\nExpose replacement `typeof` detection to the library.\\n\\n```js\\nif ('string' === lib.of('hello world')) {\\n  // ...\\n}\\n```\\n\\n\\n#### .define (type, test)\\n\\n* **@param** _{String}_ type \\n* **@param** _{RegExp|Function}_ test \\n\\nAdd a test to for the `.test()` assertion.\\n\\nCan be defined as a regular expression:\\n\\n```js\\nlib.define('int', /^[0-9]+$/);\\n```\\n\\n... or as a function:\\n\\n```js\\nlib.define('bln', function (obj) {\\n  if ('boolean' === lib.of(obj)) return true;\\n  var blns = [ 'yes', 'no', 'true', 'false', 1, 0 ];\\n  if ('string' === lib.of(obj)) obj = obj.toLowerCase();\\n  return !! ~blns.indexOf(obj);\\n});\\n```\\n\\n\\n#### .test (obj, test)\\n\\n* **@param** _{Mixed}_ object \\n* **@param** _{String}_ type \\n* **@return** _{Boolean}_  result\\n\\nAssert that an object is of type. Will first\\ncheck natives, and if that does not pass it will\\nuse the user defined custom tests.\\n\\n```js\\nassert(lib.test('1', 'int'));\\nassert(lib.test('yes', 'bln'));\\n```\\n\\n\\n\\n\\n## License\\n\\n(The MIT License)\\n\\nCopyright (c) 2013 Jake Luer <jake@alogicalparadox.com> (http://alogicalparadox.com)\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\\"Software\\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in\\nall copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\\"AS IS\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\\nTHE SOFTWARE.\\n\",\n\n/Users/saadtazi/Projects/test-protractor/node_modules/chai/node_modules/deep-eql/node_modules/type-detect/README.md:\n   98: var Noop = function () {};\n  100: assert('object' !== type(Noop));\n  101: assert('object' === type(new Noop));\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp/node_modules/gulp-util/index.js:\n   10:   noop: require('./lib/noop'),\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp/node_modules/gulp-util/README.md:\n   78: ## noop()\n   88:     .pipe(gutil.env.type === 'production' ? uglify() : gutil.noop())\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp/node_modules/gulp-util/node_modules/through2/README.md:\n   92:     function (chunk, enc, cb) { cb(null, chunk) }, // transform is a noop\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp/node_modules/gulp-util/node_modules/through2/through2.js:\n   24: // a noop _transform function\n   25: function noop (chunk, enc, callback) {\n   41:       transform = noop\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp/node_modules/orchestrator/node_modules/end-of-stream/index.js:\n    3: var noop = function() {};\n   13: 	callback = once(callback || noop);\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp/node_modules/vinyl-fs/node_modules/glob-watcher/node_modules/gaze/node_modules/globule/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:\n   28: function noop () {}\n   34:   if (typeof cb !== \"function\") cb = noop\n   54:   cb = cb || noop\n   98:   cb = cb || noop\n  139:   cb = cb || noop\n  157:   if (typeof cb !== \"function\") cb = noop\n  175:   cb = cb || noop\n  196:   if (typeof cb !== \"function\") cb = noop\n  214:   cb = cb || noop\n  239:     callback = callback || noop\n  285:         cb = cb || noop\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp/node_modules/vinyl-fs/node_modules/glob-watcher/node_modules/gaze/node_modules/globule/node_modules/glob/node_modules/graceful-fs/package.json:\n   41:   \"readme\": \"# graceful-fs\\n\\ngraceful-fs functions as a drop-in replacement for the fs module,\\nmaking various improvements.\\n\\nThe improvements are meant to normalize behavior across different\\nplatforms and environments, and to make filesystem access more\\nresilient to errors.\\n\\n## Improvements over fs module\\n\\ngraceful-fs:\\n\\n* keeps track of how many file descriptors are open, and by default\\n  limits this to 1024. Any further requests to open a file are put in a\\n  queue until new slots become available. If 1024 turns out to be too\\n  much, it decreases the limit further.\\n* fixes `lchmod` for Node versions prior to 0.6.2.\\n* implements `fs.lutimes` if possible. Otherwise it becomes a noop.\\n* ignores `EINVAL` and `EPERM` errors in `chown`, `fchown` or\\n  `lchown` if the user isn't root.\\n* makes `lchmod` and `lchown` become noops, if not available.\\n* retries reading a file if `read` results in EAGAIN error.\\n\\nOn Windows, it retries renaming a file for up to one second if `EACCESS`\\nor `EPERM` error occurs, likely because antivirus software has locked\\nthe directory.\\n\\n## Configuration\\n\\nThe maximum number of open file descriptors that graceful-fs manages may\\nbe adjusted by setting `fs.MAX_OPEN` to a different number. The default\\nis 1024.\\n\",\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp/node_modules/vinyl-fs/node_modules/glob-watcher/node_modules/gaze/node_modules/globule/node_modules/glob/node_modules/graceful-fs/README.md:\n   19: * implements `fs.lutimes` if possible. Otherwise it becomes a noop.\n   22: * makes `lchmod` and `lchown` become noops, if not available.\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp/node_modules/vinyl-fs/node_modules/glob-watcher/node_modules/gaze/node_modules/globule/node_modules/lodash/dist/lodash.compat.js:\n  592:         noop.prototype = func.prototype;\n  593:         thisBinding = new noop;\n  594:         noop.prototype = null;\n  775:   function noop() {\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp/node_modules/vinyl-fs/node_modules/glob-watcher/node_modules/gaze/node_modules/globule/node_modules/lodash/dist/lodash.js:\n  474:         noop.prototype = func.prototype;\n  475:         thisBinding = new noop;\n  476:         noop.prototype = null;\n  652:   function noop() {\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp/node_modules/vinyl-fs/node_modules/glob-watcher/node_modules/gaze/node_modules/globule/node_modules/lodash/dist/lodash.underscore.js:\n  326:         noop.prototype = func.prototype;\n  327:         thisBinding = new noop;\n  328:         noop.prototype = null;\n  472:   function noop() {\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp/node_modules/vinyl-fs/node_modules/graceful-fs/graceful-fs.js:\n   12: function noop () {}\n   14: var debug = noop\n   38:   if (typeof cb !== \"function\") cb = noop\n   69:   if (typeof cb !== \"function\") cb = noop\n   98:   if (typeof cb !== \"function\") cb = noop\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp/node_modules/vinyl-fs/node_modules/graceful-fs/polyfills.js:\n   24:     callback = callback || noop\n   70:         cb = cb || noop\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp/node_modules/vinyl-fs/node_modules/graceful-fs/README.md:\n   18: * implements `fs.lutimes` if possible. Otherwise it becomes a noop.\n   21: * makes `lchmod` and `lchown` become noops, if not available.\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp/node_modules/vinyl-fs/node_modules/through2/README.md:\n   92:     function (chunk, enc, cb) { cb(null, chunk) }, // transform is a noop\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp/node_modules/vinyl-fs/node_modules/through2/through2.js:\n   24: // a noop _transform function\n   25: function noop (chunk, enc, callback) {\n   41:       transform = noop\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp-protractor/node_modules/gulp-util/index.js:\n   10:   noop: require('./lib/noop'),\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp-protractor/node_modules/gulp-util/README.md:\n   78: ## noop()\n   88:     .pipe(gutil.env.type === 'production' ? uglify() : gutil.noop())\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp-protractor/node_modules/gulp-util/node_modules/through2/README.md:\n   92:     function (chunk, enc, cb) { cb(null, chunk) }, // transform is a noop\n\n/Users/saadtazi/Projects/test-protractor/node_modules/gulp-protractor/node_modules/gulp-util/node_modules/through2/through2.js:\n   24: // a noop _transform function\n   25: function noop (chunk, enc, callback) {\n   41:       transform = noop\n\n/Users/saadtazi/Projects/test-protractor/node_modules/lodash/index.js:\n  885:      * `noop`, `now`, `pad`, `padLeft`, `padRight`, `parseInt`, `pop`, `random`,\n 3946:     var getData = !metaMap ? noop : function(func) {\n 11329:      * _.noop(object) === undefined;\n 11332:     function noop() {\n 11881:     lodash.noop = noop;\n\n/Users/saadtazi/Projects/test-protractor/node_modules/lodash/utility.js:\n   12:   'noop': require('./utility/noop'),\n\n/Users/saadtazi/Projects/test-protractor/node_modules/lodash/chain/lodash.js:\n   72:  * `noop`, `now`, `pad`, `padLeft`, `padRight`, `parseInt`, `pop`, `random`,\n\n/Users/saadtazi/Projects/test-protractor/node_modules/lodash/internal/getData.js:\n    2:     noop = require('../utility/noop');\n   11: var getData = !metaMap ? noop : function(func) {\n\n/Users/saadtazi/Projects/test-protractor/node_modules/lodash/utility/noop.js:\n   12:  * _.noop(object) === undefined;\n   15: function noop() {\n   19: module.exports = noop;\n\n/Users/saadtazi/Projects/test-protractor/node_modules/protractor/CHANGELOG.md:\n  936:   fix(protractor): removing a mock module that was never added now is a noop\n  938:   It used to remove the last module - now is a noop.\n\n/Users/saadtazi/Projects/test-protractor/node_modules/protractor/lib/plugins.js:\n   46: var noop = function() {};\n   86:           (pluginObj[funName] || noop).apply(\n\n/Users/saadtazi/Projects/test-protractor/node_modules/protractor/node_modules/jasmine/lib/console_reporter.js:\n    5: var noopTimer = {\n   14:     timer = options.timer || noopTimer,\n\n\n\nSearching 0 files for \"noop\"\n\n0 matches\n\nSearching 4301 files for \"noop\"\n\n/Users/saadtazi/Projects/protractor-pageobject/lib/base.js:\n    6: var noop = function() {}\n   29:   initialize: noop,\n   34:   afterGet: noop,\n\n/Users/saadtazi/Projects/protractor-pageobject/lib/page.js:\n   19:   afterGet: noop,\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/chai/History.md:\n  114:  * Merge pull request #306 from chaijs/revert-297-noopchainfunc\n  120:  * Merge pull request #297 from prodatakey/noopchainfunc\n  126:  * Add docs for function style NOOP asserts\n  127:  * Make the NOOP function a shared constant\n  471:   * add `that` chain noop\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/chai/ReleaseNotes.md:\n  112: the `addChainableNoop`. This change has been reverted.\n  114: Any plugins using `addChainableNoop` should cease to do so.\n  153:   - Review `addChainableNoop` notes below.\n  157: ### Noop Function for Terminating Assertion Properties\n  213: of using `addProperty` to register terminating assertions, simply use `addChainableNoop`\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/chai/node_modules/deep-eql/node_modules/type-detect/package.json:\n   56:   \"readme\": \"# type-detect [![Build Status](https://travis-ci.org/chaijs/type-detect.png?branch=master)](https://travis-ci.org/chaijs/type-detect) [![Coverage Status](https://coveralls.io/repos/chaijs/type-detect/badge.png?branch=master)](https://coveralls.io/r/chaijs/type-detect?branch=master)\\n\\n> Improved typeof detection for node.js and the browser.\\n\\n## Installation\\n\\n### Node.js\\n\\n`type-detect` is available on [npm](http://npmjs.org).\\n\\n    $ npm install type-detect\\n\\n### Component\\n\\n`type-detect` is available as a [component](https://github.com/component/component).\\n\\n    $ component install chaijs/type-detect\\n\\n## Usage\\n\\n### Primary\\n\\nThe primary export of `type-detect` is function that can server as a replacement for \\n`typeof`. The results of this function will be more specific than that of native `typeof`.\\n\\n```js\\nvar type = require('type-detect');\\n```\\n\\n#### array\\n\\n```js\\nassert('array' === type([]));\\nassert('array' === type(new Array()));\\n```\\n\\n#### regexp\\n\\n```js\\nassert('regexp' === type(/a-z/gi));\\nassert('regexp' === type(new RegExp('a-z')));\\n```\\n\\n#### function\\n\\n```js\\nassert('function' === type(function () {}));\\n```\\n\\n#### arguments\\n\\n```js\\n(function () {\\n  assert('arguments' === type(arguments));\\n})();\\n```\\n\\n#### date\\n\\n```js\\nassert('date' === type(new Date));\\n```\\n\\n#### number\\n\\n```js\\nassert('number' === type(1));\\nassert('number' === type(1.234));\\nassert('number' === type(-1));\\nassert('number' === type(-1.234));\\nassert('number' === type(Infinity));\\nassert('number' === type(NaN));\\n```\\n\\n#### string\\n\\n```js\\nassert('string' === type('hello world'));\\n```\\n\\n#### null\\n\\n```js\\nassert('null' === type(null));\\nassert('null' !== type(undefined));\\n```\\n\\n#### undefined\\n\\n```js\\nassert('undefined' === type(undefined));\\nassert('undefined' !== type(null));\\n```\\n\\n#### object\\n\\n```js\\nvar Noop = function () {};\\nassert('object' === type({}));\\nassert('object' !== type(Noop));\\nassert('object' === type(new Noop));\\nassert('object' === type(new Object));\\nassert('object' === type(new String('hello')));\\n```\\n\\n### Library\\n\\nA `Library` is a small constructed repository for custom type detections.\\n\\n```js\\nvar lib = new type.Library;\\n```\\n\\n#### .of (obj)\\n\\n* **@param** _{Mixed}_ object to test\\n* **@return** _{String}_  type\\n\\nExpose replacement `typeof` detection to the library.\\n\\n```js\\nif ('string' === lib.of('hello world')) {\\n  // ...\\n}\\n```\\n\\n\\n#### .define (type, test)\\n\\n* **@param** _{String}_ type \\n* **@param** _{RegExp|Function}_ test \\n\\nAdd a test to for the `.test()` assertion.\\n\\nCan be defined as a regular expression:\\n\\n```js\\nlib.define('int', /^[0-9]+$/);\\n```\\n\\n... or as a function:\\n\\n```js\\nlib.define('bln', function (obj) {\\n  if ('boolean' === lib.of(obj)) return true;\\n  var blns = [ 'yes', 'no', 'true', 'false', 1, 0 ];\\n  if ('string' === lib.of(obj)) obj = obj.toLowerCase();\\n  return !! ~blns.indexOf(obj);\\n});\\n```\\n\\n\\n#### .test (obj, test)\\n\\n* **@param** _{Mixed}_ object \\n* **@param** _{String}_ type \\n* **@return** _{Boolean}_  result\\n\\nAssert that an object is of type. Will first\\ncheck natives, and if that does not pass it will\\nuse the user defined custom tests.\\n\\n```js\\nassert(lib.test('1', 'int'));\\nassert(lib.test('yes', 'bln'));\\n```\\n\\n\\n\\n\\n## License\\n\\n(The MIT License)\\n\\nCopyright (c) 2013 Jake Luer <jake@alogicalparadox.com> (http://alogicalparadox.com)\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\\"Software\\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in\\nall copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\\"AS IS\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\\nTHE SOFTWARE.\\n\",\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/chai/node_modules/deep-eql/node_modules/type-detect/README.md:\n   98: var Noop = function () {};\n  100: assert('object' !== type(Noop));\n  101: assert('object' === type(new Noop));\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/class-extend/node_modules/lodash/lodash.js:\n 1835:     var setBindData = !defineProperty ? noop : function(func, value) {\n 6332:      * _.noop(object) === undefined;\n 6335:     function noop() {\n 7010:     lodash.noop = noop;\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/class-extend/node_modules/lodash/README.md:\n  121:  * [_.noop](https://lodash.com/docs#noop) for function placeholders\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/class-extend/node_modules/lodash/dist/lodash.compat.js:\n 1818:     var setBindData = !defineProperty ? noop : function(func, value) {\n 6315:      * _.noop(object) === undefined;\n 6318:     function noop() {\n 6993:     lodash.noop = noop;\n\n~/Projects/protractor-pageobject/node_modules/class-extend/node_modules/lodash/dist/lodash.compat.min.js:\n    <binary>\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/class-extend/node_modules/lodash/dist/lodash.js:\n 1494:     var setBindData = !defineProperty ? noop : function(func, value) {\n 5965:      * _.noop(object) === undefined;\n 5968:     function noop() {\n 6643:     lodash.noop = noop;\n\n~/Projects/protractor-pageobject/node_modules/class-extend/node_modules/lodash/dist/lodash.min.js:\n    <binary>\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/class-extend/node_modules/lodash/dist/lodash.underscore.js:\n 4324:    * _.noop(object) === undefined;\n 4327:   function noop() {\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp/node_modules/gulp-util/index.js:\n   10:   noop: require('./lib/noop'),\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp/node_modules/gulp-util/README.md:\n   78: ## noop()\n   88:     .pipe(gutil.env.type === 'production' ? uglify() : gutil.noop())\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp/node_modules/gulp-util/node_modules/through2/README.md:\n   92:     function (chunk, enc, cb) { cb(null, chunk) }, // transform is a noop\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp/node_modules/gulp-util/node_modules/through2/through2.js:\n   24: // a noop _transform function\n   25: function noop (chunk, enc, callback) {\n   41:       transform = noop\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp/node_modules/orchestrator/node_modules/end-of-stream/index.js:\n    3: var noop = function() {};\n   13: 	callback = once(callback || noop);\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp/node_modules/vinyl-fs/node_modules/glob-watcher/node_modules/gaze/node_modules/globule/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:\n   28: function noop () {}\n   34:   if (typeof cb !== \"function\") cb = noop\n   54:   cb = cb || noop\n   98:   cb = cb || noop\n  139:   cb = cb || noop\n  157:   if (typeof cb !== \"function\") cb = noop\n  175:   cb = cb || noop\n  196:   if (typeof cb !== \"function\") cb = noop\n  214:   cb = cb || noop\n  239:     callback = callback || noop\n  285:         cb = cb || noop\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp/node_modules/vinyl-fs/node_modules/glob-watcher/node_modules/gaze/node_modules/globule/node_modules/glob/node_modules/graceful-fs/package.json:\n   41:   \"readme\": \"# graceful-fs\\n\\ngraceful-fs functions as a drop-in replacement for the fs module,\\nmaking various improvements.\\n\\nThe improvements are meant to normalize behavior across different\\nplatforms and environments, and to make filesystem access more\\nresilient to errors.\\n\\n## Improvements over fs module\\n\\ngraceful-fs:\\n\\n* keeps track of how many file descriptors are open, and by default\\n  limits this to 1024. Any further requests to open a file are put in a\\n  queue until new slots become available. If 1024 turns out to be too\\n  much, it decreases the limit further.\\n* fixes `lchmod` for Node versions prior to 0.6.2.\\n* implements `fs.lutimes` if possible. Otherwise it becomes a noop.\\n* ignores `EINVAL` and `EPERM` errors in `chown`, `fchown` or\\n  `lchown` if the user isn't root.\\n* makes `lchmod` and `lchown` become noops, if not available.\\n* retries reading a file if `read` results in EAGAIN error.\\n\\nOn Windows, it retries renaming a file for up to one second if `EACCESS`\\nor `EPERM` error occurs, likely because antivirus software has locked\\nthe directory.\\n\\n## Configuration\\n\\nThe maximum number of open file descriptors that graceful-fs manages may\\nbe adjusted by setting `fs.MAX_OPEN` to a different number. The default\\nis 1024.\\n\",\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp/node_modules/vinyl-fs/node_modules/glob-watcher/node_modules/gaze/node_modules/globule/node_modules/glob/node_modules/graceful-fs/README.md:\n   19: * implements `fs.lutimes` if possible. Otherwise it becomes a noop.\n   22: * makes `lchmod` and `lchown` become noops, if not available.\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp/node_modules/vinyl-fs/node_modules/glob-watcher/node_modules/gaze/node_modules/globule/node_modules/lodash/dist/lodash.compat.js:\n  592:         noop.prototype = func.prototype;\n  593:         thisBinding = new noop;\n  594:         noop.prototype = null;\n  775:   function noop() {\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp/node_modules/vinyl-fs/node_modules/glob-watcher/node_modules/gaze/node_modules/globule/node_modules/lodash/dist/lodash.js:\n  474:         noop.prototype = func.prototype;\n  475:         thisBinding = new noop;\n  476:         noop.prototype = null;\n  652:   function noop() {\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp/node_modules/vinyl-fs/node_modules/glob-watcher/node_modules/gaze/node_modules/globule/node_modules/lodash/dist/lodash.underscore.js:\n  326:         noop.prototype = func.prototype;\n  327:         thisBinding = new noop;\n  328:         noop.prototype = null;\n  472:   function noop() {\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp/node_modules/vinyl-fs/node_modules/graceful-fs/graceful-fs.js:\n   12: function noop () {}\n   14: var debug = noop\n   38:   if (typeof cb !== \"function\") cb = noop\n   69:   if (typeof cb !== \"function\") cb = noop\n   98:   if (typeof cb !== \"function\") cb = noop\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp/node_modules/vinyl-fs/node_modules/graceful-fs/polyfills.js:\n   24:     callback = callback || noop\n   70:         cb = cb || noop\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp/node_modules/vinyl-fs/node_modules/graceful-fs/README.md:\n   18: * implements `fs.lutimes` if possible. Otherwise it becomes a noop.\n   21: * makes `lchmod` and `lchown` become noops, if not available.\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp/node_modules/vinyl-fs/node_modules/through2/README.md:\n   92:     function (chunk, enc, cb) { cb(null, chunk) }, // transform is a noop\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp/node_modules/vinyl-fs/node_modules/through2/through2.js:\n   24: // a noop _transform function\n   25: function noop (chunk, enc, callback) {\n   41:       transform = noop\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp-protractor/node_modules/gulp-util/index.js:\n   10:   noop: require('./lib/noop'),\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp-protractor/node_modules/gulp-util/README.md:\n   78: ## noop()\n   88:     .pipe(gutil.env.type === 'production' ? uglify() : gutil.noop())\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp-protractor/node_modules/gulp-util/node_modules/through2/README.md:\n   92:     function (chunk, enc, cb) { cb(null, chunk) }, // transform is a noop\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/gulp-protractor/node_modules/gulp-util/node_modules/through2/through2.js:\n   24: // a noop _transform function\n   25: function noop (chunk, enc, callback) {\n   41:       transform = noop\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/lodash/index.js:\n  885:      * `noop`, `now`, `pad`, `padLeft`, `padRight`, `parseInt`, `pop`, `random`,\n 3946:     var getData = !metaMap ? noop : function(func) {\n 11329:      * _.noop(object) === undefined;\n 11332:     function noop() {\n 11881:     lodash.noop = noop;\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/lodash/utility.js:\n   12:   'noop': require('./utility/noop'),\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/lodash/chain/lodash.js:\n   72:  * `noop`, `now`, `pad`, `padLeft`, `padRight`, `parseInt`, `pop`, `random`,\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/lodash/internal/getData.js:\n    2:     noop = require('../utility/noop');\n   11: var getData = !metaMap ? noop : function(func) {\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/lodash/utility/noop.js:\n   12:  * _.noop(object) === undefined;\n   15: function noop() {\n   19: module.exports = noop;\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/CHANGELOG.md:\n  936:   fix(protractor): removing a mock module that was never added now is a noop\n  938:   It used to remove the last module - now is a noop.\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/lib/plugins.js:\n   46: var noop = function() {};\n   86:           (pluginObj[funName] || noop).apply(\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/jasmine/lib/console_reporter.js:\n    5: var noopTimer = {\n   14:     timer = options.timer || noopTimer,\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/jasmine/node_modules/jasmine-core/lib/console/console.js:\n   38:   var noopTimer = {\n   47:       timer = options.timer || noopTimer,\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine-html.js:\n   32:   var noopTimer = {\n   43:       timer = options.timer || noopTimer,\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:\n  852:   var noopTimer = {\n  858:     var timer = options.timer || noopTimer,\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/lodash/lodash.js:\n 1835:     var setBindData = !defineProperty ? noop : function(func, value) {\n 6332:      * _.noop(object) === undefined;\n 6335:     function noop() {\n 7010:     lodash.noop = noop;\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/lodash/README.md:\n  121:  * [_.noop](https://lodash.com/docs#noop) for function placeholders\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/lodash/dist/lodash.compat.js:\n 1818:     var setBindData = !defineProperty ? noop : function(func, value) {\n 6315:      * _.noop(object) === undefined;\n 6318:     function noop() {\n 6993:     lodash.noop = noop;\n\n~/Projects/protractor-pageobject/node_modules/protractor/node_modules/lodash/dist/lodash.compat.min.js:\n    <binary>\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/lodash/dist/lodash.js:\n 1494:     var setBindData = !defineProperty ? noop : function(func, value) {\n 5965:      * _.noop(object) === undefined;\n 5968:     function noop() {\n 6643:     lodash.noop = noop;\n\n~/Projects/protractor-pageobject/node_modules/protractor/node_modules/lodash/dist/lodash.min.js:\n    <binary>\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/lodash/dist/lodash.underscore.js:\n 4324:    * _.noop(object) === undefined;\n 4327:   function noop() {\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/minijasminenode/lib/index.js:\n    4: function noop() {}\n  103:     print = noop;\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/minijasminenode/lib/reporter.js:\n    6: function noop() {}\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/q/q.js:\n   81: var noop = function () {};\n 1558:             return when(promise, noop, noop);\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/request/node_modules/form-data/lib/form_data.js:\n   97:       // not that fast snoopy\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/request/node_modules/tough-cookie/lib/cookie.js:\n  873:   // S5.3 step 3: NOOP; persistent-flag and expiry-time is handled by getCookie()\n  875:   // S5.3 step 4: NOOP; domain is null by default\n  910:   // S5.3 step 8: NOOP; secure attribute\n  911:   // S5.3 step 9: NOOP; httpOnly attribute\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/js/jquery-1.4.4.min.js:\n   31: !F.call(j,\"constructor\")&&!F.call(j.constructor.prototype,\"isPrototypeOf\"))return false;for(var s in j);return s===B||F.call(j,s)},isEmptyObject:function(j){for(var s in j)return false;return true},error:function(j){throw j;},parseJSON:function(j){if(typeof j!==\"string\"||!j)return null;j=b.trim(j);if(C.test(j.replace(J,\"@\").replace(w,\"]\").replace(I,\"\")))return E.JSON&&E.JSON.parse?E.JSON.parse(j):(new Function(\"return \"+j))();else b.error(\"Invalid JSON: \"+j)},noop:function(){},globalEval:function(j){if(j&&\n   65: d&&d.scrollTop||0)-(b&&b.clientTop||d&&d.clientTop||0)}if(a.which==null&&(a.charCode!=null||a.keyCode!=null))a.which=a.charCode!=null?a.charCode:a.keyCode;if(!a.metaKey&&a.ctrlKey)a.metaKey=a.ctrlKey;if(!a.which&&a.button!==B)a.which=a.button&1?1:a.button&2?3:a.button&4?2:0;return a},guid:1E8,proxy:c.proxy,special:{ready:{setup:c.bindReady,teardown:c.noop},live:{add:function(a){c.event.add(this,Y(a.origType,a.selector),c.extend({},a,{handler:Ka,guid:a.handler.guid}))},remove:function(a){c.event.remove(this,\n  140: c.triggerGlobal(b,\"ajaxSend\",[w,b]);var L=w.onreadystatechange=function(m){if(!w||w.readyState===0||m===\"abort\"){J||c.handleComplete(b,w,e,f);J=true;if(w)w.onreadystatechange=c.noop}else if(!J&&w&&(w.readyState===4||m===\"timeout\")){J=true;w.onreadystatechange=c.noop;e=m===\"timeout\"?\"timeout\":!c.httpSuccess(w)?\"error\":b.ifModified&&c.httpNotModified(w,b.url)?\"notmodified\":\"success\";var p;if(e===\"success\")try{f=c.httpData(w,b.dataType,b)}catch(q){e=\"parsererror\";p=q}if(e===\"success\"||e===\"notmodified\")d||\n  162: f.offsetTop===5;e.style.position=\"fixed\";e.style.top=\"20px\";this.supportsFixedPosition=e.offsetTop===20||e.offsetTop===15;e.style.position=e.style.top=\"\";d.style.overflow=\"hidden\";d.style.position=\"relative\";this.subtractsBorderForOverflowNotVisible=e.offsetTop===-5;this.doesNotIncludeMarginInBodyOffset=a.offsetTop!==h;a.removeChild(b);c.offset.initialize=c.noop},bodyOffset:function(a){var b=a.offsetTop,d=a.offsetLeft;c.offset.initialize();if(c.offset.doesNotIncludeMarginInBodyOffset){b+=parseFloat(c.css(a,\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/test/promise_test.js:\n 1234: function testCancel_cancelIsANoopOnceAPromiseHasBeenFulfilled() {\n 1245: function testCancel_cancelIsANoopOnceAPromiseHasBeenRejected() {\n 1256: function testCancel_noopCancelTriggeredOnCallbackOfResolvedPromise() {\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/index.js:\n  825:      * `mixin`, `negate`, `noop`, `omit`, `once`, `pairs`, `partial`, `partialRight`,\n 3599:     var getData = !metaMap ? noop : function(func) {\n 10761:      * _.noop(object) === undefined;\n 10764:     function noop() {\n 11292:     lodash.noop = noop;\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility.js:\n   10:   'noop': require('./utility/noop'),\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/lodash.js:\n   54:  * `mixin`, `negate`, `noop`, `omit`, `once`, `pairs`, `partial`, `partialRight`,\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/getData.js:\n    2:     noop = require('../utility/noop');\n   11: var getData = !metaMap ? noop : function(func) {\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/noop.js:\n   12:  * _.noop(object) === undefined;\n   15: function noop() {\n   19: module.exports = noop;\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/test/source-map/test-source-node.js:\n   20:     node.add('function noop() {}');\n   44:     node.prepend('function noop() {}');\n   45:     assert.equal(node.children[0], 'function noop() {}');\n   51:     assert.equal(node.children[1], 'function noop() {}');\n   63:     assert.equal(node.children[4], 'function noop() {}');\n\n~/Projects/protractor-pageobject/node_modules/protractor/selenium/chromedriver:\n    <binary>\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/testapp/lib/angular_v1.2.9/angular-animate.min.js:\n    6: (function(H,f,s){'use strict';f.module(\"ngAnimate\",[\"ng\"]).factory(\"$$animateReflow\",[\"$window\",\"$timeout\",function(f,D){var c=f.requestAnimationFrame||f.webkitRequestAnimationFrame||function(c){return D(c,10,!1)},x=f.cancelAnimationFrame||f.webkitCancelAnimationFrame||function(c){return D.cancel(c)};return function(k){var f=c(k);return function(){x(f)}}}]).config([\"$provide\",\"$animateProvider\",function(S,D){function c(c){for(var f=0;f<c.length;f++){var k=c[f];if(k.nodeType==Y)return k}}var x=f.noop,\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/testapp/lib/angular_v1.2.9/angular-animate.min.js.map:\n    7: \"names\":[\"window\",\"angular\",\"undefined\",\"module\",\"factory\",\"$window\",\"$timeout\",\"requestAnimationFrame\",\"webkitRequestAnimationFrame\",\"fn\",\"cancelAnimationFrame\",\"webkitCancelAnimationFrame\",\"timer\",\"cancel\",\"id\",\"config\",\"$provide\",\"$animateProvider\",\"extractElementNode\",\"element\",\"i\",\"length\",\"elm\",\"nodeType\",\"ELEMENT_NODE\",\"noop\",\"forEach\",\"selectors\",\"$$selectors\",\"NG_ANIMATE_STATE\",\"NG_ANIMATE_CLASS_NAME\",\"rootAnimateState\",\"decorator\",\"$delegate\",\"$injector\",\"$sniffer\",\"$rootElement\",\"$rootScope\",\"$document\",\"lookup\",\"name\",\"matches\",\"flagMap\",\"classes\",\"substr\",\"split\",\"transitions\",\"animations\",\"push\",\"klass\",\"selectorFactoryName\",\"get\",\"performAnimation\",\"animationEvent\",\"className\",\"parentElement\",\"afterElement\",\"domOperation\",\"doneCallback\",\"onBeforeAnimationsComplete\",\"cancelled\",\"fireDOMOperation\",\"closeAnimation\",\"data\",\"done\",\"invokeRegisteredAnimationFns\",\"phase\",\"allAnimationFnsComplete\",\"fireAfterCallbackAsync\",\"fireBeforeCallbackAsync\",\"endFnName\",\"animation\",\"index\",\"animationPhaseCompleted\",\"phaseCompletionFlag\",\"currentAnimation\",\"isClassBased\",\"fireDOMCallback\",\"animationPhase\",\"triggerHandler\",\"hasBeenRun\",\"cleanup\",\"closeAnimationTimeout\",\"currentClassName\",\"node\",\"isAnimatableClassName\",\"animationLookup\",\"replace\",\"parent\",\"ngAnimateState\",\"animationsDisabled\",\"disabled\",\"running\",\"structural\",\"allowCancel\",\"afterFn\",\"beforeFn\",\"charAt\",\"toUpperCase\",\"futureClassName\",\"ONE_SPACE\",\"cancelAnimations\",\"isRevertingClassAnimation\",\"isFullyClassBasedAnimation\",\"event\",\"beforeComplete\",\"classNameToken\",\"indexOf\",\"addClass\",\"cancelChildAnimations\",\"querySelectorAll\",\"beforeEnd\",\"isCancelledFlag\",\"afterComplete\",\"afterEnd\",\"removeClass\",\"removeData\",\"isRoot\",\"state\",\"result\",\"$$postDigest\",\"classNameFilter\",\"test\",\"enter\",\"enabled\",\"leave\",\"move\",\"value\",\"arguments\",\"register\",\"$$animateReflow\",\"afterReflow\",\"callback\",\"cancelAnimationReflow\",\"animationReflowQueue\",\"animationElementQueue\",\"elementData\",\"NG_ANIMATE_CSS_DATA_KEY\",\"stagger\",\"staggerTime\",\"itemIndex\",\"Math\",\"max\",\"animationDelay\",\"transitionDelay\",\"closingAnimationTime\",\"maxDelay\",\"maxDuration\",\"CLOSING_TIME_BUFFER\",\"ONE_SECOND\",\"animationCount\",\"animationCounter\",\"elementQueueSnapshot\",\"animationCounterSnapshot\",\"closeAllAnimations\",\"lookupCache\",\"elements\",\"count\",\"closeAnimationFn\",\"getElementAnimationDetails\",\"cacheKey\",\"transitionDuration\",\"animationDuration\",\"transitionDelayStyle\",\"animationDelayStyle\",\"transitionDurationStyle\",\"transitionPropertyStyle\",\"elementStyles\",\"getComputedStyle\",\"TRANSITION_PROP\",\"DURATION_KEY\",\"parseMaxTime\",\"PROPERTY_KEY\",\"DELAY_KEY\",\"ANIMATION_PROP\",\"aDuration\",\"parseInt\",\"ANIMATION_ITERATION_COUNT_KEY\",\"str\",\"maxValue\",\"values\",\"isString\",\"parseFloat\",\"getCacheKey\",\"parentID\",\"NG_ANIMATE_PARENT_KEY\",\"parentCounter\",\"animateSetup\",\"calculationDecorator\",\"eventCacheKey\",\"total\",\"staggerClassName\",\"staggerCacheKey\",\"applyClasses\",\"timings\",\"activeClassName\",\"style\",\"unblockTransitions\",\"prop\",\"unblockKeyframeAnimations\",\"animateRun\",\"activeAnimationComplete\",\"onEnd\",\"off\",\"css3AnimationEvents\",\"onAnimationProgress\",\"appliedStyles\",\"removeProperty\",\"stopPropagation\",\"ev\",\"originalEvent\",\"timeStamp\",\"$manualTimeStamp\",\"Date\",\"now\",\"elapsedTime\",\"toFixed\",\"ELAPSED_TIME_MAX_DECIMAL_PLACES\",\"startTime\",\"maxDelayTime\",\"ANIMATIONEND_EVENT\",\"TRANSITIONEND_EVENT\",\"propertyStyle\",\"CSS_PREFIX\",\"prepareStaggerDelay\",\"oldStyle\",\"getAttribute\",\"setAttribute\",\"on\",\"elementData.closeAnimationFn\",\"delayStyle\",\"staggerDelay\",\"val\",\"animateBefore\",\"animateAfter\",\"afterAnimationComplete\",\"animate\",\"animationComplete\",\"preReflowCancellation\",\"suffixClasses\",\"suffix\",\"isArray\",\"ontransitionend\",\"onwebkittransitionend\",\"onanimationend\",\"onwebkitanimationend\",\"oldClasses\",\"clone\",\"cloneNode\",\"attr\",\"removeAttr\",\"empty\",\"append\",\"remove\",\"animationCompleted\",\"beforeAddClass\",\"cancellationMethod\",\"beforeRemoveClass\"]\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/testapp/lib/angular_v1.2.9/angular.min.js:\n   71: H&&H();v&&v.abort()}function E(a,d,e,g){r&&c.cancel(r);H=v=null;d=0===d?e?200:404:d;a(1223==d?204:d,e,g);b.$$completeOutstandingRequest(w)}var u;b.$$incOutstandingRequestCount();m=m||b.url();if(\"jsonp\"==x(e)){var R=\"_\"+(d.counter++).toString(36);d[R]=function(a){d[R].data=a};var H=g(m.replace(\"JSON_CALLBACK\",\"angular.callbacks.\"+R),function(){d[R].data?E(l,200,d[R].data):E(l,u||-2);d[R]=Ca.noop})}else{var v=a(e);v.open(e,m,!0);q(n,function(a,b){B(a)&&v.setRequestHeader(b,a)});v.onreadystatechange=\n  180: \"$anchorScroll\",\"$animate\",\"$sce\",function(a,c,d,e,g){return{restrict:\"ECA\",priority:400,terminal:!0,transclude:\"element\",controller:Ca.noop,compile:function(f,h){var m=h.ngInclude||h.src,k=h.onload||\"\",l=h.autoscroll;return function(f,h,q,r,y){var A=0,u,t,H=function(){u&&(u.$destroy(),u=null);t&&(e.leave(t),t=null)};f.$watch(g.parseAsResourceUrl(m),function(g){var m=function(){!B(l)||l&&!f.$eval(l)||d()},q=++A;g?(a.get(g,{cache:c}).success(function(a){if(q===A){var c=f.$new();r.template=a;a=y(c,\n  198: Je=$({restrict:\"E\",terminal:!0});(Da=Z.jQuery)?(A=Da,t(Da.fn,{scope:Ga.scope,isolateScope:Ga.isolateScope,controller:Ga.controller,injector:Ga.injector,inheritedData:Ga.inheritedData}),xb(\"remove\",!0,!0,!1),xb(\"empty\",!1,!1,!1),xb(\"html\",!1,!1,!0)):A=O;Ca.element=A;(function(a){t(a,{bootstrap:Zb,copy:aa,extend:t,equals:ua,element:A,forEach:q,injector:$b,noop:w,bind:cb,toJson:qa,fromJson:Vb,identity:Ba,isUndefined:z,isDefined:B,isString:D,isFunction:L,isObject:X,isNumber:sb,isElement:Qc,isArray:K,\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/testapp/lib/angular_v1.2.9/angular.min.js.map:\n    7: \"names\":[\"window\",\"document\",\"undefined\",\"minErr\",\"isArrayLike\",\"obj\",\"isWindow\",\"length\",\"nodeType\",\"isString\",\"isArray\",\"forEach\",\"iterator\",\"context\",\"key\",\"isFunction\",\"hasOwnProperty\",\"call\",\"sortedKeys\",\"keys\",\"push\",\"sort\",\"forEachSorted\",\"i\",\"reverseParams\",\"iteratorFn\",\"value\",\"nextUid\",\"index\",\"uid\",\"digit\",\"charCodeAt\",\"join\",\"String\",\"fromCharCode\",\"unshift\",\"setHashKey\",\"h\",\"$$hashKey\",\"extend\",\"dst\",\"arguments\",\"int\",\"str\",\"parseInt\",\"inherit\",\"parent\",\"extra\",\"noop\",\"identity\",\"$\",\"valueFn\",\"isUndefined\",\"isDefined\",\"isObject\",\"isNumber\",\"isDate\",\"toString\",\"isRegExp\",\"location\",\"alert\",\"setInterval\",\"isElement\",\"node\",\"nodeName\",\"on\",\"find\",\"map\",\"results\",\"list\",\"indexOf\",\"array\",\"arrayRemove\",\"splice\",\"copy\",\"source\",\"destination\",\"$evalAsync\",\"$watch\",\"ngMinErr\",\"Date\",\"getTime\",\"RegExp\",\"shallowCopy\",\"src\",\"charAt\",\"equals\",\"o1\",\"o2\",\"t1\",\"t2\",\"keySet\",\"csp\",\"securityPolicy\",\"isActive\",\"querySelector\",\"bind\",\"self\",\"fn\",\"curryArgs\",\"slice\",\"startIndex\",\"apply\",\"concat\",\"toJsonReplacer\",\"val\",\"toJson\",\"pretty\",\"JSON\",\"stringify\",\"fromJson\",\"json\",\"parse\",\"toBoolean\",\"v\",\"lowercase\",\"startingTag\",\"element\",\"jqLite\",\"clone\",\"empty\",\"e\",\"elemHtml\",\"append\",\"html\",\"TEXT_NODE\",\"match\",\"replace\",\"tryDecodeURIComponent\",\"decodeURIComponent\",\"parseKeyValue\",\"keyValue\",\"key_value\",\"split\",\"toKeyValue\",\"parts\",\"arrayValue\",\"encodeUriQuery\",\"encodeUriSegment\",\"pctEncodeSpaces\",\"encodeURIComponent\",\"angularInit\",\"bootstrap\",\"elements\",\"appElement\",\"module\",\"names\",\"NG_APP_CLASS_REGEXP\",\"name\",\"getElementById\",\"querySelectorAll\",\"exec\",\"className\",\"attributes\",\"attr\",\"modules\",\"doBootstrap\",\"injector\",\"tag\",\"$provide\",\"createInjector\",\"invoke\",\"scope\",\"compile\",\"animate\",\"$apply\",\"data\",\"NG_DEFER_BOOTSTRAP\",\"test\",\"angular\",\"resumeBootstrap\",\"angular.resumeBootstrap\",\"extraModules\",\"snake_case\",\"separator\",\"SNAKE_CASE_REGEXP\",\"letter\",\"pos\",\"toLowerCase\",\"assertArg\",\"arg\",\"reason\",\"assertArgFn\",\"acceptArrayAnnotation\",\"constructor\",\"assertNotHasOwnProperty\",\"getter\",\"path\",\"bindFnToScope\",\"lastInstance\",\"len\",\"getBlockElements\",\"nodes\",\"startNode\",\"endNode\",\"nextSibling\",\"setupModuleLoader\",\"$injectorMinErr\",\"$$minErr\",\"factory\",\"requires\",\"configFn\",\"invokeLater\",\"provider\",\"method\",\"insertMethod\",\"invokeQueue\",\"moduleInstance\",\"runBlocks\",\"config\",\"run\",\"block\",\"camelCase\",\"SPECIAL_CHARS_REGEXP\",\"_\",\"offset\",\"toUpperCase\",\"MOZ_HACK_REGEXP\",\"jqLitePatchJQueryRemove\",\"dispatchThis\",\"filterElems\",\"getterIfNoArguments\",\"removePatch\",\"param\",\"filter\",\"fireEvent\",\"set\",\"setIndex\",\"setLength\",\"childIndex\",\"children\",\"shift\",\"triggerHandler\",\"childLength\",\"jQuery\",\"originalJqFn\",\"$original\",\"JQLite\",\"jqLiteMinErr\",\"div\",\"createElement\",\"innerHTML\",\"removeChild\",\"firstChild\",\"jqLiteAddNodes\",\"childNodes\",\"fragment\",\"createDocumentFragment\",\"jqLiteClone\",\"cloneNode\",\"jqLiteDealoc\",\"jqLiteRemoveData\",\"jqLiteOff\",\"type\",\"unsupported\",\"events\",\"jqLiteExpandoStore\",\"handle\",\"eventHandler\",\"removeEventListenerFn\",\"expandoId\",\"jqName\",\"expandoStore\",\"jqCache\",\"$destroy\",\"jqId\",\"jqLiteData\",\"isSetter\",\"keyDefined\",\"isSimpleGetter\",\"jqLiteHasClass\",\"selector\",\"getAttribute\",\"jqLiteRemoveClass\",\"cssClasses\",\"setAttribute\",\"cssClass\",\"trim\",\"jqLiteAddClass\",\"existingClasses\",\"root\",\"jqLiteController\",\"jqLiteInheritedData\",\"ii\",\"jqLiteEmpty\",\"getBooleanAttrName\",\"booleanAttr\",\"BOOLEAN_ATTR\",\"BOOLEAN_ELEMENTS\",\"createEventHandler\",\"event\",\"preventDefault\",\"event.preventDefault\",\"returnValue\",\"stopPropagation\",\"event.stopPropagation\",\"cancelBubble\",\"target\",\"srcElement\",\"defaultPrevented\",\"prevent\",\"isDefaultPrevented\",\"event.isDefaultPrevented\",\"eventHandlersCopy\",\"msie\",\"elem\",\"hashKey\",\"objType\",\"HashMap\",\"put\",\"annotate\",\"$inject\",\"fnText\",\"STRIP_COMMENTS\",\"argDecl\",\"FN_ARGS\",\"FN_ARG_SPLIT\",\"FN_ARG\",\"all\",\"underscore\",\"last\",\"modulesToLoad\",\"supportObject\",\"delegate\",\"provider_\",\"providerInjector\",\"instantiate\",\"$get\",\"providerCache\",\"providerSuffix\",\"factoryFn\",\"loadModules\",\"moduleFn\",\"loadedModules\",\"get\",\"angularModule\",\"_runBlocks\",\"_invokeQueue\",\"invokeArgs\",\"message\",\"stack\",\"createInternalInjector\",\"cache\",\"getService\",\"serviceName\",\"INSTANTIATING\",\"err\",\"locals\",\"args\",\"Type\",\"Constructor\",\"returnedValue\",\"prototype\",\"instance\",\"has\",\"service\",\"$injector\",\"constant\",\"instanceCache\",\"decorator\",\"decorFn\",\"origProvider\",\"orig$get\",\"origProvider.$get\",\"origInstance\",\"instanceInjector\",\"servicename\",\"$AnchorScrollProvider\",\"autoScrollingEnabled\",\"disableAutoScrolling\",\"this.disableAutoScrolling\",\"$window\",\"$location\",\"$rootScope\",\"getFirstAnchor\",\"result\",\"scroll\",\"hash\",\"elm\",\"scrollIntoView\",\"getElementsByName\",\"scrollTo\",\"autoScrollWatch\",\"autoScrollWatchAction\",\"Browser\",\"$log\",\"$sniffer\",\"completeOutstandingRequest\",\"outstandingRequestCount\",\"outstandingRequestCallbacks\",\"pop\",\"error\",\"startPoller\",\"interval\",\"setTimeout\",\"check\",\"pollFns\",\"pollFn\",\"pollTimeout\",\"fireUrlChange\",\"newLocation\",\"lastBrowserUrl\",\"url\",\"urlChangeListeners\",\"listener\",\"rawDocument\",\"history\",\"clearTimeout\",\"pendingDeferIds\",\"isMock\",\"$$completeOutstandingRequest\",\"$$incOutstandingRequestCount\",\"self.$$incOutstandingRequestCount\",\"notifyWhenNoOutstandingRequests\",\"self.notifyWhenNoOutstandingRequests\",\"callback\",\"addPollFn\",\"self.addPollFn\",\"href\",\"baseElement\",\"self.url\",\"replaceState\",\"pushState\",\"urlChangeInit\",\"onUrlChange\",\"self.onUrlChange\",\"hashchange\",\"baseHref\",\"self.baseHref\",\"lastCookies\",\"lastCookieString\",\"cookiePath\",\"cookies\",\"self.cookies\",\"cookieLength\",\"cookie\",\"escape\",\"warn\",\"cookieArray\",\"unescape\",\"substring\",\"defer\",\"self.defer\",\"delay\",\"timeoutId\",\"cancel\",\"self.defer.cancel\",\"deferId\",\"$BrowserProvider\",\"$document\",\"$CacheFactoryProvider\",\"this.$get\",\"cacheFactory\",\"cacheId\",\"options\",\"refresh\",\"entry\",\"freshEnd\",\"staleEnd\",\"n\",\"link\",\"p\",\"nextEntry\",\"prevEntry\",\"caches\",\"size\",\"stats\",\"capacity\",\"Number\",\"MAX_VALUE\",\"lruHash\",\"lruEntry\",\"remove\",\"removeAll\",\"destroy\",\"info\",\"cacheFactory.info\",\"cacheFactory.get\",\"$TemplateCacheProvider\",\"$cacheFactory\",\"$CompileProvider\",\"$$sanitizeUriProvider\",\"hasDirectives\",\"Suffix\",\"COMMENT_DIRECTIVE_REGEXP\",\"CLASS_DIRECTIVE_REGEXP\",\"EVENT_HANDLER_ATTR_REGEXP\",\"directive\",\"this.directive\",\"registerDirective\",\"directiveFactory\",\"$exceptionHandler\",\"directives\",\"priority\",\"require\",\"controller\",\"restrict\",\"aHrefSanitizationWhitelist\",\"this.aHrefSanitizationWhitelist\",\"regexp\",\"imgSrcSanitizationWhitelist\",\"this.imgSrcSanitizationWhitelist\",\"$interpolate\",\"$http\",\"$templateCache\",\"$parse\",\"$controller\",\"$sce\",\"$animate\",\"$$sanitizeUri\",\"$compileNodes\",\"transcludeFn\",\"maxPriority\",\"ignoreDirective\",\"previousCompileContext\",\"nodeValue\",\"wrap\",\"compositeLinkFn\",\"compileNodes\",\"safeAddClass\",\"publicLinkFn\",\"cloneConnectFn\",\"transcludeControllers\",\"$linkNode\",\"JQLitePrototype\",\"eq\",\"$element\",\"addClass\",\"nodeList\",\"$rootElement\",\"boundTranscludeFn\",\"childLinkFn\",\"$node\",\"childScope\",\"nodeListLength\",\"stableNodeList\",\"Array\",\"linkFns\",\"nodeLinkFn\",\"$new\",\"childTranscludeFn\",\"transclude\",\"createBoundTranscludeFn\",\"attrs\",\"linkFnFound\",\"Attributes\",\"collectDirectives\",\"applyDirectivesToNode\",\"terminal\",\"transcludedScope\",\"cloneFn\",\"controllers\",\"scopeCreated\",\"$$transcluded\",\"attrsMap\",\"$attr\",\"addDirective\",\"directiveNormalize\",\"nodeName_\",\"nName\",\"nAttrs\",\"j\",\"jj\",\"attrStartName\",\"attrEndName\",\"specified\",\"ngAttrName\",\"NG_ATTR_BINDING\",\"substr\",\"directiveNName\",\"addAttrInterpolateDirective\",\"addTextInterpolateDirective\",\"byPriority\",\"groupScan\",\"attrStart\",\"attrEnd\",\"depth\",\"hasAttribute\",\"$compileMinErr\",\"groupElementsLinkFnWrapper\",\"linkFn\",\"compileNode\",\"templateAttrs\",\"jqCollection\",\"originalReplaceDirective\",\"preLinkFns\",\"postLinkFns\",\"addLinkFns\",\"pre\",\"post\",\"newIsolateScopeDirective\",\"$$isolateScope\",\"cloneAndAnnotateFn\",\"getControllers\",\"elementControllers\",\"retrievalMethod\",\"optional\",\"directiveName\",\"linkNode\",\"controllersBoundTransclude\",\"cloneAttachFn\",\"hasElementTranscludeDirective\",\"isolateScope\",\"$$element\",\"LOCAL_REGEXP\",\"templateDirective\",\"$$originalDirective\",\"definition\",\"scopeName\",\"attrName\",\"mode\",\"lastValue\",\"parentGet\",\"parentSet\",\"compare\",\"$$isolateBindings\",\"$observe\",\"$$observers\",\"$$scope\",\"literal\",\"a\",\"b\",\"assign\",\"parentValueWatch\",\"parentValue\",\"controllerDirectives\",\"controllerInstance\",\"controllerAs\",\"$scope\",\"scopeToChild\",\"template\",\"templateUrl\",\"terminalPriority\",\"newScopeDirective\",\"nonTlbTranscludeDirective\",\"hasTranscludeDirective\",\"$compileNode\",\"$template\",\"$$start\",\"$$end\",\"directiveValue\",\"assertNoDuplicate\",\"$$tlb\",\"createComment\",\"replaceWith\",\"replaceDirective\",\"contents\",\"denormalizeTemplate\",\"newTemplateAttrs\",\"templateDirectives\",\"unprocessedDirectives\",\"markDirectivesAsIsolate\",\"mergeTemplateAttributes\",\"compileTemplateUrl\",\"Math\",\"max\",\"tDirectives\",\"startAttrName\",\"endAttrName\",\"srcAttr\",\"dstAttr\",\"$set\",\"tAttrs\",\"linkQueue\",\"afterTemplateNodeLinkFn\",\"afterTemplateChildLinkFn\",\"beforeTemplateCompileNode\",\"origAsyncDirective\",\"derivedSyncDirective\",\"getTrustedResourceUrl\",\"success\",\"content\",\"childBoundTranscludeFn\",\"tempTemplateAttrs\",\"beforeTemplateLinkNode\",\"linkRootElement\",\"response\",\"code\",\"headers\",\"delayedNodeLinkFn\",\"ignoreChildLinkFn\",\"rootElement\",\"diff\",\"what\",\"previousDirective\",\"text\",\"interpolateFn\",\"textInterpolateLinkFn\",\"bindings\",\"interpolateFnWatchAction\",\"getTrustedContext\",\"attrNormalizedName\",\"HTML\",\"RESOURCE_URL\",\"attrInterpolatePreLinkFn\",\"$$inter\",\"newValue\",\"oldValue\",\"$updateClass\",\"elementsToRemove\",\"newNode\",\"firstElementToRemove\",\"removeCount\",\"parentNode\",\"j2\",\"replaceChild\",\"appendChild\",\"expando\",\"k\",\"kk\",\"annotation\",\"$addClass\",\"classVal\",\"$removeClass\",\"removeClass\",\"newClasses\",\"oldClasses\",\"tokenDifference\",\"writeAttr\",\"booleanKey\",\"prop\",\"removeAttr\",\"listeners\",\"startSymbol\",\"endSymbol\",\"PREFIX_REGEXP\",\"str1\",\"str2\",\"values\",\"tokens1\",\"tokens2\",\"token\",\"$ControllerProvider\",\"CNTRL_REG\",\"register\",\"this.register\",\"expression\",\"identifier\",\"$DocumentProvider\",\"$ExceptionHandlerProvider\",\"exception\",\"cause\",\"parseHeaders\",\"parsed\",\"line\",\"headersGetter\",\"headersObj\",\"transformData\",\"fns\",\"$HttpProvider\",\"JSON_START\",\"JSON_END\",\"PROTECTION_PREFIX\",\"CONTENT_TYPE_APPLICATION_JSON\",\"defaults\",\"d\",\"interceptorFactories\",\"interceptors\",\"responseInterceptorFactories\",\"responseInterceptors\",\"$httpBackend\",\"$browser\",\"$q\",\"requestConfig\",\"transformResponse\",\"resp\",\"status\",\"reject\",\"transformRequest\",\"mergeHeaders\",\"execHeaders\",\"headerContent\",\"headerFn\",\"header\",\"defHeaders\",\"reqHeaders\",\"defHeaderName\",\"reqHeaderName\",\"common\",\"lowercaseDefHeaderName\",\"uppercase\",\"xsrfValue\",\"urlIsSameOrigin\",\"xsrfCookieName\",\"xsrfHeaderName\",\"chain\",\"serverRequest\",\"reqData\",\"withCredentials\",\"sendReq\",\"then\",\"promise\",\"when\",\"reversedInterceptors\",\"interceptor\",\"request\",\"requestError\",\"responseError\",\"thenFn\",\"rejectFn\",\"promise.success\",\"promise.error\",\"done\",\"headersString\",\"resolvePromise\",\"$$phase\",\"deferred\",\"resolve\",\"removePendingReq\",\"idx\",\"pendingRequests\",\"cachedResp\",\"buildUrl\",\"params\",\"defaultCache\",\"timeout\",\"responseType\",\"interceptorFactory\",\"responseFn\",\"createShortMethods\",\"createShortMethodsWithData\",\"createXhr\",\"ActiveXObject\",\"XMLHttpRequest\",\"$HttpBackendProvider\",\"createHttpBackend\",\"callbacks\",\"$browserDefer\",\"jsonpReq\",\"script\",\"doneWrapper\",\"onreadystatechange\",\"onload\",\"onerror\",\"body\",\"script.onreadystatechange\",\"readyState\",\"script.onerror\",\"ABORTED\",\"timeoutRequest\",\"jsonpDone\",\"xhr\",\"abort\",\"completeRequest\",\"callbackId\",\"counter\",\"open\",\"setRequestHeader\",\"xhr.onreadystatechange\",\"responseHeaders\",\"getAllResponseHeaders\",\"responseText\",\"send\",\"$InterpolateProvider\",\"this.startSymbol\",\"this.endSymbol\",\"mustHaveExpression\",\"trustedContext\",\"endIndex\",\"hasInterpolation\",\"startSymbolLength\",\"exp\",\"endSymbolLength\",\"$interpolateMinErr\",\"part\",\"getTrusted\",\"valueOf\",\"newErr\",\"$interpolate.startSymbol\",\"$interpolate.endSymbol\",\"$IntervalProvider\",\"count\",\"invokeApply\",\"clearInterval\",\"iteration\",\"skipApply\",\"$$intervalId\",\"tick\",\"notify\",\"intervals\",\"interval.cancel\",\"$LocaleProvider\",\"short\",\"pluralCat\",\"num\",\"encodePath\",\"segments\",\"parseAbsoluteUrl\",\"absoluteUrl\",\"locationObj\",\"appBase\",\"parsedUrl\",\"urlResolve\",\"$$protocol\",\"protocol\",\"$$host\",\"hostname\",\"$$port\",\"port\",\"DEFAULT_PORTS\",\"parseAppUrl\",\"relativeUrl\",\"prefixed\",\"$$path\",\"pathname\",\"$$search\",\"search\",\"$$hash\",\"beginsWith\",\"begin\",\"whole\",\"stripHash\",\"stripFile\",\"lastIndexOf\",\"LocationHtml5Url\",\"basePrefix\",\"$$html5\",\"appBaseNoFile\",\"$$parse\",\"this.$$parse\",\"pathUrl\",\"$locationMinErr\",\"$$compose\",\"this.$$compose\",\"$$url\",\"$$absUrl\",\"$$rewrite\",\"this.$$rewrite\",\"appUrl\",\"prevAppUrl\",\"LocationHashbangUrl\",\"hashPrefix\",\"withoutBaseUrl\",\"withoutHashUrl\",\"windowsFilePathExp\",\"firstPathSegmentMatch\",\"LocationHashbangInHtml5Url\",\"locationGetter\",\"property\",\"locationGetterSetter\",\"preprocess\",\"$LocationProvider\",\"html5Mode\",\"this.hashPrefix\",\"prefix\",\"this.html5Mode\",\"afterLocationChange\",\"oldUrl\",\"$broadcast\",\"absUrl\",\"initialUrl\",\"LocationMode\",\"ctrlKey\",\"metaKey\",\"which\",\"absHref\",\"animVal\",\"rewrittenUrl\",\"newUrl\",\"$digest\",\"changeCounter\",\"$locationWatch\",\"currentReplace\",\"$$replace\",\"$LogProvider\",\"debug\",\"debugEnabled\",\"this.debugEnabled\",\"flag\",\"formatError\",\"Error\",\"sourceURL\",\"consoleLog\",\"console\",\"logFn\",\"log\",\"hasApply\",\"arg1\",\"arg2\",\"ensureSafeMemberName\",\"fullExpression\",\"$parseMinErr\",\"ensureSafeObject\",\"setter\",\"setValue\",\"fullExp\",\"propertyObj\",\"unwrapPromises\",\"promiseWarning\",\"$$v\",\"cspSafeGetterFn\",\"key0\",\"key1\",\"key2\",\"key3\",\"key4\",\"cspSafePromiseEnabledGetter\",\"pathVal\",\"cspSafeGetter\",\"simpleGetterFn1\",\"simpleGetterFn2\",\"getterFn\",\"getterFnCache\",\"pathKeys\",\"pathKeysLength\",\"evaledFnGetter\",\"Function\",\"$ParseProvider\",\"$parseOptions\",\"this.unwrapPromises\",\"logPromiseWarnings\",\"this.logPromiseWarnings\",\"$filter\",\"promiseWarningCache\",\"parsedExpression\",\"lexer\",\"Lexer\",\"parser\",\"Parser\",\"$QProvider\",\"qFactory\",\"nextTick\",\"exceptionHandler\",\"defaultCallback\",\"defaultErrback\",\"pending\",\"ref\",\"progress\",\"errback\",\"progressback\",\"wrappedCallback\",\"wrappedErrback\",\"wrappedProgressback\",\"catch\",\"finally\",\"makePromise\",\"resolved\",\"handleCallback\",\"isResolved\",\"callbackOutput\",\"promises\",\"$RootScopeProvider\",\"TTL\",\"$rootScopeMinErr\",\"lastDirtyWatch\",\"digestTtl\",\"this.digestTtl\",\"Scope\",\"$id\",\"$parent\",\"$$watchers\",\"$$nextSibling\",\"$$prevSibling\",\"$$childHead\",\"$$childTail\",\"$root\",\"$$destroyed\",\"$$asyncQueue\",\"$$postDigestQueue\",\"$$listeners\",\"$$listenerCount\",\"beginPhase\",\"phase\",\"compileToFn\",\"decrementListenerCount\",\"current\",\"initWatchVal\",\"isolate\",\"child\",\"ChildScope\",\"watchExp\",\"objectEquality\",\"watcher\",\"listenFn\",\"watcher.fn\",\"newVal\",\"oldVal\",\"originalFn\",\"$watchCollection\",\"changeDetected\",\"objGetter\",\"internalArray\",\"internalObject\",\"oldLength\",\"$watchCollectionWatch\",\"newLength\",\"$watchCollectionAction\",\"watch\",\"watchers\",\"asyncQueue\",\"postDigestQueue\",\"dirty\",\"ttl\",\"watchLog\",\"logIdx\",\"logMsg\",\"asyncTask\",\"$eval\",\"isNaN\",\"next\",\"expr\",\"$$postDigest\",\"$on\",\"namedListeners\",\"$emit\",\"listenerArgs\",\"array1\",\"currentScope\",\"$$SanitizeUriProvider\",\"sanitizeUri\",\"uri\",\"isImage\",\"regex\",\"normalizedVal\",\"adjustMatcher\",\"matcher\",\"$sceMinErr\",\"adjustMatchers\",\"matchers\",\"adjustedMatchers\",\"$SceDelegateProvider\",\"SCE_CONTEXTS\",\"resourceUrlWhitelist\",\"resourceUrlBlacklist\",\"this.resourceUrlWhitelist\",\"this.resourceUrlBlacklist\",\"generateHolderType\",\"Base\",\"holderType\",\"trustedValue\",\"$$unwrapTrustedValue\",\"this.$$unwrapTrustedValue\",\"holderType.prototype.valueOf\",\"holderType.prototype.toString\",\"htmlSanitizer\",\"trustedValueHolderBase\",\"byType\",\"CSS\",\"URL\",\"JS\",\"trustAs\",\"maybeTrusted\",\"allowed\",\"$SceProvider\",\"enabled\",\"this.enabled\",\"$sceDelegate\",\"msieDocumentMode\",\"sce\",\"isEnabled\",\"sce.isEnabled\",\"sce.getTrusted\",\"parseAs\",\"sce.parseAs\",\"sceParseAsTrusted\",\"enumValue\",\"lName\",\"$SnifferProvider\",\"eventSupport\",\"android\",\"userAgent\",\"navigator\",\"boxee\",\"documentMode\",\"vendorPrefix\",\"vendorRegex\",\"bodyStyle\",\"style\",\"transitions\",\"animations\",\"webkitTransition\",\"webkitAnimation\",\"hasEvent\",\"divElm\",\"$TimeoutProvider\",\"deferreds\",\"$$timeoutId\",\"timeout.cancel\",\"base\",\"urlParsingNode\",\"host\",\"requestUrl\",\"originUrl\",\"$WindowProvider\",\"$FilterProvider\",\"filters\",\"suffix\",\"currencyFilter\",\"dateFilter\",\"filterFilter\",\"jsonFilter\",\"limitToFilter\",\"lowercaseFilter\",\"numberFilter\",\"orderByFilter\",\"uppercaseFilter\",\"comparator\",\"comparatorType\",\"predicates\",\"predicates.check\",\"objKey\",\"filtered\",\"$locale\",\"formats\",\"NUMBER_FORMATS\",\"amount\",\"currencySymbol\",\"CURRENCY_SYM\",\"formatNumber\",\"PATTERNS\",\"GROUP_SEP\",\"DECIMAL_SEP\",\"number\",\"fractionSize\",\"pattern\",\"groupSep\",\"decimalSep\",\"isFinite\",\"isNegative\",\"abs\",\"numStr\",\"formatedText\",\"hasExponent\",\"toFixed\",\"fractionLen\",\"min\",\"minFrac\",\"maxFrac\",\"pow\",\"round\",\"fraction\",\"lgroup\",\"lgSize\",\"group\",\"gSize\",\"negPre\",\"posPre\",\"negSuf\",\"posSuf\",\"padNumber\",\"digits\",\"neg\",\"dateGetter\",\"date\",\"dateStrGetter\",\"shortForm\",\"jsonStringToDate\",\"string\",\"R_ISO8601_STR\",\"tzHour\",\"tzMin\",\"dateSetter\",\"setUTCFullYear\",\"setFullYear\",\"timeSetter\",\"setUTCHours\",\"setHours\",\"m\",\"s\",\"ms\",\"parseFloat\",\"format\",\"DATETIME_FORMATS\",\"NUMBER_STRING\",\"DATE_FORMATS_SPLIT\",\"DATE_FORMATS\",\"object\",\"input\",\"limit\",\"out\",\"sortPredicate\",\"reverseOrder\",\"reverseComparator\",\"comp\",\"descending\",\"predicate\",\"v1\",\"v2\",\"arrayCopy\",\"ngDirective\",\"FormController\",\"toggleValidCss\",\"isValid\",\"validationErrorKey\",\"INVALID_CLASS\",\"VALID_CLASS\",\"form\",\"parentForm\",\"nullFormCtrl\",\"invalidCount\",\"errors\",\"$error\",\"controls\",\"$name\",\"ngForm\",\"$dirty\",\"$pristine\",\"$valid\",\"$invalid\",\"$addControl\",\"PRISTINE_CLASS\",\"form.$addControl\",\"control\",\"$removeControl\",\"form.$removeControl\",\"queue\",\"validationToken\",\"$setValidity\",\"form.$setValidity\",\"$setDirty\",\"form.$setDirty\",\"DIRTY_CLASS\",\"$setPristine\",\"form.$setPristine\",\"validate\",\"ctrl\",\"validatorName\",\"validity\",\"textInputType\",\"composing\",\"ngTrim\",\"$viewValue\",\"$setViewValue\",\"deferListener\",\"keyCode\",\"$render\",\"ctrl.$render\",\"$isEmpty\",\"ngPattern\",\"patternValidator\",\"patternObj\",\"$formatters\",\"$parsers\",\"ngMinlength\",\"minlength\",\"minLengthValidator\",\"ngMaxlength\",\"maxlength\",\"maxLengthValidator\",\"classDirective\",\"ngClassWatchAction\",\"$index\",\"flattenClasses\",\"classes\",\"old$index\",\"mod\",\"Object\",\"version\",\"addEventListenerFn\",\"addEventListener\",\"attachEvent\",\"removeEventListener\",\"detachEvent\",\"ready\",\"trigger\",\"fired\",\"removeAttribute\",\"css\",\"currentStyle\",\"lowercasedName\",\"getNamedItem\",\"ret\",\"getText\",\"textProp\",\"NODE_TYPE_TEXT_PROPERTY\",\"$dv\",\"multiple\",\"option\",\"selected\",\"onFn\",\"eventFns\",\"contains\",\"compareDocumentPosition\",\"adown\",\"documentElement\",\"bup\",\"eventmap\",\"related\",\"relatedTarget\",\"one\",\"off\",\"replaceNode\",\"insertBefore\",\"prepend\",\"wrapNode\",\"after\",\"newElement\",\"toggleClass\",\"condition\",\"nextElementSibling\",\"getElementsByTagName\",\"eventName\",\"eventData\",\"arg3\",\"unbind\",\"$animateMinErr\",\"$AnimateProvider\",\"$$selectors\",\"classNameFilter\",\"this.classNameFilter\",\"$$classNameFilter\",\"$timeout\",\"enter\",\"leave\",\"move\",\"PATH_MATCH\",\"paramValue\",\"OPERATORS\",\"null\",\"true\",\"false\",\"+\",\"-\",\"*\",\"/\",\"%\",\"^\",\"===\",\"!==\",\"==\",\"!=\",\"<\",\">\",\"<=\",\">=\",\"&&\",\"||\",\"&\",\"|\",\"!\",\"ESCAPE\",\"lex\",\"ch\",\"lastCh\",\"tokens\",\"is\",\"readString\",\"peek\",\"readNumber\",\"isIdent\",\"readIdent\",\"was\",\"isWhitespace\",\"ch2\",\"ch3\",\"fn2\",\"fn3\",\"throwError\",\"chars\",\"isExpOperator\",\"start\",\"end\",\"colStr\",\"peekCh\",\"ident\",\"lastDot\",\"peekIndex\",\"methodName\",\"quote\",\"rawString\",\"hex\",\"rep\",\"ZERO\",\"Parser.ZERO\",\"assignment\",\"logicalOR\",\"functionCall\",\"fieldAccess\",\"objectIndex\",\"filterChain\",\"this.filterChain\",\"primary\",\"statements\",\"expect\",\"consume\",\"arrayDeclaration\",\"msg\",\"peekToken\",\"e1\",\"e2\",\"e3\",\"e4\",\"t\",\"unaryFn\",\"right\",\"ternaryFn\",\"left\",\"middle\",\"binaryFn\",\"statement\",\"argsFn\",\"fnInvoke\",\"ternary\",\"logicalAND\",\"equality\",\"relational\",\"additive\",\"multiplicative\",\"unary\",\"field\",\"indexFn\",\"o\",\"safe\",\"contextGetter\",\"fnPtr\",\"elementFns\",\"allConstant\",\"elementFn\",\"keyValues\",\"ampmGetter\",\"getHours\",\"AMPMS\",\"timeZoneGetter\",\"zone\",\"getTimezoneOffset\",\"paddedZone\",\"htmlAnchorDirective\",\"ngAttributeAliasDirectives\",\"propName\",\"normalized\",\"ngBooleanAttrWatchAction\",\"formDirectiveFactory\",\"isNgForm\",\"formDirective\",\"formElement\",\"action\",\"preventDefaultListener\",\"parentFormCtrl\",\"alias\",\"ngFormDirective\",\"URL_REGEXP\",\"EMAIL_REGEXP\",\"NUMBER_REGEXP\",\"inputType\",\"numberInputType\",\"minValidator\",\"maxValidator\",\"urlInputType\",\"urlValidator\",\"emailInputType\",\"emailValidator\",\"radioInputType\",\"checked\",\"checkboxInputType\",\"trueValue\",\"ngTrueValue\",\"falseValue\",\"ngFalseValue\",\"ctrl.$isEmpty\",\"inputDirective\",\"NgModelController\",\"$modelValue\",\"NaN\",\"$viewChangeListeners\",\"ngModelGet\",\"ngModel\",\"ngModelSet\",\"this.$isEmpty\",\"inheritedData\",\"this.$setValidity\",\"this.$setPristine\",\"this.$setViewValue\",\"ngModelWatch\",\"formatters\",\"ngModelDirective\",\"ctrls\",\"modelCtrl\",\"formCtrl\",\"ngChangeDirective\",\"ngChange\",\"requiredDirective\",\"required\",\"validator\",\"ngListDirective\",\"ngList\",\"viewValue\",\"CONSTANT_VALUE_REGEXP\",\"ngValueDirective\",\"tpl\",\"tplAttr\",\"ngValue\",\"ngValueConstantLink\",\"ngValueLink\",\"valueWatchAction\",\"ngBindDirective\",\"ngBind\",\"ngBindWatchAction\",\"ngBindTemplateDirective\",\"ngBindTemplate\",\"ngBindHtmlDirective\",\"ngBindHtml\",\"getStringValue\",\"ngBindHtmlWatchAction\",\"getTrustedHtml\",\"ngClassDirective\",\"ngClassOddDirective\",\"ngClassEvenDirective\",\"ngCloakDirective\",\"ngControllerDirective\",\"ngEventDirectives\",\"ngIfDirective\",\"$transclude\",\"ngIf\",\"ngIfWatchAction\",\"ngIncludeDirective\",\"$anchorScroll\",\"srcExp\",\"ngInclude\",\"onloadExp\",\"autoScrollExp\",\"autoscroll\",\"currentElement\",\"cleanupLastIncludeContent\",\"parseAsResourceUrl\",\"ngIncludeWatchAction\",\"afterAnimation\",\"thisChangeId\",\"newScope\",\"ngIncludeFillContentDirective\",\"$compile\",\"ngInitDirective\",\"ngInit\",\"ngNonBindableDirective\",\"ngPluralizeDirective\",\"BRACE\",\"numberExp\",\"whenExp\",\"whens\",\"whensExpFns\",\"isWhen\",\"attributeName\",\"ngPluralizeWatch\",\"ngPluralizeWatchAction\",\"ngRepeatDirective\",\"ngRepeatMinErr\",\"ngRepeat\",\"trackByExpGetter\",\"trackByIdExpFn\",\"trackByIdArrayFn\",\"trackByIdObjFn\",\"valueIdentifier\",\"keyIdentifier\",\"hashFnLocals\",\"lhs\",\"rhs\",\"trackByExp\",\"lastBlockMap\",\"ngRepeatAction\",\"collection\",\"previousNode\",\"nextNode\",\"nextBlockMap\",\"arrayLength\",\"collectionKeys\",\"nextBlockOrder\",\"trackByIdFn\",\"trackById\",\"id\",\"$first\",\"$last\",\"$middle\",\"$odd\",\"$even\",\"ngShowDirective\",\"ngShow\",\"ngShowWatchAction\",\"ngHideDirective\",\"ngHide\",\"ngHideWatchAction\",\"ngStyleDirective\",\"ngStyle\",\"ngStyleWatchAction\",\"newStyles\",\"oldStyles\",\"ngSwitchDirective\",\"ngSwitchController\",\"cases\",\"selectedTranscludes\",\"selectedElements\",\"selectedScopes\",\"ngSwitch\",\"ngSwitchWatchAction\",\"change\",\"selectedTransclude\",\"selectedScope\",\"caseElement\",\"anchor\",\"ngSwitchWhenDirective\",\"ngSwitchWhen\",\"ngSwitchDefaultDirective\",\"ngTranscludeDirective\",\"$attrs\",\"scriptDirective\",\"ngOptionsMinErr\",\"ngOptionsDirective\",\"selectDirective\",\"NG_OPTIONS_REGEXP\",\"nullModelCtrl\",\"optionsMap\",\"ngModelCtrl\",\"unknownOption\",\"databound\",\"init\",\"self.init\",\"ngModelCtrl_\",\"nullOption_\",\"unknownOption_\",\"addOption\",\"self.addOption\",\"removeOption\",\"self.removeOption\",\"hasOption\",\"renderUnknownOption\",\"self.renderUnknownOption\",\"unknownVal\",\"self.hasOption\",\"setupAsSingle\",\"selectElement\",\"selectCtrl\",\"ngModelCtrl.$render\",\"emptyOption\",\"setupAsMultiple\",\"lastView\",\"items\",\"selectMultipleWatch\",\"setupAsOptions\",\"render\",\"optionGroups\",\"optionGroupNames\",\"optionGroupName\",\"optionGroup\",\"existingParent\",\"existingOptions\",\"modelValue\",\"valuesFn\",\"keyName\",\"groupIndex\",\"selectedSet\",\"lastElement\",\"trackFn\",\"trackIndex\",\"valueName\",\"groupByFn\",\"modelCast\",\"label\",\"displayFn\",\"nullOption\",\"groupLength\",\"optionGroupsCache\",\"optGroupTemplate\",\"existingOption\",\"optionTemplate\",\"optionsExp\",\"track\",\"optionElement\",\"ngOptions\",\"ngModelCtrl.$isEmpty\",\"optionDirective\",\"nullSelectCtrl\",\"selectCtrlName\",\"interpolateWatchAction\",\"styleDirective\",\"publishExternalAPI\",\"ngModule\",\"$$csp\"]\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/testapp/lib/angular_v1.3.13/angular-animate.min.js:\n    7: function ba(f,n){return g(f)==g(n)}var t=f.noop,n=f.forEach,da=C.$$selectors,aa=f.isArray,ea=f.isString,ga=f.isObject,r={running:!0},u;X.decorator(\"$animate\",[\"$delegate\",\"$$q\",\"$injector\",\"$sniffer\",\"$rootElement\",\"$$asyncCallback\",\"$rootScope\",\"$document\",\"$templateRequest\",\"$$jqLite\",function(O,N,M,Y,y,H,P,W,Z,Q){function R(a,c){var b=a.data(\"$$ngAnimateState\")||{};c&&(b.running=!0,b.structural=!0,a.data(\"$$ngAnimateState\",b));return b.disabled||b.running&&b.structural}function D(a){var c,b=N.defer();\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/testapp/lib/angular_v1.3.13/angular-animate.min.js.map:\n    7: \"names\":[\"window\",\"angular\",\"undefined\",\"module\",\"directive\",\"scope\",\"element\",\"attrs\",\"val\",\"ngAnimateChildren\",\"isString\",\"length\",\"data\",\"NG_ANIMATE_CHILDREN\",\"$watch\",\"value\",\"factory\",\"$$rAF\",\"$document\",\"fn\",\"config\",\"$provide\",\"$animateProvider\",\"extractElementNode\",\"i\",\"elm\",\"ELEMENT_NODE\",\"nodeType\",\"isMatchingElement\",\"elm1\",\"elm2\",\"noop\",\"forEach\",\"selectors\",\"$$selectors\",\"isArray\",\"isObject\",\"rootAnimateState\",\"running\",\"$$jqLite\",\"decorator\",\"$delegate\",\"$$q\",\"$injector\",\"$sniffer\",\"$rootElement\",\"$$asyncCallback\",\"$rootScope\",\"$templateRequest\",\"$$$jqLite\",\"classBasedAnimationsBlocked\",\"setter\",\"NG_ANIMATE_STATE\",\"structural\",\"disabled\",\"runAnimationPostDigest\",\"cancelFn\",\"defer\",\"promise\",\"$$cancelFn\",\"defer.promise.$$cancelFn\",\"$$postDigest\",\"resolve\",\"parseAnimateOptions\",\"options\",\"tempClasses\",\"split\",\"resolveElementClasses\",\"cache\",\"runningAnimations\",\"lookup\",\"selector\",\"s\",\"hasClasses\",\"Object\",\"create\",\"attr\",\"className\",\"toAdd\",\"toRemove\",\"classes\",\"status\",\"hasClass\",\"matchingAnimation\",\"event\",\"push\",\"join\",\"name\",\"matches\",\"flagMap\",\"substr\",\"transitions\",\"animations\",\"get\",\"klass\",\"selectorFactoryName\",\"animationRunner\",\"animationEvent\",\"registerAnimation\",\"animationFactory\",\"afterFn\",\"beforeFn\",\"charAt\",\"toUpperCase\",\"after\",\"before\",\"run\",\"fns\",\"cancellations\",\"allCompleteFn\",\"animation\",\"count\",\"index\",\"progress\",\"classNameAdd\",\"classNameRemove\",\"from\",\"to\",\"node\",\"isSetClassOperation\",\"isClassBased\",\"currentClassName\",\"isAnimatableClassName\",\"beforeComplete\",\"beforeCancel\",\"afterComplete\",\"afterCancel\",\"animationLookup\",\"replace\",\"created\",\"applyStyles\",\"css\",\"extend\",\"cancel\",\"performAnimation\",\"parentElement\",\"afterElement\",\"domOperation\",\"doneCallback\",\"fireDOMCallback\",\"animationPhase\",\"eventName\",\"elementEvents\",\"triggerHandler\",\"fireBeforeCallbackAsync\",\"fireAfterCallbackAsync\",\"fireDOMOperation\",\"hasBeenRun\",\"closeAnimation\",\"runner\",\"removeClass\",\"cleanup\",\"localAnimationCount\",\"_data\",\"events\",\"parent\",\"animationsDisabled\",\"ngAnimateState\",\"active\",\"totalActiveAnimations\",\"totalActive\",\"lastAnimation\",\"last\",\"skipAnimation\",\"animationsToCancel\",\"current\",\"operation\",\"one\",\"e\",\"state\",\"activeLeaveAnimation\",\"addClass\",\"NG_ANIMATE_CLASS_NAME\",\"globalAnimationCounter\",\"cancelled\",\"cancelChildAnimations\",\"nodes\",\"isFunction\",\"getElementsByClassName\",\"querySelectorAll\",\"removeAnimations\",\"removeData\",\"allowChildAnimations\",\"parentRunningAnimation\",\"hasParent\",\"isRoot\",\"animateChildrenFlag\",\"isDefined\",\"deregisterWatch\",\"totalPendingRequests\",\"oldVal\",\"classNameFilter\",\"test\",\"animate\",\"done\",\"enter\",\"leave\",\"move\",\"setClass\",\"add\",\"remove\",\"$$setClassImmediately\",\"STORAGE_KEY\",\"hasCache\",\"c\",\"elementNode\",\"parentNode\",\"$$addClassImmediately\",\"$$removeClassImmediately\",\"enabled\",\"arguments\",\"register\",\"$window\",\"$timeout\",\"$$animateReflow\",\"clearCacheAfterReflow\",\"cancelAnimationReflow\",\"animationReflowQueue\",\"lookupCache\",\"afterReflow\",\"callback\",\"animationCloseHandler\",\"totalTime\",\"animationElementQueue\",\"futureTimestamp\",\"Date\",\"now\",\"closingTimestamp\",\"closingTimer\",\"closeAllAnimations\",\"elements\",\"elementData\",\"NG_ANIMATE_CSS_DATA_KEY\",\"closeAnimationFns\",\"getElementAnimationDetails\",\"cacheKey\",\"transitionDuration\",\"transitionDelay\",\"animationDuration\",\"animationDelay\",\"elementStyles\",\"getComputedStyle\",\"Math\",\"max\",\"parseMaxTime\",\"transitionDurationStyle\",\"TRANSITION_PROP\",\"DURATION_KEY\",\"transitionDelayStyle\",\"DELAY_KEY\",\"ANIMATION_PROP\",\"aDuration\",\"parseInt\",\"ANIMATION_ITERATION_COUNT_KEY\",\"total\",\"str\",\"maxValue\",\"values\",\"parseFloat\",\"animateSetup\",\"styles\",\"indexOf\",\"parentID\",\"NG_ANIMATE_PARENT_KEY\",\"parentCounter\",\"getAttribute\",\"eventCacheKey\",\"itemIndex\",\"stagger\",\"staggerClassName\",\"staggerCacheKey\",\"applyClasses\",\"formerData\",\"timings\",\"blockTransition\",\"blockAnimation\",\"blockTransitions\",\"style\",\"ANIMATION_PLAYSTATE_KEY\",\"animateRun\",\"activeAnimationComplete\",\"onEnd\",\"off\",\"css3AnimationEvents\",\"onAnimationProgress\",\"activeClassName\",\"pendingClassName\",\"staggerTimeout\",\"animateClose\",\"appliedStyles\",\"removeProperty\",\"stopPropagation\",\"ev\",\"originalEvent\",\"timeStamp\",\"$manualTimeStamp\",\"elapsedTime\",\"toFixed\",\"ELAPSED_TIME_MAX_DECIMAL_PLACES\",\"startTime\",\"maxDelayTime\",\"maxDuration\",\"prefix\",\"staggerTime\",\"transitionStaggerDelay\",\"animationStaggerDelay\",\"CSS_PREFIX\",\"round\",\"keys\",\"maxDelay\",\"ONE_SECOND\",\"oldStyle\",\"setAttribute\",\"ANIMATIONEND_EVENT\",\"TRANSITIONEND_EVENT\",\"CLOSING_TIME_BUFFER\",\"on\",\"bool\",\"PROPERTY_KEY\",\"animateBefore\",\"animateAfter\",\"afterAnimationComplete\",\"animationComplete\",\"preReflowCancellation\",\"suffixClasses\",\"suffix\",\"ontransitionend\",\"onwebkittransitionend\",\"onanimationend\",\"onwebkitanimationend\",\"animationCompleted\",\"beforeSetClass\",\"cancellationMethod\",\"beforeAddClass\",\"beforeRemoveClass\"]\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/testapp/lib/angular_v1.3.13/angular.min.js:\n   23: element:D,forEach:s,injector:ab,noop:z,bind:oc,toJson:$a,fromJson:pc,identity:pa,isUndefined:B,isDefined:y,isString:F,isFunction:G,isObject:I,isNumber:V,isElement:nc,isArray:H,version:Qd,isDate:qa,lowercase:Q,uppercase:vb,callbacks:{counter:0},getTestability:Ld,$$minErr:S,$$csp:bb,reloadWithDebugInfo:Kd});cb=Od(M);try{cb(\"ngLocale\")}catch(a){cb(\"ngLocale\",[]).provider(\"$locale\",Rd)}cb(\"ng\",[\"ngLocale\"],[\"$provide\",function(a){a.provider({$$sanitizeUri:Sd});a.provider(\"$compile\",xc).directive({a:Td,\n  216: \"$animate\",\"$sce\",function(a,c,d,e){return{restrict:\"ECA\",priority:400,terminal:!0,transclude:\"element\",controller:ca.noop,compile:function(f,g){var h=g.ngInclude||g.src,l=g.onload||\"\",k=g.autoscroll;return function(f,g,q,s,r){var t=0,p,v,w,L=function(){v&&(v.remove(),v=null);p&&(p.$destroy(),p=null);w&&(d.leave(w).then(function(){v=null}),v=w,w=null)};f.$watch(e.parseAsResourceUrl(h),function(e){var h=function(){!y(k)||k&&!f.$eval(k)||c()},q=++t;e?(a(e,!0).then(function(a){if(q===t){var c=f.$new();\n  229: !1,this.$options.updateOn=U(this.$options.updateOn.replace(eg,function(){d.$options.updateOnDefault=!0;return\" \"}))):this.$options.updateOnDefault=!0}]}},le=Ja({terminal:!0,priority:1E3}),me=[\"$locale\",\"$interpolate\",function(a,c){var d=/{}/g,e=/^when(Minus)?(.+)$/;return{restrict:\"EA\",link:function(f,g,h){function l(a){g.text(a||\"\")}var k=h.count,m=h.$attr.when&&g.attr(h.$attr.when),n=h.offset||0,q=f.$eval(m)||{},u={},m=c.startSymbol(),r=c.endSymbol(),t=m+k+\"-\"+n+r,p=ca.noop,v;s(h,function(a,c){var d=\n\n/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/testapp/lib/angular_v1.3.13/angular.min.js.map:\n    7: \"names\":[\"window\",\"document\",\"undefined\",\"minErr\",\"isArrayLike\",\"obj\",\"isWindow\",\"length\",\"nodeType\",\"NODE_TYPE_ELEMENT\",\"isString\",\"isArray\",\"forEach\",\"iterator\",\"context\",\"key\",\"isFunction\",\"hasOwnProperty\",\"call\",\"isPrimitive\",\"forEachSorted\",\"keys\",\"Object\",\"sort\",\"i\",\"reverseParams\",\"iteratorFn\",\"value\",\"nextUid\",\"uid\",\"setHashKey\",\"h\",\"$$hashKey\",\"extend\",\"dst\",\"ii\",\"arguments\",\"j\",\"jj\",\"int\",\"str\",\"parseInt\",\"inherit\",\"parent\",\"extra\",\"create\",\"noop\",\"identity\",\"$\",\"valueFn\",\"isUndefined\",\"isDefined\",\"isObject\",\"isNumber\",\"isDate\",\"toString\",\"isRegExp\",\"isScope\",\"$evalAsync\",\"$watch\",\"isBoolean\",\"isElement\",\"node\",\"nodeName\",\"prop\",\"attr\",\"find\",\"makeMap\",\"items\",\"split\",\"nodeName_\",\"element\",\"lowercase\",\"arrayRemove\",\"array\",\"index\",\"indexOf\",\"splice\",\"copy\",\"source\",\"destination\",\"stackSource\",\"stackDest\",\"ngMinErr\",\"push\",\"result\",\"Date\",\"getTime\",\"RegExp\",\"match\",\"lastIndex\",\"emptyObject\",\"getPrototypeOf\",\"shallowCopy\",\"src\",\"charAt\",\"equals\",\"o1\",\"o2\",\"t1\",\"t2\",\"keySet\",\"concat\",\"array1\",\"array2\",\"slice\",\"bind\",\"self\",\"fn\",\"curryArgs\",\"startIndex\",\"apply\",\"toJsonReplacer\",\"val\",\"toJson\",\"pretty\",\"JSON\",\"stringify\",\"fromJson\",\"json\",\"parse\",\"startingTag\",\"jqLite\",\"clone\",\"empty\",\"e\",\"elemHtml\",\"append\",\"html\",\"NODE_TYPE_TEXT\",\"replace\",\"tryDecodeURIComponent\",\"decodeURIComponent\",\"parseKeyValue\",\"keyValue\",\"key_value\",\"toKeyValue\",\"parts\",\"arrayValue\",\"encodeUriQuery\",\"join\",\"encodeUriSegment\",\"pctEncodeSpaces\",\"encodeURIComponent\",\"getNgAttribute\",\"ngAttr\",\"ngAttrPrefixes\",\"angularInit\",\"bootstrap\",\"appElement\",\"module\",\"config\",\"prefix\",\"name\",\"hasAttribute\",\"getAttribute\",\"candidate\",\"querySelector\",\"strictDi\",\"modules\",\"defaultConfig\",\"doBootstrap\",\"injector\",\"tag\",\"unshift\",\"$provide\",\"debugInfoEnabled\",\"$compileProvider\",\"createInjector\",\"invoke\",\"bootstrapApply\",\"scope\",\"compile\",\"$apply\",\"data\",\"NG_ENABLE_DEBUG_INFO\",\"NG_DEFER_BOOTSTRAP\",\"test\",\"angular\",\"resumeBootstrap\",\"angular.resumeBootstrap\",\"extraModules\",\"resumeDeferredBootstrap\",\"reloadWithDebugInfo\",\"location\",\"reload\",\"getTestability\",\"rootElement\",\"get\",\"snake_case\",\"separator\",\"SNAKE_CASE_REGEXP\",\"letter\",\"pos\",\"toLowerCase\",\"bindJQuery\",\"originalCleanData\",\"bindJQueryFired\",\"jQuery\",\"on\",\"JQLitePrototype\",\"isolateScope\",\"controller\",\"inheritedData\",\"cleanData\",\"jQuery.cleanData\",\"elems\",\"events\",\"skipDestroyOnNextJQueryCleanData\",\"elem\",\"_data\",\"$destroy\",\"triggerHandler\",\"JQLite\",\"assertArg\",\"arg\",\"reason\",\"assertArgFn\",\"acceptArrayAnnotation\",\"constructor\",\"assertNotHasOwnProperty\",\"getter\",\"path\",\"bindFnToScope\",\"lastInstance\",\"len\",\"getBlockNodes\",\"nodes\",\"endNode\",\"blockNodes\",\"nextSibling\",\"createMap\",\"setupModuleLoader\",\"ensure\",\"factory\",\"$injectorMinErr\",\"$$minErr\",\"requires\",\"configFn\",\"invokeLater\",\"provider\",\"method\",\"insertMethod\",\"queue\",\"invokeQueue\",\"moduleInstance\",\"configBlocks\",\"runBlocks\",\"_invokeQueue\",\"_configBlocks\",\"_runBlocks\",\"service\",\"constant\",\"animation\",\"filter\",\"directive\",\"run\",\"block\",\"publishExternalAPI\",\"version\",\"uppercase\",\"counter\",\"csp\",\"angularModule\",\"$LocaleProvider\",\"ngModule\",\"$$sanitizeUri\",\"$$SanitizeUriProvider\",\"$CompileProvider\",\"a\",\"htmlAnchorDirective\",\"input\",\"inputDirective\",\"textarea\",\"form\",\"formDirective\",\"script\",\"scriptDirective\",\"select\",\"selectDirective\",\"style\",\"styleDirective\",\"option\",\"optionDirective\",\"ngBind\",\"ngBindDirective\",\"ngBindHtml\",\"ngBindHtmlDirective\",\"ngBindTemplate\",\"ngBindTemplateDirective\",\"ngClass\",\"ngClassDirective\",\"ngClassEven\",\"ngClassEvenDirective\",\"ngClassOdd\",\"ngClassOddDirective\",\"ngCloak\",\"ngCloakDirective\",\"ngController\",\"ngControllerDirective\",\"ngForm\",\"ngFormDirective\",\"ngHide\",\"ngHideDirective\",\"ngIf\",\"ngIfDirective\",\"ngInclude\",\"ngIncludeDirective\",\"ngInit\",\"ngInitDirective\",\"ngNonBindable\",\"ngNonBindableDirective\",\"ngPluralize\",\"ngPluralizeDirective\",\"ngRepeat\",\"ngRepeatDirective\",\"ngShow\",\"ngShowDirective\",\"ngStyle\",\"ngStyleDirective\",\"ngSwitch\",\"ngSwitchDirective\",\"ngSwitchWhen\",\"ngSwitchWhenDirective\",\"ngSwitchDefault\",\"ngSwitchDefaultDirective\",\"ngOptions\",\"ngOptionsDirective\",\"ngTransclude\",\"ngTranscludeDirective\",\"ngModel\",\"ngModelDirective\",\"ngList\",\"ngListDirective\",\"ngChange\",\"ngChangeDirective\",\"pattern\",\"patternDirective\",\"ngPattern\",\"required\",\"requiredDirective\",\"ngRequired\",\"minlength\",\"minlengthDirective\",\"ngMinlength\",\"maxlength\",\"maxlengthDirective\",\"ngMaxlength\",\"ngValue\",\"ngValueDirective\",\"ngModelOptions\",\"ngModelOptionsDirective\",\"ngIncludeFillContentDirective\",\"ngAttributeAliasDirectives\",\"ngEventDirectives\",\"$anchorScroll\",\"$AnchorScrollProvider\",\"$animate\",\"$AnimateProvider\",\"$browser\",\"$BrowserProvider\",\"$cacheFactory\",\"$CacheFactoryProvider\",\"$controller\",\"$ControllerProvider\",\"$document\",\"$DocumentProvider\",\"$exceptionHandler\",\"$ExceptionHandlerProvider\",\"$filter\",\"$FilterProvider\",\"$interpolate\",\"$InterpolateProvider\",\"$interval\",\"$IntervalProvider\",\"$http\",\"$HttpProvider\",\"$httpBackend\",\"$HttpBackendProvider\",\"$location\",\"$LocationProvider\",\"$log\",\"$LogProvider\",\"$parse\",\"$ParseProvider\",\"$rootScope\",\"$RootScopeProvider\",\"$q\",\"$QProvider\",\"$$q\",\"$$QProvider\",\"$sce\",\"$SceProvider\",\"$sceDelegate\",\"$SceDelegateProvider\",\"$sniffer\",\"$SnifferProvider\",\"$templateCache\",\"$TemplateCacheProvider\",\"$templateRequest\",\"$TemplateRequestProvider\",\"$$testability\",\"$$TestabilityProvider\",\"$timeout\",\"$TimeoutProvider\",\"$window\",\"$WindowProvider\",\"$$rAF\",\"$$RAFProvider\",\"$$asyncCallback\",\"$$AsyncCallbackProvider\",\"$$jqLite\",\"$$jqLiteProvider\",\"camelCase\",\"SPECIAL_CHARS_REGEXP\",\"_\",\"offset\",\"toUpperCase\",\"MOZ_HACK_REGEXP\",\"jqLiteAcceptsData\",\"NODE_TYPE_DOCUMENT\",\"jqLiteBuildFragment\",\"tmp\",\"fragment\",\"createDocumentFragment\",\"HTML_REGEXP\",\"appendChild\",\"createElement\",\"TAG_NAME_REGEXP\",\"exec\",\"wrap\",\"wrapMap\",\"_default\",\"innerHTML\",\"XHTML_TAG_REGEXP\",\"lastChild\",\"childNodes\",\"firstChild\",\"textContent\",\"createTextNode\",\"argIsString\",\"trim\",\"jqLiteMinErr\",\"parsed\",\"SINGLE_TAG_REGEXP\",\"jqLiteAddNodes\",\"jqLiteClone\",\"cloneNode\",\"jqLiteDealoc\",\"onlyDescendants\",\"jqLiteRemoveData\",\"querySelectorAll\",\"descendants\",\"l\",\"jqLiteOff\",\"type\",\"unsupported\",\"expandoStore\",\"jqLiteExpandoStore\",\"handle\",\"listenerFns\",\"removeEventListener\",\"expandoId\",\"ng339\",\"jqCache\",\"createIfNecessary\",\"jqId\",\"jqLiteData\",\"isSimpleSetter\",\"isSimpleGetter\",\"massGetter\",\"jqLiteHasClass\",\"selector\",\"jqLiteRemoveClass\",\"cssClasses\",\"setAttribute\",\"cssClass\",\"jqLiteAddClass\",\"existingClasses\",\"root\",\"elements\",\"jqLiteController\",\"jqLiteInheritedData\",\"documentElement\",\"names\",\"parentNode\",\"NODE_TYPE_DOCUMENT_FRAGMENT\",\"host\",\"jqLiteEmpty\",\"removeChild\",\"jqLiteRemove\",\"keepData\",\"jqLiteDocumentLoaded\",\"action\",\"win\",\"readyState\",\"setTimeout\",\"getBooleanAttrName\",\"booleanAttr\",\"BOOLEAN_ATTR\",\"BOOLEAN_ELEMENTS\",\"getAliasedAttrName\",\"ALIASED_ATTR\",\"createEventHandler\",\"eventHandler\",\"event\",\"isDefaultPrevented\",\"event.isDefaultPrevented\",\"defaultPrevented\",\"eventFns\",\"eventFnsLength\",\"immediatePropagationStopped\",\"originalStopImmediatePropagation\",\"stopImmediatePropagation\",\"event.stopImmediatePropagation\",\"stopPropagation\",\"isImmediatePropagationStopped\",\"event.isImmediatePropagationStopped\",\"$get\",\"this.$get\",\"hasClass\",\"classes\",\"addClass\",\"removeClass\",\"hashKey\",\"nextUidFn\",\"objType\",\"HashMap\",\"isolatedUid\",\"this.nextUid\",\"put\",\"anonFn\",\"args\",\"fnText\",\"STRIP_COMMENTS\",\"FN_ARGS\",\"modulesToLoad\",\"supportObject\",\"delegate\",\"provider_\",\"providerInjector\",\"instantiate\",\"providerCache\",\"providerSuffix\",\"enforceReturnValue\",\"enforcedReturnValue\",\"instanceInjector\",\"factoryFn\",\"enforce\",\"loadModules\",\"moduleFn\",\"runInvokeQueue\",\"invokeArgs\",\"loadedModules\",\"message\",\"stack\",\"createInternalInjector\",\"cache\",\"getService\",\"serviceName\",\"caller\",\"INSTANTIATING\",\"err\",\"shift\",\"locals\",\"$inject\",\"$$annotate\",\"Type\",\"instance\",\"prototype\",\"returnedValue\",\"annotate\",\"has\",\"$injector\",\"instanceCache\",\"decorator\",\"decorFn\",\"origProvider\",\"orig$get\",\"origProvider.$get\",\"origInstance\",\"$delegate\",\"autoScrollingEnabled\",\"disableAutoScrolling\",\"this.disableAutoScrolling\",\"getFirstAnchor\",\"list\",\"Array\",\"some\",\"scrollTo\",\"scrollIntoView\",\"scroll\",\"yOffset\",\"getComputedStyle\",\"position\",\"getBoundingClientRect\",\"bottom\",\"elemTop\",\"top\",\"scrollBy\",\"hash\",\"elm\",\"getElementById\",\"getElementsByName\",\"autoScrollWatch\",\"autoScrollWatchAction\",\"newVal\",\"oldVal\",\"supported\",\"Browser\",\"completeOutstandingRequest\",\"outstandingRequestCount\",\"outstandingRequestCallbacks\",\"pop\",\"error\",\"startPoller\",\"interval\",\"check\",\"pollFns\",\"pollFn\",\"pollTimeout\",\"cacheStateAndFireUrlChange\",\"cacheState\",\"fireUrlChange\",\"cachedState\",\"history\",\"state\",\"lastCachedState\",\"lastBrowserUrl\",\"url\",\"lastHistoryState\",\"urlChangeListeners\",\"listener\",\"safeDecodeURIComponent\",\"rawDocument\",\"clearTimeout\",\"pendingDeferIds\",\"isMock\",\"$$completeOutstandingRequest\",\"$$incOutstandingRequestCount\",\"self.$$incOutstandingRequestCount\",\"notifyWhenNoOutstandingRequests\",\"self.notifyWhenNoOutstandingRequests\",\"callback\",\"addPollFn\",\"self.addPollFn\",\"href\",\"baseElement\",\"reloadLocation\",\"self.url\",\"sameState\",\"sameBase\",\"stripHash\",\"substr\",\"self.state\",\"urlChangeInit\",\"onUrlChange\",\"self.onUrlChange\",\"$$checkUrlChange\",\"baseHref\",\"self.baseHref\",\"lastCookies\",\"lastCookieString\",\"cookiePath\",\"cookies\",\"self.cookies\",\"cookieLength\",\"cookie\",\"warn\",\"cookieArray\",\"substring\",\"defer\",\"self.defer\",\"delay\",\"timeoutId\",\"cancel\",\"self.defer.cancel\",\"deferId\",\"cacheFactory\",\"cacheId\",\"options\",\"refresh\",\"entry\",\"freshEnd\",\"staleEnd\",\"n\",\"link\",\"p\",\"nextEntry\",\"prevEntry\",\"caches\",\"size\",\"stats\",\"id\",\"capacity\",\"Number\",\"MAX_VALUE\",\"lruHash\",\"lruEntry\",\"remove\",\"removeAll\",\"destroy\",\"info\",\"cacheFactory.info\",\"cacheFactory.get\",\"$$sanitizeUriProvider\",\"parseIsolateBindings\",\"directiveName\",\"LOCAL_REGEXP\",\"bindings\",\"definition\",\"scopeName\",\"$compileMinErr\",\"mode\",\"collection\",\"optional\",\"attrName\",\"hasDirectives\",\"COMMENT_DIRECTIVE_REGEXP\",\"CLASS_DIRECTIVE_REGEXP\",\"ALL_OR_NOTHING_ATTRS\",\"REQUIRE_PREFIX_REGEXP\",\"EVENT_HANDLER_ATTR_REGEXP\",\"this.directive\",\"registerDirective\",\"directiveFactory\",\"Suffix\",\"directives\",\"priority\",\"require\",\"restrict\",\"$$isolateBindings\",\"aHrefSanitizationWhitelist\",\"this.aHrefSanitizationWhitelist\",\"regexp\",\"imgSrcSanitizationWhitelist\",\"this.imgSrcSanitizationWhitelist\",\"this.debugInfoEnabled\",\"enabled\",\"safeAddClass\",\"$element\",\"className\",\"$compileNodes\",\"transcludeFn\",\"maxPriority\",\"ignoreDirective\",\"previousCompileContext\",\"nodeValue\",\"compositeLinkFn\",\"compileNodes\",\"$$addScopeClass\",\"namespace\",\"publicLinkFn\",\"cloneConnectFn\",\"parentBoundTranscludeFn\",\"transcludeControllers\",\"futureParentElement\",\"$$boundTransclude\",\"$linkNode\",\"wrapTemplate\",\"controllerName\",\"$$addScopeInfo\",\"nodeList\",\"$rootElement\",\"childLinkFn\",\"childScope\",\"childBoundTranscludeFn\",\"stableNodeList\",\"nodeLinkFnFound\",\"linkFns\",\"idx\",\"nodeLinkFn\",\"$new\",\"transcludeOnThisElement\",\"createBoundTranscludeFn\",\"transclude\",\"elementTranscludeOnThisElement\",\"templateOnThisElement\",\"attrs\",\"linkFnFound\",\"Attributes\",\"collectDirectives\",\"applyDirectivesToNode\",\"$$element\",\"terminal\",\"previousBoundTranscludeFn\",\"elementTransclusion\",\"boundTranscludeFn\",\"transcludedScope\",\"cloneFn\",\"controllers\",\"containingScope\",\"$$transcluded\",\"attrsMap\",\"$attr\",\"addDirective\",\"directiveNormalize\",\"isNgAttr\",\"nAttrs\",\"attributes\",\"attrStartName\",\"attrEndName\",\"ngAttrName\",\"NG_ATTR_BINDING\",\"PREFIX_REGEXP\",\"directiveNName\",\"directiveIsMultiElement\",\"nName\",\"addAttrInterpolateDirective\",\"animVal\",\"addTextInterpolateDirective\",\"NODE_TYPE_COMMENT\",\"byPriority\",\"groupScan\",\"attrStart\",\"attrEnd\",\"depth\",\"groupElementsLinkFnWrapper\",\"linkFn\",\"compileNode\",\"templateAttrs\",\"jqCollection\",\"originalReplaceDirective\",\"preLinkFns\",\"postLinkFns\",\"addLinkFns\",\"pre\",\"post\",\"newIsolateScopeDirective\",\"$$isolateScope\",\"cloneAndAnnotateFn\",\"getControllers\",\"elementControllers\",\"retrievalMethod\",\"$searchElement\",\"linkNode\",\"controllersBoundTransclude\",\"cloneAttachFn\",\"hasElementTranscludeDirective\",\"scopeToChild\",\"controllerDirectives\",\"$scope\",\"$attrs\",\"$transclude\",\"controllerInstance\",\"controllerAs\",\"templateDirective\",\"$$originalDirective\",\"isolateScopeController\",\"isolateBindingContext\",\"identifier\",\"bindToController\",\"lastValue\",\"parentGet\",\"parentSet\",\"compare\",\"$observe\",\"$$observers\",\"$$scope\",\"literal\",\"b\",\"assign\",\"parentValueWatch\",\"parentValue\",\"$stateful\",\"unwatch\",\"$watchCollection\",\"$on\",\"invokeLinkFn\",\"template\",\"templateUrl\",\"terminalPriority\",\"newScopeDirective\",\"nonTlbTranscludeDirective\",\"hasTranscludeDirective\",\"hasTemplate\",\"$compileNode\",\"$template\",\"childTranscludeFn\",\"$$start\",\"$$end\",\"directiveValue\",\"assertNoDuplicate\",\"$$tlb\",\"createComment\",\"replaceWith\",\"replaceDirective\",\"contents\",\"denormalizeTemplate\",\"removeComments\",\"templateNamespace\",\"newTemplateAttrs\",\"templateDirectives\",\"unprocessedDirectives\",\"markDirectivesAsIsolate\",\"mergeTemplateAttributes\",\"compileTemplateUrl\",\"Math\",\"max\",\"tDirectives\",\"startAttrName\",\"endAttrName\",\"multiElement\",\"srcAttr\",\"dstAttr\",\"$set\",\"tAttrs\",\"linkQueue\",\"afterTemplateNodeLinkFn\",\"afterTemplateChildLinkFn\",\"beforeTemplateCompileNode\",\"origAsyncDirective\",\"derivedSyncDirective\",\"getTrustedResourceUrl\",\"then\",\"content\",\"tempTemplateAttrs\",\"beforeTemplateLinkNode\",\"linkRootElement\",\"$$destroyed\",\"oldClasses\",\"delayedNodeLinkFn\",\"ignoreChildLinkFn\",\"diff\",\"what\",\"previousDirective\",\"text\",\"interpolateFn\",\"textInterpolateCompileFn\",\"templateNode\",\"templateNodeParent\",\"hasCompileParent\",\"$$addBindingClass\",\"textInterpolateLinkFn\",\"$$addBindingInfo\",\"expressions\",\"interpolateFnWatchAction\",\"wrapper\",\"getTrustedContext\",\"attrNormalizedName\",\"HTML\",\"RESOURCE_URL\",\"allOrNothing\",\"trustedContext\",\"attrInterpolatePreLinkFn\",\"newValue\",\"$$inter\",\"oldValue\",\"$updateClass\",\"elementsToRemove\",\"newNode\",\"firstElementToRemove\",\"removeCount\",\"j2\",\"replaceChild\",\"expando\",\"k\",\"kk\",\"annotation\",\"attributesToCopy\",\"$normalize\",\"$addClass\",\"classVal\",\"$removeClass\",\"newClasses\",\"toAdd\",\"tokenDifference\",\"toRemove\",\"writeAttr\",\"booleanKey\",\"aliasedKey\",\"observer\",\"trimmedSrcset\",\"srcPattern\",\"rawUris\",\"nbrUrisWith2parts\",\"floor\",\"innerIdx\",\"lastTuple\",\"removeAttr\",\"listeners\",\"startSymbol\",\"endSymbol\",\"binding\",\"isolated\",\"noTemplate\",\"dataName\",\"str1\",\"str2\",\"values\",\"tokens1\",\"tokens2\",\"token\",\"jqNodes\",\"globals\",\"CNTRL_REG\",\"register\",\"this.register\",\"allowGlobals\",\"this.allowGlobals\",\"addIdentifier\",\"expression\",\"later\",\"ident\",\"$controllerMinErr\",\"controllerPrototype\",\"exception\",\"cause\",\"defaultHttpResponseTransform\",\"headers\",\"tempData\",\"JSON_PROTECTION_PREFIX\",\"contentType\",\"jsonStart\",\"JSON_START\",\"JSON_ENDS\",\"parseHeaders\",\"line\",\"headersGetter\",\"headersObj\",\"transformData\",\"status\",\"fns\",\"defaults\",\"transformResponse\",\"transformRequest\",\"d\",\"common\",\"CONTENT_TYPE_APPLICATION_JSON\",\"patch\",\"xsrfCookieName\",\"xsrfHeaderName\",\"useApplyAsync\",\"this.useApplyAsync\",\"interceptorFactories\",\"interceptors\",\"requestConfig\",\"response\",\"resp\",\"reject\",\"executeHeaderFns\",\"headerContent\",\"processedHeaders\",\"headerFn\",\"header\",\"mergeHeaders\",\"defHeaders\",\"reqHeaders\",\"defHeaderName\",\"reqHeaderName\",\"lowercaseDefHeaderName\",\"chain\",\"serverRequest\",\"reqData\",\"withCredentials\",\"sendReq\",\"promise\",\"when\",\"reversedInterceptors\",\"interceptor\",\"request\",\"requestError\",\"responseError\",\"thenFn\",\"rejectFn\",\"success\",\"promise.success\",\"promise.error\",\"done\",\"headersString\",\"statusText\",\"resolveHttpPromise\",\"resolvePromise\",\"$applyAsync\",\"$$phase\",\"deferred\",\"resolve\",\"resolvePromiseWithResult\",\"removePendingReq\",\"pendingRequests\",\"cachedResp\",\"buildUrl\",\"params\",\"defaultCache\",\"xsrfValue\",\"urlIsSameOrigin\",\"timeout\",\"responseType\",\"v\",\"toISOString\",\"interceptorFactory\",\"createShortMethods\",\"createShortMethodsWithData\",\"createXhr\",\"XMLHttpRequest\",\"createHttpBackend\",\"callbacks\",\"$browserDefer\",\"jsonpReq\",\"callbackId\",\"async\",\"body\",\"called\",\"addEventListener\",\"timeoutRequest\",\"jsonpDone\",\"xhr\",\"abort\",\"completeRequest\",\"open\",\"setRequestHeader\",\"onload\",\"xhr.onload\",\"responseText\",\"urlResolve\",\"protocol\",\"getAllResponseHeaders\",\"onerror\",\"onabort\",\"send\",\"this.startSymbol\",\"this.endSymbol\",\"escape\",\"ch\",\"mustHaveExpression\",\"unescapeText\",\"escapedStartRegexp\",\"escapedEndRegexp\",\"parseStringifyInterceptor\",\"getTrusted\",\"valueOf\",\"newErr\",\"$interpolateMinErr\",\"endIndex\",\"parseFns\",\"textLength\",\"expressionPositions\",\"startSymbolLength\",\"exp\",\"endSymbolLength\",\"compute\",\"interpolationFn\",\"$$watchDelegate\",\"objectEquality\",\"$watchGroup\",\"interpolateFnWatcher\",\"oldValues\",\"currValue\",\"$interpolate.startSymbol\",\"$interpolate.endSymbol\",\"count\",\"invokeApply\",\"setInterval\",\"clearInterval\",\"iteration\",\"skipApply\",\"$$intervalId\",\"tick\",\"notify\",\"intervals\",\"interval.cancel\",\"NUMBER_FORMATS\",\"DECIMAL_SEP\",\"GROUP_SEP\",\"PATTERNS\",\"minInt\",\"minFrac\",\"maxFrac\",\"posPre\",\"posSuf\",\"negPre\",\"negSuf\",\"gSize\",\"lgSize\",\"CURRENCY_SYM\",\"DATETIME_FORMATS\",\"MONTH\",\"SHORTMONTH\",\"DAY\",\"SHORTDAY\",\"AMPMS\",\"medium\",\"fullDate\",\"longDate\",\"mediumDate\",\"shortDate\",\"mediumTime\",\"shortTime\",\"pluralCat\",\"num\",\"encodePath\",\"segments\",\"parseAbsoluteUrl\",\"absoluteUrl\",\"locationObj\",\"parsedUrl\",\"$$protocol\",\"$$host\",\"hostname\",\"$$port\",\"port\",\"DEFAULT_PORTS\",\"parseAppUrl\",\"relativeUrl\",\"prefixed\",\"$$path\",\"pathname\",\"$$search\",\"search\",\"$$hash\",\"beginsWith\",\"begin\",\"whole\",\"trimEmptyHash\",\"stripFile\",\"lastIndexOf\",\"LocationHtml5Url\",\"appBase\",\"basePrefix\",\"$$html5\",\"appBaseNoFile\",\"$$parse\",\"this.$$parse\",\"pathUrl\",\"$locationMinErr\",\"$$compose\",\"this.$$compose\",\"$$url\",\"$$absUrl\",\"$$parseLinkUrl\",\"this.$$parseLinkUrl\",\"relHref\",\"appUrl\",\"prevAppUrl\",\"rewrittenUrl\",\"LocationHashbangUrl\",\"hashPrefix\",\"withoutBaseUrl\",\"withoutHashUrl\",\"windowsFilePathExp\",\"firstPathSegmentMatch\",\"LocationHashbangInHtml5Url\",\"locationGetter\",\"property\",\"locationGetterSetter\",\"preprocess\",\"html5Mode\",\"requireBase\",\"rewriteLinks\",\"this.hashPrefix\",\"this.html5Mode\",\"setBrowserUrlWithFallback\",\"oldUrl\",\"oldState\",\"$$state\",\"afterLocationChange\",\"$broadcast\",\"absUrl\",\"LocationMode\",\"initialUrl\",\"IGNORE_URI_REGEXP\",\"ctrlKey\",\"metaKey\",\"shiftKey\",\"which\",\"button\",\"target\",\"absHref\",\"preventDefault\",\"initializing\",\"newUrl\",\"newState\",\"$digest\",\"$locationWatch\",\"currentReplace\",\"$$replace\",\"urlOrStateChanged\",\"debug\",\"debugEnabled\",\"this.debugEnabled\",\"flag\",\"formatError\",\"Error\",\"sourceURL\",\"consoleLog\",\"console\",\"logFn\",\"log\",\"hasApply\",\"arg1\",\"arg2\",\"ensureSafeMemberName\",\"fullExpression\",\"$parseMinErr\",\"ensureSafeObject\",\"children\",\"isConstant\",\"setter\",\"setValue\",\"fullExp\",\"propertyObj\",\"isPossiblyDangerousMemberName\",\"cspSafeGetterFn\",\"key0\",\"key1\",\"key2\",\"key3\",\"key4\",\"expensiveChecks\",\"eso\",\"o\",\"eso0\",\"eso1\",\"eso2\",\"eso3\",\"eso4\",\"cspSafeGetter\",\"pathVal\",\"getterFnWithEnsureSafeObject\",\"s\",\"getterFn\",\"getterFnCache\",\"getterFnCacheExpensive\",\"getterFnCacheDefault\",\"pathKeys\",\"pathKeysLength\",\"code\",\"needsEnsureSafeObject\",\"lookupJs\",\"evaledFnGetter\",\"Function\",\"sharedGetter\",\"fn.assign\",\"getValueOf\",\"objectValueOf\",\"cacheDefault\",\"cacheExpensive\",\"wrapSharedExpression\",\"wrapped\",\"collectExpressionInputs\",\"inputs\",\"expressionInputDirtyCheck\",\"oldValueOfValue\",\"inputsWatchDelegate\",\"parsedExpression\",\"inputExpressions\",\"$$inputs\",\"lastResult\",\"oldInputValue\",\"expressionInputWatch\",\"newInputValue\",\"oldInputValueOfValues\",\"expressionInputsWatch\",\"changed\",\"oneTimeWatchDelegate\",\"oneTimeWatch\",\"oneTimeListener\",\"old\",\"$$postDigest\",\"oneTimeLiteralWatchDelegate\",\"isAllDefined\",\"allDefined\",\"constantWatchDelegate\",\"constantWatch\",\"constantListener\",\"addInterceptor\",\"interceptorFn\",\"watchDelegate\",\"regularInterceptedExpression\",\"oneTimeInterceptedExpression\",\"$parseOptions\",\"$parseOptionsExpensive\",\"oneTime\",\"cacheKey\",\"parseOptions\",\"lexer\",\"Lexer\",\"parser\",\"Parser\",\"qFactory\",\"nextTick\",\"exceptionHandler\",\"callOnce\",\"resolveFn\",\"Promise\",\"simpleBind\",\"scheduleProcessQueue\",\"processScheduled\",\"pending\",\"Deferred\",\"$qMinErr\",\"TypeError\",\"onFulfilled\",\"onRejected\",\"progressBack\",\"catch\",\"finally\",\"handleCallback\",\"$$reject\",\"$$resolve\",\"progress\",\"makePromise\",\"resolved\",\"isResolved\",\"callbackOutput\",\"errback\",\"$Q\",\"Q\",\"resolver\",\"all\",\"promises\",\"results\",\"requestAnimationFrame\",\"webkitRequestAnimationFrame\",\"cancelAnimationFrame\",\"webkitCancelAnimationFrame\",\"webkitCancelRequestAnimationFrame\",\"rafSupported\",\"raf\",\"timer\",\"TTL\",\"$rootScopeMinErr\",\"lastDirtyWatch\",\"applyAsyncId\",\"digestTtl\",\"this.digestTtl\",\"Scope\",\"$id\",\"$parent\",\"$$watchers\",\"$$nextSibling\",\"$$prevSibling\",\"$$childHead\",\"$$childTail\",\"$root\",\"$$listeners\",\"$$listenerCount\",\"beginPhase\",\"phase\",\"decrementListenerCount\",\"current\",\"initWatchVal\",\"flushApplyAsync\",\"applyAsyncQueue\",\"scheduleApplyAsync\",\"isolate\",\"destroyChild\",\"child\",\"$$ChildScope\",\"this.$$ChildScope\",\"watchExp\",\"watcher\",\"last\",\"eq\",\"deregisterWatch\",\"watchExpressions\",\"watchGroupAction\",\"changeReactionScheduled\",\"firstRun\",\"newValues\",\"deregisterFns\",\"shouldCall\",\"deregisterWatchGroup\",\"expr\",\"unwatchFn\",\"watchGroupSubAction\",\"$watchCollectionInterceptor\",\"_value\",\"bothNaN\",\"newItem\",\"oldItem\",\"internalArray\",\"oldLength\",\"changeDetected\",\"newLength\",\"internalObject\",\"veryOldValue\",\"trackVeryOldValue\",\"changeDetector\",\"initRun\",\"$watchCollectionAction\",\"watch\",\"watchers\",\"dirty\",\"ttl\",\"watchLog\",\"logIdx\",\"asyncTask\",\"asyncQueue\",\"$eval\",\"isNaN\",\"msg\",\"next\",\"postDigestQueue\",\"eventName\",\"this.$watchGroup\",\"$applyAsyncExpression\",\"namedListeners\",\"indexOfListener\",\"$emit\",\"targetScope\",\"listenerArgs\",\"currentScope\",\"$$asyncQueue\",\"$$postDigestQueue\",\"$$applyAsyncQueue\",\"sanitizeUri\",\"uri\",\"isImage\",\"regex\",\"normalizedVal\",\"adjustMatcher\",\"matcher\",\"$sceMinErr\",\"escapeForRegexp\",\"adjustMatchers\",\"matchers\",\"adjustedMatchers\",\"SCE_CONTEXTS\",\"resourceUrlWhitelist\",\"resourceUrlBlacklist\",\"this.resourceUrlWhitelist\",\"this.resourceUrlBlacklist\",\"matchUrl\",\"generateHolderType\",\"Base\",\"holderType\",\"trustedValue\",\"$$unwrapTrustedValue\",\"this.$$unwrapTrustedValue\",\"holderType.prototype.valueOf\",\"holderType.prototype.toString\",\"htmlSanitizer\",\"trustedValueHolderBase\",\"byType\",\"CSS\",\"URL\",\"JS\",\"trustAs\",\"Constructor\",\"maybeTrusted\",\"allowed\",\"this.enabled\",\"msie\",\"sce\",\"isEnabled\",\"sce.isEnabled\",\"sce.getTrusted\",\"parseAs\",\"sce.parseAs\",\"enumValue\",\"lName\",\"eventSupport\",\"android\",\"userAgent\",\"navigator\",\"boxee\",\"vendorPrefix\",\"vendorRegex\",\"bodyStyle\",\"transitions\",\"animations\",\"webkitTransition\",\"webkitAnimation\",\"pushState\",\"hasEvent\",\"divElm\",\"handleRequestFn\",\"tpl\",\"ignoreRequestError\",\"totalPendingRequests\",\"transformer\",\"httpOptions\",\"handleError\",\"testability\",\"testability.findBindings\",\"opt_exactMatch\",\"getElementsByClassName\",\"matches\",\"dataBinding\",\"bindingName\",\"testability.findModels\",\"prefixes\",\"attributeEquals\",\"testability.getLocation\",\"testability.setLocation\",\"testability.whenStable\",\"deferreds\",\"$$timeoutId\",\"timeout.cancel\",\"urlParsingNode\",\"requestUrl\",\"originUrl\",\"filters\",\"suffix\",\"currencyFilter\",\"dateFilter\",\"filterFilter\",\"jsonFilter\",\"limitToFilter\",\"lowercaseFilter\",\"numberFilter\",\"orderByFilter\",\"uppercaseFilter\",\"comparator\",\"matchAgainstAnyProp\",\"predicateFn\",\"createPredicateFn\",\"shouldMatchPrimitives\",\"actual\",\"expected\",\"item\",\"deepCompare\",\"dontMatchWholeObject\",\"actualType\",\"expectedType\",\"expectedVal\",\"matchAnyProperty\",\"actualVal\",\"$locale\",\"formats\",\"amount\",\"currencySymbol\",\"fractionSize\",\"formatNumber\",\"number\",\"groupSep\",\"decimalSep\",\"isFinite\",\"isNegative\",\"abs\",\"numStr\",\"formatedText\",\"hasExponent\",\"toFixed\",\"parseFloat\",\"fractionLen\",\"min\",\"round\",\"fraction\",\"lgroup\",\"group\",\"padNumber\",\"digits\",\"neg\",\"dateGetter\",\"date\",\"dateStrGetter\",\"shortForm\",\"getFirstThursdayOfYear\",\"year\",\"dayOfWeekOnFirst\",\"getDay\",\"weekGetter\",\"firstThurs\",\"getFullYear\",\"thisThurs\",\"getMonth\",\"getDate\",\"jsonStringToDate\",\"string\",\"R_ISO8601_STR\",\"tzHour\",\"tzMin\",\"dateSetter\",\"setUTCFullYear\",\"setFullYear\",\"timeSetter\",\"setUTCHours\",\"setHours\",\"m\",\"ms\",\"format\",\"timezone\",\"NUMBER_STRING\",\"DATE_FORMATS_SPLIT\",\"setMinutes\",\"getMinutes\",\"getTimezoneOffset\",\"DATE_FORMATS\",\"object\",\"spacing\",\"limit\",\"Infinity\",\"sortPredicate\",\"reverseOrder\",\"reverseComparator\",\"comp\",\"descending\",\"objectToString\",\"v1\",\"v2\",\"map\",\"predicate\",\"ngDirective\",\"FormController\",\"controls\",\"parentForm\",\"$$parentForm\",\"nullFormCtrl\",\"$error\",\"$$success\",\"$pending\",\"$name\",\"$dirty\",\"$pristine\",\"$valid\",\"$invalid\",\"$submitted\",\"$addControl\",\"$rollbackViewValue\",\"form.$rollbackViewValue\",\"control\",\"$commitViewValue\",\"form.$commitViewValue\",\"form.$addControl\",\"$$renameControl\",\"form.$$renameControl\",\"newName\",\"oldName\",\"$removeControl\",\"form.$removeControl\",\"$setValidity\",\"addSetValidityMethod\",\"ctrl\",\"set\",\"unset\",\"$setDirty\",\"form.$setDirty\",\"PRISTINE_CLASS\",\"DIRTY_CLASS\",\"$setPristine\",\"form.$setPristine\",\"setClass\",\"SUBMITTED_CLASS\",\"$setUntouched\",\"form.$setUntouched\",\"$setSubmitted\",\"form.$setSubmitted\",\"stringBasedInputType\",\"$formatters\",\"$isEmpty\",\"baseInputType\",\"composing\",\"ev\",\"ngTrim\",\"$viewValue\",\"$$hasNativeValidators\",\"$setViewValue\",\"deferListener\",\"origValue\",\"keyCode\",\"$render\",\"ctrl.$render\",\"createDateParser\",\"mapping\",\"iso\",\"ISO_DATE_REGEXP\",\"yyyy\",\"MM\",\"dd\",\"HH\",\"getHours\",\"mm\",\"ss\",\"getSeconds\",\"sss\",\"getMilliseconds\",\"part\",\"NaN\",\"createDateInputType\",\"parseDate\",\"dynamicDateInputType\",\"isValidDate\",\"parseObservedDateValue\",\"badInputChecker\",\"$options\",\"previousDate\",\"$$parserName\",\"$parsers\",\"parsedDate\",\"$ngModelMinErr\",\"timezoneOffset\",\"ngMin\",\"minVal\",\"$validators\",\"ctrl.$validators.min\",\"$validate\",\"ngMax\",\"maxVal\",\"ctrl.$validators.max\",\"validity\",\"VALIDITY_STATE_PROPERTY\",\"badInput\",\"typeMismatch\",\"parseConstantExpr\",\"fallback\",\"parseFn\",\"classDirective\",\"arrayDifference\",\"arrayClasses\",\"digestClassCounts\",\"classCounts\",\"classesToUpdate\",\"ngClassWatchAction\",\"$index\",\"old$index\",\"mod\",\"cachedToggleClass\",\"switchValue\",\"classCache\",\"toggleValidationCss\",\"validationErrorKey\",\"isValid\",\"VALID_CLASS\",\"INVALID_CLASS\",\"setValidity\",\"isObjectEmpty\",\"PENDING_CLASS\",\"combinedState\",\"REGEX_STRING_REGEXP\",\"documentMode\",\"isActive_\",\"active\",\"full\",\"major\",\"minor\",\"dot\",\"codeName\",\"JQLite._data\",\"MOUSE_EVENT_MAP\",\"mouseleave\",\"mouseenter\",\"optgroup\",\"tbody\",\"tfoot\",\"colgroup\",\"caption\",\"thead\",\"th\",\"td\",\"ready\",\"trigger\",\"fired\",\"removeData\",\"removeAttribute\",\"css\",\"lowercasedName\",\"specified\",\"getNamedItem\",\"ret\",\"getText\",\"$dv\",\"multiple\",\"selected\",\"nodeCount\",\"jqLiteOn\",\"types\",\"related\",\"relatedTarget\",\"contains\",\"off\",\"one\",\"onFn\",\"replaceNode\",\"insertBefore\",\"contentDocument\",\"prepend\",\"wrapNode\",\"detach\",\"after\",\"newElement\",\"toggleClass\",\"condition\",\"classCondition\",\"nextElementSibling\",\"getElementsByTagName\",\"extraParameters\",\"dummyEvent\",\"handlerArgs\",\"eventFnsCopy\",\"arg3\",\"unbind\",\"FN_ARG_SPLIT\",\"FN_ARG\",\"argDecl\",\"underscore\",\"$animateMinErr\",\"$$selectors\",\"classNameFilter\",\"this.classNameFilter\",\"$$classNameFilter\",\"runAnimationPostDigest\",\"cancelFn\",\"$$cancelFn\",\"defer.promise.$$cancelFn\",\"ngAnimatePostDigest\",\"ngAnimateNotifyComplete\",\"resolveElementClasses\",\"hasClasses\",\"cachedClassManipulation\",\"op\",\"asyncPromise\",\"currentDefer\",\"applyStyles\",\"styles\",\"from\",\"to\",\"animate\",\"enter\",\"leave\",\"move\",\"$$addClassImmediately\",\"$$removeClassImmediately\",\"add\",\"createdCache\",\"STORAGE_KEY\",\"$$setClassImmediately\",\"APPLICATION_JSON\",\"PATH_MATCH\",\"locationPrototype\",\"paramValue\",\"Location\",\"Location.prototype.state\",\"CALL\",\"APPLY\",\"BIND\",\"CONSTANTS\",\"null\",\"true\",\"false\",\"constantGetter\",\"OPERATORS\",\"+\",\"-\",\"*\",\"/\",\"%\",\"===\",\"!==\",\"==\",\"!=\",\"<\",\">\",\"<=\",\">=\",\"&&\",\"||\",\"!\",\"ESCAPE\",\"lex\",\"tokens\",\"readString\",\"peek\",\"readNumber\",\"isIdent\",\"readIdent\",\"is\",\"isWhitespace\",\"ch2\",\"ch3\",\"op2\",\"op3\",\"op1\",\"operator\",\"throwError\",\"chars\",\"isExpOperator\",\"start\",\"end\",\"colStr\",\"peekCh\",\"quote\",\"rawString\",\"hex\",\"String\",\"fromCharCode\",\"rep\",\"ZERO\",\"statements\",\"primary\",\"expect\",\"filterChain\",\"consume\",\"arrayDeclaration\",\"functionCall\",\"objectIndex\",\"fieldAccess\",\"peekToken\",\"e1\",\"e2\",\"e3\",\"e4\",\"peekAhead\",\"t\",\"unaryFn\",\"right\",\"$parseUnaryFn\",\"binaryFn\",\"left\",\"isBranching\",\"$parseBinaryFn\",\"$parseConstant\",\"$parseStatements\",\"inputFn\",\"argsFn\",\"$parseFilter\",\"every\",\"assignment\",\"ternary\",\"$parseAssignment\",\"logicalOR\",\"middle\",\"$parseTernary\",\"logicalAND\",\"equality\",\"relational\",\"additive\",\"multiplicative\",\"unary\",\"$parseFieldAccess\",\"indexFn\",\"$parseObjectIndex\",\"fnGetter\",\"contextGetter\",\"expressionText\",\"$parseFunctionCall\",\"elementFns\",\"$parseArrayLiteral\",\"valueFns\",\"$parseObjectLiteral\",\"yy\",\"y\",\"MMMM\",\"MMM\",\"M\",\"H\",\"hh\",\"EEEE\",\"EEE\",\"ampmGetter\",\"Z\",\"timeZoneGetter\",\"zone\",\"paddedZone\",\"ww\",\"w\",\"xlinkHref\",\"propName\",\"normalized\",\"ngBooleanAttrWatchAction\",\"htmlAttr\",\"ngAttrAliasWatchAction\",\"nullFormRenameControl\",\"formDirectiveFactory\",\"isNgForm\",\"ngFormCompile\",\"formElement\",\"ngFormPreLink\",\"handleFormSubmission\",\"parentFormCtrl\",\"alias\",\"URL_REGEXP\",\"EMAIL_REGEXP\",\"NUMBER_REGEXP\",\"DATE_REGEXP\",\"DATETIMELOCAL_REGEXP\",\"WEEK_REGEXP\",\"MONTH_REGEXP\",\"TIME_REGEXP\",\"inputType\",\"textInputType\",\"weekParser\",\"isoWeek\",\"existingDate\",\"week\",\"minutes\",\"hours\",\"seconds\",\"milliseconds\",\"addDays\",\"numberInputType\",\"urlInputType\",\"ctrl.$validators.url\",\"modelValue\",\"viewValue\",\"emailInputType\",\"email\",\"ctrl.$validators.email\",\"radioInputType\",\"checked\",\"checkboxInputType\",\"trueValue\",\"ngTrueValue\",\"falseValue\",\"ngFalseValue\",\"ctrl.$isEmpty\",\"ctrls\",\"CONSTANT_VALUE_REGEXP\",\"tplAttr\",\"ngValueConstantLink\",\"ngValueLink\",\"valueWatchAction\",\"$compile\",\"ngBindCompile\",\"templateElement\",\"ngBindLink\",\"ngBindWatchAction\",\"ngBindTemplateCompile\",\"ngBindTemplateLink\",\"ngBindHtmlCompile\",\"tElement\",\"ngBindHtmlGetter\",\"ngBindHtmlWatch\",\"getStringValue\",\"ngBindHtmlLink\",\"ngBindHtmlWatchAction\",\"getTrustedHtml\",\"$viewChangeListeners\",\"forceAsyncEvents\",\"ngEventHandler\",\"$event\",\"previousElements\",\"ngIfWatchAction\",\"newScope\",\"srcExp\",\"onloadExp\",\"autoScrollExp\",\"autoscroll\",\"changeCounter\",\"previousElement\",\"currentElement\",\"cleanupLastIncludeContent\",\"parseAsResourceUrl\",\"ngIncludeWatchAction\",\"afterAnimation\",\"thisChangeId\",\"namespaceAdaptedClone\",\"trimValues\",\"NgModelController\",\"$modelValue\",\"$$rawModelValue\",\"$asyncValidators\",\"$untouched\",\"$touched\",\"parsedNgModel\",\"parsedNgModelAssign\",\"ngModelGet\",\"ngModelSet\",\"pendingDebounce\",\"$$setOptions\",\"this.$$setOptions\",\"getterSetter\",\"invokeModelGetter\",\"invokeModelSetter\",\"$$$p\",\"this.$isEmpty\",\"currentValidationRunId\",\"this.$setPristine\",\"this.$setDirty\",\"this.$setUntouched\",\"UNTOUCHED_CLASS\",\"TOUCHED_CLASS\",\"$setTouched\",\"this.$setTouched\",\"this.$rollbackViewValue\",\"$$lastCommittedViewValue\",\"this.$validate\",\"prevValid\",\"prevModelValue\",\"allowInvalid\",\"$$runValidators\",\"parserValid\",\"allValid\",\"$$writeModelToScope\",\"this.$$runValidators\",\"parseValid\",\"doneCallback\",\"processSyncValidators\",\"syncValidatorsValid\",\"validator\",\"processAsyncValidators\",\"validatorPromises\",\"validationDone\",\"localValidationRunId\",\"processParseErrors\",\"errorKey\",\"this.$commitViewValue\",\"$$parseAndValidate\",\"this.$$parseAndValidate\",\"this.$$writeModelToScope\",\"this.$setViewValue\",\"updateOnDefault\",\"$$debounceViewValueCommit\",\"this.$$debounceViewValueCommit\",\"debounceDelay\",\"debounce\",\"ngModelWatch\",\"formatters\",\"ngModelCompile\",\"ngModelPreLink\",\"modelCtrl\",\"formCtrl\",\"ngModelPostLink\",\"updateOn\",\"DEFAULT_REGEXP\",\"that\",\"BRACE\",\"IS_WHEN\",\"updateElementText\",\"newText\",\"numberExp\",\"whenExp\",\"whens\",\"whensExpFns\",\"braceReplacement\",\"watchRemover\",\"lastCount\",\"attributeName\",\"tmpMatch\",\"whenKey\",\"ngPluralizeWatchAction\",\"countIsNaN\",\"ngRepeatMinErr\",\"updateScope\",\"valueIdentifier\",\"keyIdentifier\",\"arrayLength\",\"$first\",\"$last\",\"$middle\",\"$odd\",\"$even\",\"ngRepeatCompile\",\"ngRepeatEndComment\",\"lhs\",\"rhs\",\"aliasAs\",\"trackByExp\",\"trackByExpGetter\",\"trackByIdExpFn\",\"trackByIdArrayFn\",\"trackByIdObjFn\",\"hashFnLocals\",\"ngRepeatLink\",\"lastBlockMap\",\"ngRepeatAction\",\"previousNode\",\"nextNode\",\"nextBlockMap\",\"collectionLength\",\"trackById\",\"collectionKeys\",\"nextBlockOrder\",\"trackByIdFn\",\"itemKey\",\"blockKey\",\"ngRepeatTransclude\",\"ngShowWatchAction\",\"NG_HIDE_CLASS\",\"tempClasses\",\"NG_HIDE_IN_PROGRESS_CLASS\",\"ngHideWatchAction\",\"ngStyleWatchAction\",\"newStyles\",\"oldStyles\",\"ngSwitchController\",\"cases\",\"selectedTranscludes\",\"selectedElements\",\"previousLeaveAnimations\",\"selectedScopes\",\"spliceFactory\",\"ngSwitchWatchAction\",\"selectedTransclude\",\"caseElement\",\"selectedScope\",\"anchor\",\"ngOptionsMinErr\",\"NG_OPTIONS_REGEXP\",\"nullModelCtrl\",\"optionsMap\",\"ngModelCtrl\",\"unknownOption\",\"databound\",\"init\",\"self.init\",\"ngModelCtrl_\",\"nullOption_\",\"unknownOption_\",\"addOption\",\"self.addOption\",\"removeOption\",\"self.removeOption\",\"hasOption\",\"renderUnknownOption\",\"self.renderUnknownOption\",\"unknownVal\",\"self.hasOption\",\"setupAsSingle\",\"selectElement\",\"selectCtrl\",\"ngModelCtrl.$render\",\"emptyOption\",\"setupAsMultiple\",\"lastView\",\"selectMultipleWatch\",\"setupAsOptions\",\"callExpression\",\"exprFn\",\"valueName\",\"keyName\",\"createIsSelectedFn\",\"selectedSet\",\"trackFn\",\"trackIndex\",\"isSelected\",\"compareValueFn\",\"selectAsFn\",\"scheduleRendering\",\"renderScheduled\",\"render\",\"updateLabelMap\",\"labelMap\",\"label\",\"added\",\"optionGroups\",\"optionGroupNames\",\"optionGroupName\",\"optionGroup\",\"existingParent\",\"existingOptions\",\"existingOption\",\"valuesFn\",\"anySelected\",\"optionId\",\"trackKeysCache\",\"groupByFn\",\"displayFn\",\"nullOption\",\"groupIndex\",\"groupLength\",\"optionGroupsCache\",\"optGroupTemplate\",\"lastElement\",\"optionTemplate\",\"optionsExp\",\"selectAs\",\"track\",\"selectionChanged\",\"selectedKey\",\"viewValueFn\",\"getLabels\",\"toDisplay\",\"ngModelCtrl.$isEmpty\",\"nullSelectCtrl\",\"selectCtrlName\",\"interpolateWatchAction\",\"ctrl.$validators.required\",\"patternExp\",\"ctrl.$validators.pattern\",\"intVal\",\"ctrl.$validators.maxlength\",\"ctrl.$validators.minlength\",\"$$csp\"]\n\n258 matches across 73 files\n",
+			"settings":
+			{
+				"buffer_size": 107696,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "lib/base.js",
+			"settings":
+			{
+				"buffer_size": 1131,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 610,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/component.js",
+			"settings":
+			{
+				"buffer_size": 270,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tests/pageobjects/home.js",
+			"settings":
+			{
+				"buffer_size": 205,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tests/specs/home-page.spec.js",
+			"settings":
+			{
+				"buffer_size": 543,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tests/protractor.config.js",
+			"settings":
+			{
+				"buffer_size": 986,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/index.js",
+			"settings":
+			{
+				"buffer_size": 229,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"packremo",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"format",
+				"JSFMT: Format the current file"
+			],
+			[
+				"git di",
+				"Git: Diff Current File"
+			],
+			[
+				"jsf",
+				"JSFMT: Toggle autoformat"
+			],
+			[
+				"jsonf",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"form",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"git dif",
+				"Git: Diff All Files"
+			],
+			[
+				"jsfmt",
+				"JSFMT: Toggle autoformat"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"git diff",
+				"Git: Diff All Files"
+			],
+			[
+				"tog",
+				"Toggle Block Comment"
+			],
+			[
+				"tify",
+				"Javascript Beautify"
+			],
+			[
+				"comm",
+				"Toggle Block Comment"
+			],
+			[
+				"tob",
+				"Toggle Block Comment"
+			],
+			[
+				"html",
+				"HTMLBeautify"
+			],
+			[
+				"htmlb",
+				"HTMLBeautify"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"lin",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"lint",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"block",
+				"Toggle Block Comment"
+			],
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"inp",
+				"Package Control: Install Package"
+			],
+			[
+				"insp",
+				"Package Control: Install Package"
+			],
+			[
+				"jsonre",
+				"JSON Reindent: reindent file or selection"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"json",
+				"JSON Reindent: reindent file or selection"
+			],
+			[
+				"mark",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"blockc",
+				"Toggle Block Comment"
+			],
+			[
+				"shoer",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"lint ",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"gitdi",
+				"Git: Diff Current File"
+			],
+			[
+				"install e",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"packl",
+				"Package Control: List Packages"
+			],
+			[
+				"packre",
+				"Package Control: Remove Package"
+			],
+			[
+				"remop",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"filed",
+				"FileDiffs: Menu"
+			],
+			[
+				"dif",
+				"FileDiffs: Menu"
+			],
+			[
+				"jsl",
+				"JSLint: Run JSLint"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"",
+				"Bracketeer: Indent Text"
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"zen",
+				"Zen Coding: Zen as you type"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"bra",
+				"Bracketeer: Select Inside Braces"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"sublimelint",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"ter",
+				"Preferences: Terminal Settings – Default"
+			],
+			[
+				"term",
+				"Preferences: Terminal Settings – Default"
+			],
+			[
+				"conso",
+				"Package Control: Discover Packages"
+			],
+			[
+				"command",
+				"Snippet: <command>"
+			],
+			[
+				"git",
+				"Package Control: Install Package"
+			],
+			[
+				"insde",
+				"Indent Tags on Document"
+			],
+			[
+				"attri",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"xml",
+				"Snippet: XML Processing Instruction"
+			],
+			[
+				"clas",
+				"Snippet: Class"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"paddin",
+				"Snippet: padding: V H"
+			],
+			[
+				"com",
+				"Snippet: display: common-types"
+			],
+			[
+				"colo",
+				"Snippet: color: name"
+			],
+			[
+				"less",
+				"Snippet: Google AJAX Libraries: Scriptaculous"
+			]
+		],
+		"width": 475.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/saadtazi/Projects/test-protractor/tests",
+		"/Users/saadtazi/Projects/test-protractor/tests/pageobjects",
+		"/Users/saadtazi/Projects/test-protractor/tests/specs",
+		"/Users/saadtazi/Projects/protractor-pageobject",
+		"/Users/saadtazi/Projects/protractor-pageobject/lib",
+		"/Users/saadtazi/Projects/protractor-pageobject/tests",
+		"/Users/saadtazi/Projects/protractor-pageobject/tests/pageobjects",
+		"/Users/saadtazi/Projects/protractor-pageobject/tests/specs"
+	],
+	"file_history":
+	[
+		"/Users/saadtazi/Projects/test-protractor/tests/pageobjects/base.js",
+		"/Users/saadtazi/Projects/test-protractor/TODO.md",
+		"/Users/saadtazi/Projects/protractor-pageobject/README.md",
+		"/Users/saadtazi/Projects/protractor-pageobject/package.json",
+		"/Users/saadtazi/Projects/protractor-pageobject/lib/page.js",
+		"/Users/saadtazi/Projects/protractor-pageobject/lib/component.js",
+		"/Users/saadtazi/Projects/test-protractor/tests/pageobjects/home.js",
+		"/Users/saadtazi/Projects/protractor-pageobject/lib/base.js",
+		"/Users/saadtazi/Projects/test-protractor/gulpfile.js",
+		"/Users/saadtazi/Projects/test-protractor/tests/specs/test-hello.spec.js",
+		"/Users/saadtazi/Projects/test-protractor/tests/protractor.config.js",
+		"/Users/saadtazi/Projects/test-protractor/tests/specs/test-hello.js",
+		"/Users/saadtazi/Projects/test-protractor/tests/specs/init.js",
+		"/Users/saadtazi/Projects/test-protractor/tests/specs/_init.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/collections/controllers/collection-controller.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-models/lib/models/concrete-collection.js",
+		"/Users/saadtazi/Downloads/Here_are_the_collections_for_prod_and_dev_as_of_today.csv",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/bin/create-missing-collections.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/apis/v3.0.0/collection_api.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/collection-action-modal/index.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/collections/index.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/bin/helpers/index.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/sidebar/less/main.less",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/sidebar/templates/sidebar-template.hbs",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/server/index.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-models/lib/collections/index.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/collections/controllers/collection-filters-controller.js",
+		"/Users/saadtazi/Projects/radialpoint/data-services-sdk/gruntfile.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/sidebar/templates/browse-fuzzy-picker-item-template.hbs",
+		"/Users/saadtazi/Projects/radialpoint/data-services-sdk/lib/providers/elasticsearch/es_provider.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/collections/collection-list.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/collections/templates/document-list-empty-template.hbs",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/sidebar/views/concrete-collection-view.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/collections/views/document-list-empty-view.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/helpers/middleware_helpers.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/apis/v3.0.0/document_api_transition.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/apis/v3.0.0/user_documents_api.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-models/lib/models/collection-tree.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/sidebar/controllers/virtual-collection-controller.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/sidebar/controllers/sidebar-controller.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-models/lib/collections/collections.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-models/test/spec/models/collection-tree.spec.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/bin/missing-collections.sample.csv",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/collection-action-modal/controllers/save-document-controller.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/collections/views/collection-filters-view.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/providers/stormpath/stormpath_provider.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/providers/stormpath/stormpath.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/bin/get-missing-public-collections.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/bin/create-public-collections.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/bin/test.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/server/routes.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/helpers/collection_helpers.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/Gruntfile.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/package.json",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/team-creation/views/team-creation-form-view.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/apis/test/helpers/api-container.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/apis/v3.0.0/team_creation.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/providers/stormpath/organization_provider.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/helpers/stormpath_helpers.js",
+		"/Users/saadtazi/Projects/radialpoint/data-services-sdk/lib/event_stream/collection_events.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/models/user.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/providers/stormpath/user_provider.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/helpers/promise_helpers.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-models/lib/models/user.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/config/development.json",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/config/default/development.json",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/team-creation/controllers/team-creation-form-controller.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/team-creation/models/user-switchteam.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/models/collection.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/collection-actions/templates/create-collection-template.hbs",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/collection-actions/templates/collection-form-template.hbs",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/collection-actions/controllers/collection-form-controller.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/collection-actions/controllers/edit-collection-controller.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/collection-actions/views/edit-collection-view.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/app-module.js",
+		"/Users/saadtazi/Projects/radialpoint/data-services-sdk/lib/client.js",
+		"/Users/saadtazi/Projects/radialpoint/data-services-sdk/lib/event_stream/index.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/apis/v3.0.0/collection_documents_api.js",
+		"/Users/saadtazi/Projects/radialpoint/data-services-sdk/lib/transaction_validators/base.js",
+		"/Users/saadtazi/Projects/radialpoint/data-services-sdk/lib/transaction_validators/collection.js",
+		"/Users/saadtazi/Projects/radialpoint/data-services-sdk/lib/transaction_validators/document.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/fuzzy-picker/views/fuzzy-picker-item-view.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/collections/templates/collection-picker-item-template.hbs",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/fuzzy-picker/controllers/fuzzy-picker-controller.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/fuzzy-picker/views/fuzzy-picker-view.js",
+		"/Users/saadtazi/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/collections/controllers/collection-picker-controller.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/fuzzy-picker/templates/fuzzy-picker-default-item-template.hbs",
+		"/Users/saadtazi/Projects/radialpoint/data-services-sdk/lib/providers/elasticsearch/collection_provider.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/collections/templates/collection-picker-template.hbs",
+		"/Users/saadtazi/Projects/radialpoint/data-services-sdk/test/spec/event_stream/event_stream.spec.js",
+		"/Users/saadtazi/Projects/radialpoint/data-services-sdk/lib/event_stream/event.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-models/lib/models/event.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/apis/v3.0.0/feed_api.js",
+		"/Users/saadtazi/Projects/radialpoint/data-services-sdk/node_modules/data-services-sdk/lib/providers/elasticsearch/document_provider.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/apis/v3.0.0/document_api.js",
+		"/Users/saadtazi/Projects/radialpoint/data-services-sdk/lib/data_store/data_store.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/errors/http_error.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-models/test/spec/models/concrete-collection.spec.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/apis/test/spec/v3.0.0/collection_api.spec.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/apis/v3.0.0/helpers/event_helpers.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/download/views/download-view.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/download/controllers/download-controller.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/utils/test/spec/view-controller.spec.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/document-list/views/document-list-item-view.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/document-list/controllers/document-item-controller.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-models/lib/models/document.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/utils/controllers/view-controller.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/document-list/templates/document-list-item.hbs",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/package.json",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/karma.conf.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/document/controllers/document-collection-controller.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/utils/index.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/server/views/layouts/app.hbs",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/document/views/document-collection-view.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/document/views/document-list-item-view.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/share/utils.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/intercom/index.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/server/views/app.hbs",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/deployment/prod.json",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/apis/v3.0.0/users_api.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/apis/v3.0.0/helpers/user-param.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/bootstrap.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/app/index.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/collections/organizations.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/document-list/templates/team-save-count.hbs",
+		"/Users/saadtazi/Projects/radialpoint/reveal-models/test/helpers/backbone-chai/attributes-assertions.js",
+		"/Users/saadtazi/Projects/radialpoint/reveal-models/test/fixtures/collection-team-search.js"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"protractor-pageobject/*",
+			"protractor-pageobject",
+			"",
+			"reveal-models/*",
+			"reveal-models",
+			"",
+			"reveal-site/*",
+			"*.js",
+			"",
+			"*.js",
+			"",
+			"data-services-sdk/lib",
+			"",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app",
+			"/reveal-site/server/webapp",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp",
+			"<project>",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules",
+			"<project>",
+			"",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app",
+			"<project>",
+			"/Users/saadtazi/Projects/radialpoint/reveal-common,*.js",
+			"/Users/saadtazi/Projects/radialpoint/reveal-common,*.hbs",
+			"/Users/saadtazi/Projects/radialpoint/reveal-common,*.js",
+			"/Users/saadtazi/Projects/radialpoint/reveal-common",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules",
+			"<projects>,*.js",
+			"<projects>",
+			"<projects>,*.hbs",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/,*.hbs",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/*.hbs",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp",
+			"<projects>/*/*.hbs",
+			"<projects>",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp",
+			"/Users/saadtazi/Projects/radialpoint/reveal-common/lib",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/config",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/node_modules/reveal-common",
+			"/Users/saadtazi/Projects/radialpoint/node_modules/reveal-common",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/node_modules/reveal-common/",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site",
+			"/Users/saadtazi/Projects/radialpoint/reveal-common",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/providers",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/",
+			"~/Users/saadtazi/Projects/radialpoint/reveal-site/server/public,/Users/saadtazi/Projects/radialpoint/reveal-site/server/",
+			"!/Users/saadtazi/Projects/radialpoint/reveal-site/server/public,/Users/saadtazi/Projects/radialpoint/reveal-site/server/",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/test, /Users/saadtazi/Projects/radialpoint/reveal-site/server",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/test",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/test",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/test/server",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/views/*.hjs",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/public/*.hjs",
+			"/Users/saadtazi/Projects/radialpoint/reveal-site/server/public",
+			"",
+			"-node_modules/*,test/*",
+			"-node_modules/*,server/*",
+			"-node_modules/*,test/*",
+			"-node_modules/*,server/*",
+			"-node_modules/*,test/*",
+			"-node_modules/*,server/*",
+			"-node_modules/*,test/*",
+			"-node_modules/*,server/*",
+			"-node_modules/*,server/public/*",
+			"-node_modules/*,test/*",
+			"-node_modules/*,server/*",
+			"-node_modules/*,test/*.js",
+			"-node_modules/*,*.js",
+			"-node_modules,*.js",
+			"<project>/spec/*.js",
+			"<project>/test/*.js",
+			"/test/*.js",
+			"test/*.js",
+			"*.js",
+			"spec/*.js",
+			"*/json",
+			"ext/*.js,*/json",
+			"ext/*.js",
+			"test/ext/*.js",
+			"ext/*.js",
+			"test/ext/*.js",
+			"<project>/test/ext/*.js",
+			"<project>/test/*.js",
+			"./*.js",
+			"./test/*.js",
+			"test/*.js",
+			"ext/*.js",
+			"spec/*.js",
+			"web/*.js",
+			"ext/*.js",
+			"test/*.js",
+			"ext/src/*.js",
+			"ext.js",
+			"*.js",
+			"test/*.js",
+			"ext/*.js",
+			"spec/test/*.js",
+			"ext/*.js",
+			"spec/test/*.js",
+			"spec/*.js",
+			"*.js",
+			"/Users/saadtazi/Projects/upmp/upmp_app,*.js",
+			"/Users/saadtazi/Projects/upmp/upmp_test",
+			"/Users/saadtazi/Projects/upmp/upmp_app",
+			"/Users/saadtazi/Projects/upmp/upmp_app,*.ejs",
+			"/Users/saadtazi/Projects/upmp/upmp_test,*.py",
+			"/Users/saadtazi/Projects/upmp/upmp_test,*.feature",
+			"/Users/saadtazi/Projects/upmp/upmp_test,*.py"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"dv",
+			"noop",
+			"this.elements",
+			".ui",
+			"ui",
+			"uiEl",
+			"ui",
+			"_",
+			"\"",
+			"teammate",
+			"teammate:",
+			".teammate",
+			"teammate",
+			"personal",
+			",prod",
+			",dev",
+			"firstName",
+			"personal",
+			"public ",
+			"/me",
+			"settin",
+			"user-fullname",
+			"/me",
+			"'me",
+			"'me'",
+			"aliases.me",
+			"aliases",
+			"'me'",
+			"COLLECTION_TYPE",
+			"COLLECTION_TYPE.me",
+			"'me",
+			"isMe",
+			"COLLECTION_TYPE.me",
+			"'me",
+			"COLLECTION_TYPE.me",
+			"'me",
+			"_public",
+			"'me",
+			"reveal-models",
+			"_p",
+			"'me",
+			"VirtualCollectionController",
+			"virtual-collection-controller",
+			"editable:",
+			"editabl\neditable:",
+			"editabl",
+			"_public",
+			"'me'",
+			"_public",
+			"CollectionList",
+			"collection-list",
+			"visi",
+			"utils",
+			"config",
+			"requestOptions",
+			"getpa",
+			"switchTeam",
+			"switch",
+			"team-creation",
+			"organization",
+			"inviteTeam",
+			"getCollectionPublicPrivileges",
+			"request",
+			"jshint",
+			"esUrl",
+			"esu",
+			"esUrl",
+			".promise",
+			"Q.defe",
+			"Q.def",
+			"config",
+			"util",
+			"direc",
+			"DataServices",
+			"extension-dow",
+			"efaultPublicPermission",
+			"efaultPermissions",
+			"defaultPermissions",
+			"edit-collection-view",
+			"sdkConfig",
+			"permission_",
+			"permission",
+			"user.js",
+			"expand:",
+			"DIRECTORY_URL",
+			"'stormpath'",
+			"storm",
+			"sdk.esHost",
+			"eshost",
+			"config",
+			"sdk",
+			"DataServices",
+			"var ",
+			"addCollectionPermissions",
+			"sdk",
+			"sdk'",
+			"injectAndUseSdk",
+			"signup",
+			"SORT_BY",
+			"Q.",
+			"Q",
+			"deletecoll",
+			"collectionde",
+			"\"name\": \"\"",
+			"right-",
+			"collectiontree",
+			"fuzzy-picker-controller",
+			"fuzzy-picker-view",
+			"FUZZY-PICKER-ITEM-VIEW",
+			"fuzzy-picker-item'",
+			"fuzzy-picker-item",
+			"collection-picker-item",
+			"collection-picker-item-template",
+			"Collection ",
+			"sendCollectionPrivilegeEvent",
+			"options.context",
+			"void",
+			"feed_api",
+			"listColl",
+			"url:",
+			"validateDocumentOptions",
+			"urlMd",
+			"'url'",
+			"searchDoc",
+			"searchD\nsearchD",
+			"validateDocumentOptions",
+			"createD",
+			"collectionCurator"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"</div",
+			"<div ",
+			"class=\"main\"",
+			".main",
+			"/walkthrough/images",
+			"/invite/",
+			"href=\"landing_page/",
+			"src=\"landing_page/",
+			"href=\"landing_page/",
+			"'obj'",
+			"'two'",
+			"'a'",
+			"\"",
+			"trackClickSpy",
+			"clickUrls",
+			"googleClickRoute",
+			"'",
+			"in the 'search' text field",
+			"# Then I wait 2 seconds",
+			"can.route.attr",
+			"field.name",
+			"25",
+			"\"",
+			"options",
+			", ",
+			"\", \""
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/saadtazi/Projects/test-protractor/TODO.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 833,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lib/item-list.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib/page.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 612,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								179,
+								179
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 107696,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										161,
+										165
+									],
+									[
+										225,
+										229
+									],
+									[
+										277,
+										281
+									],
+									[
+										309,
+										313
+									],
+									[
+										369,
+										373
+									],
+									[
+										475,
+										479
+									],
+									[
+										551,
+										555
+									],
+									[
+										611,
+										615
+									],
+									[
+										641,
+										645
+									],
+									[
+										782,
+										786
+									],
+									[
+										2799,
+										2803
+									],
+									[
+										2880,
+										2884
+									],
+									[
+										2918,
+										2922
+									],
+									[
+										5532,
+										5536
+									],
+									[
+										5587,
+										5591
+									],
+									[
+										5631,
+										5635
+									],
+									[
+										5741,
+										5745
+									],
+									[
+										5762,
+										5766
+									],
+									[
+										5874,
+										5878
+									],
+									[
+										5949,
+										5953
+									],
+									[
+										6149,
+										6153
+									],
+									[
+										6284,
+										6288
+									],
+									[
+										6325,
+										6329
+									],
+									[
+										6380,
+										6384
+									],
+									[
+										6519,
+										6523
+									],
+									[
+										6577,
+										6581
+									],
+									[
+										6806,
+										6810
+									],
+									[
+										6861,
+										6865
+									],
+									[
+										6886,
+										6890
+									],
+									[
+										6911,
+										6915
+									],
+									[
+										6936,
+										6940
+									],
+									[
+										6985,
+										6989
+									],
+									[
+										7010,
+										7014
+									],
+									[
+										7059,
+										7063
+									],
+									[
+										7084,
+										7088
+									],
+									[
+										7123,
+										7127
+									],
+									[
+										7154,
+										7158
+									],
+									[
+										8072,
+										8076
+									],
+									[
+										8215,
+										8219
+									],
+									[
+										8917,
+										8921
+									],
+									[
+										8967,
+										8971
+									],
+									[
+										9197,
+										9201
+									],
+									[
+										9263,
+										9267
+									],
+									[
+										9284,
+										9288
+									],
+									[
+										9325,
+										9329
+									],
+									[
+										9532,
+										9536
+									],
+									[
+										9598,
+										9602
+									],
+									[
+										9619,
+										9623
+									],
+									[
+										9660,
+										9664
+									],
+									[
+										9878,
+										9882
+									],
+									[
+										9944,
+										9948
+									],
+									[
+										9965,
+										9969
+									],
+									[
+										10006,
+										10010
+									],
+									[
+										10154,
+										10158
+									],
+									[
+										10184,
+										10188
+									],
+									[
+										10233,
+										10237
+									],
+									[
+										10282,
+										10286
+									],
+									[
+										10331,
+										10335
+									],
+									[
+										10491,
+										10495
+									],
+									[
+										10522,
+										10526
+									],
+									[
+										10714,
+										10718
+									],
+									[
+										10764,
+										10768
+									],
+									[
+										10980,
+										10984
+									],
+									[
+										11114,
+										11118
+									],
+									[
+										11155,
+										11159
+									],
+									[
+										11210,
+										11214
+									],
+									[
+										11328,
+										11332
+									],
+									[
+										11349,
+										11353
+									],
+									[
+										11472,
+										11476
+									],
+									[
+										11547,
+										11551
+									],
+									[
+										11758,
+										11762
+									],
+									[
+										11904,
+										11908
+									],
+									[
+										11945,
+										11949
+									],
+									[
+										12000,
+										12004
+									],
+									[
+										12092,
+										12096
+									],
+									[
+										12201,
+										12205
+									],
+									[
+										12242,
+										12246
+									],
+									[
+										12291,
+										12295
+									],
+									[
+										12319,
+										12323
+									],
+									[
+										12326,
+										12330
+									],
+									[
+										12416,
+										12420
+									],
+									[
+										12442,
+										12446
+									],
+									[
+										12540,
+										12544
+									],
+									[
+										12707,
+										12711
+									],
+									[
+										12734,
+										12738
+									],
+									[
+										12774,
+										12778
+									],
+									[
+										12889,
+										12893
+									],
+									[
+										12933,
+										12937
+									],
+									[
+										12966,
+										12970
+									],
+									[
+										13131,
+										13135
+									],
+									[
+										13190,
+										13194
+									],
+									[
+										13289,
+										13293
+									],
+									[
+										13351,
+										13355
+									],
+									[
+										13487,
+										13491
+									],
+									[
+										13537,
+										13541
+									],
+									[
+										13696,
+										13700
+									],
+									[
+										13738,
+										13742
+									],
+									[
+										13763,
+										13767
+									],
+									[
+										13849,
+										13853
+									],
+									[
+										13990,
+										13994
+									],
+									[
+										14054,
+										14058
+									],
+									[
+										14106,
+										14110
+									],
+									[
+										14138,
+										14142
+									],
+									[
+										14198,
+										14202
+									],
+									[
+										14310,
+										14314
+									],
+									[
+										14386,
+										14390
+									],
+									[
+										14446,
+										14450
+									],
+									[
+										14476,
+										14480
+									],
+									[
+										14617,
+										14621
+									],
+									[
+										16640,
+										16644
+									],
+									[
+										16721,
+										16725
+									],
+									[
+										16759,
+										16763
+									],
+									[
+										19379,
+										19383
+									],
+									[
+										19434,
+										19438
+									],
+									[
+										19478,
+										19482
+									],
+									[
+										19638,
+										19642
+									],
+									[
+										19685,
+										19689
+									],
+									[
+										19733,
+										19737
+									],
+									[
+										19760,
+										19764
+									],
+									[
+										19767,
+										19771
+									],
+									[
+										19891,
+										19895
+									],
+									[
+										19921,
+										19925
+									],
+									[
+										20117,
+										20121
+									],
+									[
+										20164,
+										20168
+									],
+									[
+										20212,
+										20216
+									],
+									[
+										20239,
+										20243
+									],
+									[
+										20246,
+										20250
+									],
+									[
+										20529,
+										20533
+									],
+									[
+										20576,
+										20580
+									],
+									[
+										20624,
+										20628
+									],
+									[
+										20651,
+										20655
+									],
+									[
+										20658,
+										20662
+									],
+									[
+										20912,
+										20916
+									],
+									[
+										20958,
+										20962
+									],
+									[
+										21075,
+										21079
+									],
+									[
+										21096,
+										21100
+									],
+									[
+										21214,
+										21218
+									],
+									[
+										21289,
+										21293
+									],
+									[
+										21495,
+										21499
+									],
+									[
+										21636,
+										21640
+									],
+									[
+										21677,
+										21681
+									],
+									[
+										21732,
+										21736
+									],
+									[
+										21877,
+										21881
+									],
+									[
+										21935,
+										21939
+									],
+									[
+										22170,
+										22174
+									],
+									[
+										22225,
+										22229
+									],
+									[
+										22250,
+										22254
+									],
+									[
+										22275,
+										22279
+									],
+									[
+										22300,
+										22304
+									],
+									[
+										22349,
+										22353
+									],
+									[
+										22374,
+										22378
+									],
+									[
+										22423,
+										22427
+									],
+									[
+										22448,
+										22452
+									],
+									[
+										22487,
+										22491
+									],
+									[
+										22518,
+										22522
+									],
+									[
+										23442,
+										23446
+									],
+									[
+										23585,
+										23589
+									],
+									[
+										24293,
+										24297
+									],
+									[
+										24343,
+										24347
+									],
+									[
+										24579,
+										24583
+									],
+									[
+										24645,
+										24649
+									],
+									[
+										24666,
+										24670
+									],
+									[
+										24707,
+										24711
+									],
+									[
+										24920,
+										24924
+									],
+									[
+										24986,
+										24990
+									],
+									[
+										25007,
+										25011
+									],
+									[
+										25048,
+										25052
+									],
+									[
+										25272,
+										25276
+									],
+									[
+										25338,
+										25342
+									],
+									[
+										25359,
+										25363
+									],
+									[
+										25400,
+										25404
+									],
+									[
+										25554,
+										25558
+									],
+									[
+										25584,
+										25588
+									],
+									[
+										25633,
+										25637
+									],
+									[
+										25682,
+										25686
+									],
+									[
+										25731,
+										25735
+									],
+									[
+										25897,
+										25901
+									],
+									[
+										25928,
+										25932
+									],
+									[
+										26126,
+										26130
+									],
+									[
+										26176,
+										26180
+									],
+									[
+										26398,
+										26402
+									],
+									[
+										26538,
+										26542
+									],
+									[
+										26579,
+										26583
+									],
+									[
+										26634,
+										26638
+									],
+									[
+										26758,
+										26762
+									],
+									[
+										26779,
+										26783
+									],
+									[
+										26908,
+										26912
+									],
+									[
+										26983,
+										26987
+									],
+									[
+										27200,
+										27204
+									],
+									[
+										27352,
+										27356
+									],
+									[
+										27393,
+										27397
+									],
+									[
+										27448,
+										27452
+									],
+									[
+										27546,
+										27550
+									],
+									[
+										27655,
+										27659
+									],
+									[
+										27696,
+										27700
+									],
+									[
+										27745,
+										27749
+									],
+									[
+										27773,
+										27777
+									],
+									[
+										27780,
+										27784
+									],
+									[
+										27876,
+										27880
+									],
+									[
+										27902,
+										27906
+									],
+									[
+										28006,
+										28010
+									],
+									[
+										28179,
+										28183
+									],
+									[
+										28206,
+										28210
+									],
+									[
+										28246,
+										28250
+									],
+									[
+										28367,
+										28371
+									],
+									[
+										28411,
+										28415
+									],
+									[
+										28444,
+										28448
+									],
+									[
+										28615,
+										28619
+									],
+									[
+										28674,
+										28678
+									],
+									[
+										28779,
+										28783
+									],
+									[
+										28841,
+										28845
+									],
+									[
+										28983,
+										28987
+									],
+									[
+										29033,
+										29037
+									],
+									[
+										29200,
+										29204
+									],
+									[
+										29252,
+										29256
+									],
+									[
+										29429,
+										29433
+									],
+									[
+										29481,
+										29485
+									],
+									[
+										29653,
+										29657
+									],
+									[
+										29707,
+										29711
+									],
+									[
+										29868,
+										29872
+									],
+									[
+										29915,
+										29919
+									],
+									[
+										29963,
+										29967
+									],
+									[
+										29990,
+										29994
+									],
+									[
+										29997,
+										30001
+									],
+									[
+										30119,
+										30123
+									],
+									[
+										30149,
+										30153
+									],
+									[
+										30343,
+										30347
+									],
+									[
+										30390,
+										30394
+									],
+									[
+										30438,
+										30442
+									],
+									[
+										30465,
+										30469
+									],
+									[
+										30472,
+										30476
+									],
+									[
+										30751,
+										30755
+									],
+									[
+										30798,
+										30802
+									],
+									[
+										30846,
+										30850
+									],
+									[
+										30873,
+										30877
+									],
+									[
+										30880,
+										30884
+									],
+									[
+										31130,
+										31134
+									],
+									[
+										31176,
+										31180
+									],
+									[
+										31316,
+										31320
+									],
+									[
+										31345,
+										31349
+									],
+									[
+										31485,
+										31489
+									],
+									[
+										31599,
+										31603
+									],
+									[
+										31662,
+										31666
+									],
+									[
+										31668,
+										31672
+									],
+									[
+										31840,
+										31844
+									],
+									[
+										32005,
+										32009
+									],
+									[
+										32094,
+										32098
+									],
+									[
+										32151,
+										32155
+									],
+									[
+										32199,
+										32203
+									],
+									[
+										32837,
+										32841
+									],
+									[
+										33245,
+										33249
+									],
+									[
+										33589,
+										33593
+									],
+									[
+										33674,
+										33678
+									],
+									[
+										34288,
+										34292
+									],
+									[
+										34617,
+										34621
+									],
+									[
+										34690,
+										34694
+									],
+									[
+										34753,
+										34757
+									],
+									[
+										35016,
+										35020
+									],
+									[
+										35111,
+										35115
+									],
+									[
+										35152,
+										35156
+									],
+									[
+										35201,
+										35205
+									],
+									[
+										35229,
+										35233
+									],
+									[
+										35236,
+										35240
+									],
+									[
+										35432,
+										35436
+									],
+									[
+										35458,
+										35462
+									],
+									[
+										35681,
+										35685
+									],
+									[
+										35940,
+										35944
+									],
+									[
+										35967,
+										35971
+									],
+									[
+										36007,
+										36011
+									],
+									[
+										36228,
+										36232
+									],
+									[
+										36272,
+										36276
+									],
+									[
+										36305,
+										36309
+									],
+									[
+										36506,
+										36510
+									],
+									[
+										36553,
+										36557
+									],
+									[
+										36618,
+										36622
+									],
+									[
+										36683,
+										36687
+									],
+									[
+										36748,
+										36752
+									],
+									[
+										37485,
+										37489
+									],
+									[
+										37954,
+										37958
+									],
+									[
+										42015,
+										42019
+									],
+									[
+										42268,
+										42272
+									],
+									[
+										42997,
+										43001
+									],
+									[
+										43749,
+										43753
+									],
+									[
+										67176,
+										67180
+									],
+									[
+										68123,
+										68127
+									],
+									[
+										72693,
+										72697
+									],
+									[
+										73290,
+										73294
+									],
+									[
+										74160,
+										74164
+									],
+									[
+										74775,
+										74779
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								13844,
+								13844
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/Users/saadtazi/Projects/test-protractor",
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3944.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "lib/base.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1131,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9,
+								9
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 610,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								263,
+								263
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "lib/component.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								208,
+								208
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "tests/pageobjects/home.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 205,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								96,
+								96
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "tests/specs/home-page.spec.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								320,
+								320
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "tests/protractor.config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 986,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								281,
+								281
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 136.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "lib/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								222,
+								222
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 94.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 112.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 112.0
+	},
+	"output.sftp":
+	{
+		"height": 132.0
+	},
+	"pinned_build_system": "",
+	"project": "protractor-po.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"page",
+				"protractor-pageobject/lib/page.js"
+			],
+			[
+				"modelscollection",
+				"reveal-models/lib/models/concrete-collection.js"
+			],
+			[
+				"moducollin",
+				"reveal-site/server/webapp/app/modules/collections/index.js"
+			],
+			[
+				"modcolin",
+				"reveal-models/lib/collections/index.js"
+			],
+			[
+				"collection/in",
+				"reveal-models/lib/collections/index.js"
+			],
+			[
+				"collectionsin",
+				"reveal-site/server/webapp/app/modules/collections/controllers/collection-filters-controller.js"
+			],
+			[
+				"collection-action-mo",
+				"reveal-site/server/webapp/app/modules/collection-action-modal/index.js"
+			],
+			[
+				"collection_api",
+				"reveal-site/server/apis/v3.0.0/collection_api.js"
+			],
+			[
+				"datagrun",
+				"data-services-sdk/gruntfile.js"
+			],
+			[
+				"virtual-",
+				"reveal-site/server/webapp/app/modules/sidebar/controllers/virtual-collection-controller.js"
+			],
+			[
+				"collection-tre",
+				"reveal-models/lib/models/collection-tree.js"
+			],
+			[
+				"collection-con",
+				"reveal-site/server/webapp/app/modules/collections/controllers/collection-controller.js"
+			],
+			[
+				"collectionli",
+				"reveal-site/server/collections/collection-list.js"
+			],
+			[
+				"midd",
+				"reveal-site/server/helpers/middleware_helpers.js"
+			],
+			[
+				"creat-m",
+				"reveal-site/bin/create-missing-collections.js"
+			],
+			[
+				"collectionfil",
+				"reveal-site/server/webapp/app/modules/collections/views/collection-filters-view.js"
+			],
+			[
+				"save-do",
+				"reveal-site/server/webapp/app/modules/collection-action-modal/controllers/save-document-controller.js"
+			],
+			[
+				"stormat_p",
+				"reveal-site/server/providers/stormpath/stormpath_provider.js"
+			],
+			[
+				"stompath",
+				"reveal-site/server/providers/stormpath/stormpath.js"
+			],
+			[
+				"user.js",
+				"reveal-models/lib/models/user.js"
+			],
+			[
+				"team-creationvi",
+				"reveal-site/server/webapp/app/modules/team-creation/views/team-creation-form-view.js"
+			],
+			[
+				"team-creation",
+				"reveal-site/server/webapp/app/modules/team-creation/controllers/team-creation-form-controller.js"
+			],
+			[
+				"organization_",
+				"reveal-site/server/providers/stormpath/organization_provider.js"
+			],
+			[
+				"stormpathhe",
+				"reveal-site/server/helpers/stormpath_helpers.js"
+			],
+			[
+				"webappserin",
+				"reveal-site/server/webapp/server/index.js"
+			],
+			[
+				"route",
+				"reveal-site/server/webapp/server/routes.js"
+			],
+			[
+				"cr",
+				"reveal-site/bin/create-public-collections.js"
+			],
+			[
+				"creat",
+				"reveal-common/lib/collection-actions/templates/create-collection-template.hbs"
+			],
+			[
+				"middle",
+				"reveal-site/server/helpers/middleware_helpers.js"
+			],
+			[
+				"gruntfile",
+				"reveal-site/Gruntfile.js"
+			],
+			[
+				"collection_helpers",
+				"reveal-site/server/helpers/collection_helpers.js"
+			],
+			[
+				"deve",
+				"reveal-site/config/default/development.json"
+			],
+			[
+				"pack",
+				"reveal-site/package.json"
+			],
+			[
+				"stormpath",
+				"reveal-site/server/providers/stormpath/stormpath.js"
+			],
+			[
+				"dedevelop",
+				"reveal-site/config/default/development.json"
+			],
+			[
+				"configde",
+				"reveal-site/config/development.json"
+			],
+			[
+				"rou",
+				"reveal-site/server/webapp/server/routes.js"
+			],
+			[
+				"webserrou",
+				"reveal-site/server/webapp/server/routes.js"
+			],
+			[
+				"collection-form-tem",
+				"reveal-common/lib/collection-actions/templates/collection-form-template.hbs"
+			],
+			[
+				"collection-form-",
+				"reveal-common/lib/collection-actions/controllers/collection-form-controller.js"
+			],
+			[
+				"create-collection",
+				"reveal-common/lib/collection-actions/templates/create-collection-template.hbs"
+			],
+			[
+				"collectioneditvi",
+				"reveal-common/lib/collection-actions/views/edit-collection-view.js"
+			],
+			[
+				"collectione",
+				"data-services-sdk/lib/event_stream/collection_events.js"
+			],
+			[
+				"user_pro",
+				"reveal-site/server/providers/stormpath/user_provider.js"
+			],
+			[
+				"user.j",
+				"reveal-site/server/models/user.js"
+			],
+			[
+				"app-mod",
+				"reveal-site/server/app-module.js"
+			],
+			[
+				"event_streamin",
+				"data-services-sdk/lib/event_stream/index.js"
+			],
+			[
+				"client",
+				"data-services-sdk/lib/client.js"
+			],
+			[
+				"collectionapi",
+				"reveal-site/server/apis/v3.0.0/collection_api.js"
+			],
+			[
+				"collection-list",
+				"reveal-site/server/collections/collection-list.js"
+			],
+			[
+				"colldo",
+				"reveal-site/server/apis/v3.0.0/collection_documents_api.js"
+			],
+			[
+				"trans",
+				"data-services-sdk/lib/transaction_validators/base.js"
+			],
+			[
+				"event_sin",
+				"data-services-sdk/lib/event_stream/index.js"
+			],
+			[
+				"event_stin",
+				"data-services-sdk/lib/event_stream/index.js"
+			],
+			[
+				"tracollection",
+				"data-services-sdk/lib/transaction_validators/collection.js"
+			],
+			[
+				"collection_e",
+				"data-services-sdk/lib/event_stream/collection_events.js"
+			],
+			[
+				"collection_pro",
+				"data-services-sdk/lib/providers/elasticsearch/collection_provider.js"
+			],
+			[
+				"collection_eve",
+				"data-services-sdk/lib/event_stream/collection_events.js"
+			],
+			[
+				"transcollection",
+				"data-services-sdk/lib/transaction_validators/collection.js"
+			],
+			[
+				"pickeritemhbs",
+				"reveal-common/lib/collections/templates/collection-picker-item-template.hbs"
+			],
+			[
+				"picker-hbs",
+				"reveal-common/lib/collections/templates/collection-picker-template.hbs"
+			],
+			[
+				"default-item",
+				"reveal-common/lib/fuzzy-picker/templates/fuzzy-picker-default-item-template.hbs"
+			],
+			[
+				"pickitem-view",
+				"reveal-common/lib/fuzzy-picker/views/fuzzy-picker-item-view.js"
+			],
+			[
+				"pcikerit",
+				"reveal-common/lib/collections/templates/collection-picker-item-template.hbs"
+			],
+			[
+				"collection_p",
+				"data-services-sdk/lib/providers/elasticsearch/collection_provider.js"
+			],
+			[
+				"collection",
+				"reveal-site/server/apis/v3.0.0/collection_api.js"
+			],
+			[
+				"event_strin",
+				"data-services-sdk/lib/event_stream/index.js"
+			],
+			[
+				"event_s",
+				"data-services-sdk/test/spec/event_stream/event_stream.spec.js"
+			],
+			[
+				"sdkevent",
+				"data-services-sdk/lib/event_stream/event.js"
+			],
+			[
+				"event.",
+				"reveal-models/lib/models/event.js"
+			],
+			[
+				"collection_event",
+				"data-services-sdk/lib/event_stream/collection_events.js"
+			],
+			[
+				"collection_api.js",
+				"reveal-site/server/apis/v3.0.0/collection_api.js"
+			],
+			[
+				"collection_",
+				"data-services-sdk/lib/providers/elasticsearch/collection_provider.js"
+			],
+			[
+				"feed",
+				"reveal-site/server/apis/v3.0.0/feed_api.js"
+			],
+			[
+				"collectiondocument",
+				"reveal-site/server/apis/v3.0.0/collection_documents_api.js"
+			],
+			[
+				"espr",
+				"data-services-sdk/lib/providers/elasticsearch/es_provider.js"
+			],
+			[
+				"data_s",
+				"data-services-sdk/lib/data_store/data_store.js"
+			],
+			[
+				"document",
+				"data-services-sdk/lib/transaction_validators/document.js"
+			],
+			[
+				"collectionap",
+				"reveal-site/server/apis/v3.0.0/collection_api.js"
+			],
+			[
+				"http_",
+				"reveal-site/server/errors/http_error.js"
+			],
+			[
+				"http",
+				"reveal-site/server/errors/http_error.js"
+			],
+			[
+				"collectiond",
+				"reveal-site/server/apis/v3.0.0/collection_documents_api.js"
+			],
+			[
+				"event_help",
+				"reveal-site/server/apis/v3.0.0/helpers/event_helpers.js"
+			],
+			[
+				"downlcon",
+				"reveal-site/server/webapp/app/modules/download/controllers/download-controller.js"
+			],
+			[
+				"fuzzpickercon",
+				"reveal-common/lib/fuzzy-picker/controllers/fuzzy-picker-controller.js"
+			],
+			[
+				"event_helper",
+				"reveal-site/server/apis/v3.0.0/helpers/event_helpers.js"
+			],
+			[
+				"user_do",
+				"reveal-site/server/apis/v3.0.0/user_documents_api.js"
+			],
+			[
+				"document.",
+				"reveal-models/lib/models/document.js"
+			],
+			[
+				"itemcon",
+				"reveal-common/lib/document-list/controllers/document-item-controller.js"
+			],
+			[
+				"document-itemvi",
+				"reveal-common/lib/document-list/views/document-list-item-view.js"
+			],
+			[
+				"view-controller.s",
+				"reveal-common/lib/utils/test/spec/view-controller.spec.js"
+			],
+			[
+				"view-",
+				"reveal-common/lib/utils/controllers/view-controller.js"
+			],
+			[
+				"item.hb",
+				"reveal-common/lib/document-list/templates/document-list-item.hbs"
+			],
+			[
+				"docitemvi",
+				"reveal-common/lib/document-list/views/document-list-item-view.js"
+			],
+			[
+				"itemcontr",
+				"reveal-common/lib/document-list/controllers/document-item-controller.js"
+			],
+			[
+				"document_a",
+				"reveal-site/server/apis/v3.0.0/document_api.js"
+			],
+			[
+				"karma",
+				"reveal-site/karma.conf.js"
+			],
+			[
+				"gruntfi",
+				"reveal-site/Gruntfile.js"
+			],
+			[
+				"grunt",
+				"reveal-site/Gruntfile.js"
+			],
+			[
+				"pac",
+				"reveal-site/package.json"
+			],
+			[
+				"server/weapppa",
+				"reveal-site/server/webapp/package.json"
+			],
+			[
+				"appmo",
+				"reveal-site/server/app-module.js"
+			],
+			[
+				"routes",
+				"reveal-site/server/webapp/server/routes.js"
+			],
+			[
+				"webapppa",
+				"reveal-site/server/webapp/package.json"
+			],
+			[
+				"webappa",
+				"reveal-site/server/webapp/package.json"
+			],
+			[
+				"document-item.hb",
+				"reveal-common/lib/document-list/templates/document-list-item.hbs"
+			],
+			[
+				"documentitemvi",
+				"reveal-common/lib/document-list/views/document-list-item-view.js"
+			],
+			[
+				"devel",
+				"reveal-site/config/default/development.json"
+			],
+			[
+				"apphbs",
+				"reveal-site/server/webapp/server/views/app.hbs"
+			],
+			[
+				"prod.",
+				"reveal-site/deployment/prod.json"
+			],
+			[
+				"storm",
+				"reveal-site/server/helpers/stormpath_helpers.js"
+			],
+			[
+				"user-",
+				"reveal-site/server/apis/v3.0.0/helpers/user-param.js"
+			],
+			[
+				"moduleapp",
+				"reveal-site/server/webapp/app/modules/app/index.js"
+			],
+			[
+				"documentapi",
+				"reveal-site/server/apis/v3.0.0/document_api.js"
+			],
+			[
+				"document-list-co",
+				"reveal-common/lib/document-list/controllers/document-list-controller.js"
+			],
+			[
+				"ollectioncon",
+				"reveal-site/server/webapp/app/modules/document/controllers/document-collection-controller.js"
+			],
+			[
+				"collection-co",
+				"reveal-site/server/webapp/app/modules/collections/controllers/collection-controller.js"
+			],
+			[
+				"webapp",
+				"reveal-site/server/webapp/package.json"
+			],
+			[
+				"prod.json",
+				"reveal-site/deployment/prod.json"
+			],
+			[
+				"invite.js",
+				"reveal-site/server/webapp/app/modules/email-invite/models/invite.js"
+			],
+			[
+				"invi",
+				"reveal-site/orm/models/invite.js"
+			],
+			[
+				"serverwebapppa",
+				"reveal-site/server/webapp/package.json"
+			],
+			[
+				"add-to-collection",
+				"reveal-site/server/webapp/app/modules/collections/controllers/add-to-collection-controller.js"
+			],
+			[
+				"trackingin",
+				"reveal-site/server/webapp/app/modules/tracking/index.js"
+			],
+			[
+				"app-mo",
+				"reveal-site/server/app-module.js"
+			],
+			[
+				"reveal-commonpac",
+				"reveal-common/package.json"
+			],
+			[
+				"organizationshjs",
+				"reveal-site/server/admin/organizations/views/list.hjs"
+			],
+			[
+				"reveal-commonpa",
+				"reveal-common/package.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Projects/radialpoint/reveal-redux/reveal-redux.sublime-project"
+			],
+			[
+				"rev",
+				"~/Projects/radialpoint/reveal-redux/reveal-redux.sublime-project"
+			],
+			[
+				"reveal",
+				"~/Projects/radialpoint/reveal/reveal.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 209.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

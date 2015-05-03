@@ -1,0 +1,11 @@
+TODOs:
+  
+  features:
+    ☐ add itemList class
+
+  add tests:
+    ☐ unit
+    ☐ e2e
+
+  prepare release:
+    ☐ plug saucelabs and ci (travis)
