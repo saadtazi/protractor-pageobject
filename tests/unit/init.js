@@ -1,7 +1,21 @@
-// setup mocha, chai...
-var chai = require('chai');
-// var chaiAsPromised = require('chai-as-promised');
-// chai.use(chaiAsPromised);
-chai.should();
+'use strict';
 
-global.browser = {};
+// setup mocha, chai...
+var chai = require('chai'),
+  sinon = require('sinon'),
+  sinonChai = require('sinon-chai');
+
+chai.should();
+chai.use(sinonChai);
+
+global.browser = {
+  global: 'browser'
+};
+
+beforeEach(function() {
+  global.sandbox = sinon.sandbox.create();
+});
+
+afterEach(function() {
+  global.sandbox.restore();
+});

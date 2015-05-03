@@ -1,13 +1,17 @@
+'use strict';
+
 var gulp = require('gulp');
 
 // load plugins
 var $ = require('gulp-load-plugins')();
 var protractor = $.protractor.protractor;
-var webdriver_standalone = $.protractor.webdriver_standalone;
 
+/* jshint camelcase: false */
+var webdriverStandalone = $.protractor.webdriver_standalone;
+/* jshint camelcase: true */
 
 gulp.task('lint', function() {
-  return gulp.src(['./lib/*.js', './tests/*.js'])
+  return gulp.src(['gulpfile.js', './lib/*.js', './tests/**/*.js'])
     .pipe($.jshint())
     .pipe($.jshint.reporter('default'));
 });
@@ -32,5 +36,9 @@ gulp.task('unit', function() {
     }));
 });
 
+gulp.task('watch', function() {
+  gulp.watch(['tests/unit/**/*', 'lib/**/*'], ['lint', 'unit']);
+});
 
-gulp.task('webdriver_standalone', webdriver_standalone);
+
+gulp.task('webdriver_standalone', webdriverStandalone);

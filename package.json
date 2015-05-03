@@ -22,7 +22,9 @@
     "gulp-load-plugins": "^0.10.0",
     "gulp-mocha": "^2.0.1",
     "gulp-protractor": "^1.0.0",
-    "protractor": "^2.0.0"
+    "protractor": "^2.0.0",
+    "sinon": "^1.14.1",
+    "sinon-chai": "^2.7.0"
   },
   "dependencies": {
     "class-extend": "^0.1.1",

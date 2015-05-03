@@ -17,7 +17,6 @@
     "camelcase"     : true,
     "curly"         : true,     // Require {} for every new block or scope.
     "eqeqeq"        : true,     // Require triple equals i.e. `===`.
-    "es3"           : true,
 
     "forin"         : false,     // Tolerate `for in` loops without `hasOwnPrototype`.
 
@@ -158,8 +157,6 @@
       "context",
       "it",
 
-      "$expect", "expect", "sinon", "jsdom",
-      "should", // chai.should
-      "request"
+      "by"
     ]
 }
