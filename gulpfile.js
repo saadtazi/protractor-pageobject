@@ -12,8 +12,8 @@ gulp.task('lint', function() {
     .pipe($.jshint.reporter('default'));
 });
 
-gulp.task('test', function() {
-  gulp.src(['./tests/specs/**/*.spec.js'])
+gulp.task('e2e', function() {
+  gulp.src(['./tests/specs/e2e/**/*.spec.js'])
     .pipe(protractor({
       configFile: './protractor.config.js'
     }))
@@ -22,6 +22,15 @@ gulp.task('test', function() {
     });
 });
 
+gulp.task('unit', function() {
+  return gulp.src(['tests/unit/**/*.js'], {
+    read: false
+  })
+    // gulp-mocha needs filepaths so you can't have any plugins before it
+    .pipe($.mocha({
+      reporter: 'nyan'
+    }));
+});
 
 
 gulp.task('webdriver_standalone', webdriver_standalone);

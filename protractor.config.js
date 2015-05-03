@@ -28,7 +28,7 @@ exports.config = {
     var chaiAsPromised = require('chai-as-promised');
 
     chai.use(chaiAsPromised);
-    require('chai').should();
+    chai.should();
     // global.expect = chai.expect;
     Object.defineProperty(protractor.promise.Promise.prototype, 'should', {
       get: Object.prototype.__lookupGetter__('should'),

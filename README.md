@@ -1,6 +1,6 @@
 # Protractor Page Object
 
->> Protractor Page Object pattern for protractor.
+> Protractor Page Object pattern for [Protractor](http://angular.github.io/protractor/).
 
 Still a work in progress, use at your own risk.
 
