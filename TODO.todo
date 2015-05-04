@@ -1,7 +1,10 @@
 TODOs:
   
   features:
-    ☐ add itemList class
+    ☐ add setFields({elName: value, ...}) method:
+        * if method `setElName` exist, use it
+        * otherwise, detect the input field type and use sendKeys or other
+    ☐ add ItemList class
 
   add tests:
     ☐ unit

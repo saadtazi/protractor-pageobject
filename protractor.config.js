@@ -4,7 +4,13 @@
 var path = require('path');
 
 exports.config = {
-// baseUrl: 'http://saadtazi.com',
+  // plugins: [{
+  //   path: 'node_modules/protractor/plugins/timeline/index.js',
+
+  //   // Output json and html will go in this folder.
+  //   outdir: 'timelines',
+  // }],
+  // baseUrl: 'http://saadtazi.com',
   seleniumAddress: 'http://localhost:4444/wd/hub',
   seleniumServerJar: './node_modules/protractor/selenium/selenium-server-standalone-2.45.0.jar',
   framework: 'mocha',
@@ -12,7 +18,7 @@ exports.config = {
     timeout: 60000
   },
   specs: [
-    path.join(__dirname, './**/*.spec.js')
+    path.join(__dirname, './tests/e2e/**/*.spec.js')
   ],
 
   beforeLaunch: function() {},
