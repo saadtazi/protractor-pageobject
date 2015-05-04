@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"sea",
+				"searchBox"
+			],
+			[
 				"fa",
 				"fakeBrowser"
 			],
@@ -143,6 +147,72 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "tests/e2e/pageobjects/google/home.js",
+			"settings":
+			{
+				"buffer_size": 758,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tests/e2e/pageobjects/google/results.js",
+			"settings":
+			{
+				"buffer_size": 240,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tests/e2e/specs/google.spec.js",
+			"settings":
+			{
+				"buffer_size": 451,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tests/unit/specs/base.spec.js",
+			"settings":
+			{
+				"buffer_size": 2478,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 13 files for \".only\"\n\n/Users/saadtazi/Projects/protractor-pageobject/tests/e2e/specs/google.spec.js:\n    5: describe.only('Google Landing Page', function() {\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 187,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "lib/page.js",
+			"settings":
+			{
+				"buffer_size": 466,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/base.js",
+			"settings":
+			{
+				"buffer_size": 1553,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tests/e2e/pageobjects/google/search-box.js",
+			"settings":
+			{
+				"buffer_size": 345,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -487,31 +557,41 @@
 	[
 		"/Users/saadtazi/Projects/protractor-pageobject",
 		"/Users/saadtazi/Projects/protractor-pageobject/lib",
+		"/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor",
+		"/Users/saadtazi/Projects/protractor-pageobject/node_modules/protractor/lib",
 		"/Users/saadtazi/Projects/protractor-pageobject/tests",
 		"/Users/saadtazi/Projects/protractor-pageobject/tests/e2e",
 		"/Users/saadtazi/Projects/protractor-pageobject/tests/e2e/pageobjects",
+		"/Users/saadtazi/Projects/protractor-pageobject/tests/e2e/pageobjects/google",
 		"/Users/saadtazi/Projects/protractor-pageobject/tests/e2e/specs",
 		"/Users/saadtazi/Projects/protractor-pageobject/tests/unit",
 		"/Users/saadtazi/Projects/protractor-pageobject/tests/unit/specs"
 	],
 	"file_history":
 	[
-		"/Users/saadtazi/Projects/protractor-pageobject/tests/unit/specs/base.spec.js",
-		"/Users/saadtazi/Projects/protractor-pageobject/tests/unit/init.js",
+		"/Users/saadtazi/Projects/protractor-pageobject/protractor-po.sublime-project",
+		"/Users/saadtazi/Projects/protractor-pageobject/tests/e2e/specs/google.spec.js",
+		"/Users/saadtazi/Projects/protractor-pageobject/tests/e2e/pageobjects/google/results.js",
+		"/Users/saadtazi/Projects/protractor-pageobject/tests/e2e/pageobjects/google/search-box.js",
+		"/Users/saadtazi/Projects/protractor-pageobject/lib/component.js",
 		"/Users/saadtazi/Projects/protractor-pageobject/lib/base.js",
+		"/Users/saadtazi/Projects/protractor-pageobject/.gitignore",
+		"/Users/saadtazi/Projects/protractor-pageobject/.npmignore",
+		"/Users/saadtazi/Projects/protractor-pageobject/tests/unit/specs/component.spec.js",
+		"/Users/saadtazi/Projects/protractor-pageobject/tests/e2e/pageobjects/google/home.js",
+		"/Users/saadtazi/Projects/protractor-pageobject/protractor.config.js",
+		"/Users/saadtazi/Projects/protractor-pageobject/tests/e2e/pageobjects/home.js",
 		"/Users/saadtazi/Projects/protractor-pageobject/gulpfile.js",
+		"/Users/saadtazi/Projects/protractor-pageobject/tests/unit/init.js",
+		"/Users/saadtazi/Projects/protractor-pageobject/tests/unit/specs/base.spec.js",
+		"/Users/saadtazi/Projects/protractor-pageobject/.jshintrc",
 		"/Users/saadtazi/Projects/protractor-pageobject/lib/index.js",
 		"/Users/saadtazi/Projects/protractor-pageobject/lib/item-list.js",
 		"/Users/saadtazi/Projects/protractor-pageobject/lib/page.js",
-		"/Users/saadtazi/Projects/protractor-pageobject/.gitignore",
-		"/Users/saadtazi/Projects/protractor-pageobject/protractor-po.sublime-project",
 		"/Users/saadtazi/Projects/protractor-pageobject/package.json",
 		"/Users/saadtazi/Projects/protractor-pageobject/README.md",
 		"/Users/saadtazi/Projects/protractor-pageobject/LICENSE.md",
-		"/Users/saadtazi/Projects/protractor-pageobject/lib/component.js",
-		"/Users/saadtazi/Projects/protractor-pageobject/tests/e2e/pageobjects/home.js",
 		"/Users/saadtazi/Projects/protractor-pageobject/tests/e2e/specs/home-page.spec.js",
-		"/Users/saadtazi/Projects/protractor-pageobject/protractor.config.js",
 		"/Users/saadtazi/Projects/protractor-pageobject/TODO.todo",
 		"/Users/saadtazi/Library/Application Support/Sublime Text 3/Packages/PlainTasks/messages/Tutorial.todo",
 		"/Users/saadtazi/Projects/test-protractor/TODO.md",
@@ -616,14 +696,7 @@
 		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/document-list/views/document-list-item-view.js",
 		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/document-list/controllers/document-item-controller.js",
 		"/Users/saadtazi/Projects/radialpoint/reveal-models/lib/models/document.js",
-		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/utils/controllers/view-controller.js",
-		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/document-list/templates/document-list-item.hbs",
-		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/package.json",
-		"/Users/saadtazi/Projects/radialpoint/reveal-site/karma.conf.js",
-		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/document/controllers/document-collection-controller.js",
-		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/utils/index.js",
-		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/server/views/layouts/app.hbs",
-		"/Users/saadtazi/Projects/radialpoint/reveal-site/server/webapp/app/modules/document/views/document-collection-view.js"
+		"/Users/saadtazi/Projects/radialpoint/reveal-common/lib/utils/controllers/view-controller.js"
 	],
 	"find":
 	{
@@ -634,6 +707,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"tests/*",
 			"protractor-pageobject/*",
 			"protractor-pageobject",
 			"",
@@ -760,8 +834,7 @@
 			"/Users/saadtazi/Projects/upmp/upmp_app",
 			"/Users/saadtazi/Projects/upmp/upmp_app,*.ejs",
 			"/Users/saadtazi/Projects/upmp/upmp_test,*.py",
-			"/Users/saadtazi/Projects/upmp/upmp_test,*.feature",
-			"/Users/saadtazi/Projects/upmp/upmp_test,*.py"
+			"/Users/saadtazi/Projects/upmp/upmp_test,*.feature"
 		]
 	},
 	"find_state":
@@ -769,6 +842,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".only",
 			"dv",
 			"noop",
 			"this.elements",
@@ -895,8 +969,7 @@
 			"searchDoc",
 			"searchD\nsearchD",
 			"validateDocumentOptions",
-			"createD",
-			"collectionCurator"
+			"createD"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -940,8 +1013,261 @@
 	"groups":
 	[
 		{
+			"selected": 6,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "tests/e2e/pageobjects/google/home.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 758,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								668,
+								668
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 32.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "tests/e2e/pageobjects/google/results.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								238,
+								238
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "tests/e2e/specs/google.spec.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 451,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "tests/unit/specs/base.spec.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2478,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2026,
+								2026
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1048.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 187,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										126,
+										131
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								128,
+								128
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/Users/saadtazi/Projects/protractor-pageobject",
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "lib/page.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								130,
+								130
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "lib/base.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1553,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1534,
+								1534
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 453.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "tests/e2e/pageobjects/google/search-box.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 345,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								207,
+								207
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1010,8 +1336,32 @@
 		"selected_items":
 		[
 			[
+				"page",
+				"lib/page.js"
+			],
+			[
+				"base.js",
+				"lib/base.js"
+			],
+			[
 				"base",
 				"lib/base.js"
+			],
+			[
+				"basesp",
+				"tests/unit/specs/base.spec.js"
+			],
+			[
+				"base.",
+				"lib/base.js"
+			],
+			[
+				"gulpf",
+				"gulpfile.js"
+			],
+			[
+				"c",
+				"lib/component.js"
 			],
 			[
 				"gul",
@@ -1020,10 +1370,6 @@
 			[
 				"prot",
 				"tests/protractor.config.js"
-			],
-			[
-				"page",
-				"lib/page.js"
 			],
 			[
 				"modelscollection",
@@ -1500,26 +1846,6 @@
 			[
 				"invite.js",
 				"reveal-site/server/webapp/app/modules/email-invite/models/invite.js"
-			],
-			[
-				"invi",
-				"reveal-site/orm/models/invite.js"
-			],
-			[
-				"serverwebapppa",
-				"reveal-site/server/webapp/package.json"
-			],
-			[
-				"add-to-collection",
-				"reveal-site/server/webapp/app/modules/collections/controllers/add-to-collection-controller.js"
-			],
-			[
-				"trackingin",
-				"reveal-site/server/webapp/app/modules/tracking/index.js"
-			],
-			[
-				"app-mo",
-				"reveal-site/server/app-module.js"
 			]
 		],
 		"width": 0.0

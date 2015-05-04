@@ -1,0 +1,11 @@
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+node_modules/
+npm-debug.log
+tests/
+doc/
+.travis.yml
+.coveralls.yml
+.jshintrc
+gulpfile.js
