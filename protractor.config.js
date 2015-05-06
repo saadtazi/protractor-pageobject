@@ -18,7 +18,7 @@ exports.config = {
     timeout: 60000
   },
   specs: [
-    path.join(__dirname, './tests/e2e/**/*.spec.js')
+    path.join(__dirname, './tests/integration/**/*.spec.js')
   ],
 
   beforeLaunch: function() {},

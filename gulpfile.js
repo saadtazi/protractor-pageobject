@@ -16,14 +16,37 @@ gulp.task('lint', function() {
     .pipe($.jshint.reporter('default'));
 });
 
-gulp.task('e2e', function() {
-  gulp.src(['./tests/specs/e2e/**/*.spec.js'])
+gulp.task('protractor', function() {
+  gulp.src(['./tests/integration/specs/**/*.spec.js'])
     .pipe(protractor({
       configFile: './protractor.config.js'
     }))
     .on('error', function(e) {
       throw e;
     });
+});
+
+
+var spawn = require('child_process').spawn;
+
+gulp.task('kk', function(cb) {
+  console.log('cici');
+  spawn('node_modules/.bin/protractor', ['protractor.config.js'], {
+    stdio: 'inherit'
+  }).once('close', cb);
+});
+
+
+
+gulp.task('integration', function(cb) {
+  var server = require('./tests/test-server/app');
+  spawn('node_modules/.bin/protractor', ['protractor.config.js'], {
+    stdio: 'inherit'
+  }).once('close', function(exitCode) {
+    server.close();
+    cb(exitCode);
+  });
+
 });
 
 gulp.task('unit', function() {
