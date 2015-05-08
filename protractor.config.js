@@ -12,14 +12,15 @@ exports.config = {
   // }],
   // baseUrl: 'http://saadtazi.com',
   seleniumAddress: 'http://localhost:4444/wd/hub',
-  seleniumServerJar: './node_modules/protractor/selenium/selenium-server-standalone-2.45.0.jar',
   framework: 'mocha',
   mochaOpts: {
     timeout: 60000
   },
-  specs: [
-    path.join(__dirname, './tests/integration/**/*.spec.js')
-  ],
+  directConnect: true,
+  suites: {
+    integration: path.join(__dirname, './tests/integration/**/*.spec.js'),
+    example: path.join(__dirname, './examples/**/*.spec.js')
+  },
 
   beforeLaunch: function() {},
   onPrepare: function() {

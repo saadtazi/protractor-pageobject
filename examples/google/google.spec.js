@@ -1,6 +1,6 @@
 'use strict';
 
-var GooglePage = require('../pageobjects/google/home');
+var GooglePage = require('./pageobjects/home');
 
 describe('Google Landing Page', function() {
   var googlePage;

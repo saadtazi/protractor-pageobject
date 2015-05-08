@@ -14,7 +14,7 @@ gulp.task('lint', function() {
 
 gulp.task('integration', function(cb) {
   var server = require('./tests/test-server/app');
-  spawn('node_modules/.bin/protractor', ['protractor.config.js'], {
+  spawn('node_modules/.bin/protractor', ['--suite', 'integration', 'protractor.config.js'], {
     stdio: 'inherit'
   }).once('close', function(exitCode) {
     server.close();

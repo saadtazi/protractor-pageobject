@@ -1,7 +1,7 @@
 /* global protractor */
 'use strict';
 
-var Component = require('../../../../lib').Component;
+var Component = require('../../../lib').Component;
 
 var SearchBox = Component.extend({
   set: function(val) {

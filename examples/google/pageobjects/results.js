@@ -1,7 +1,7 @@
 'use strict';
 
 // TODO: use a ItemList
-var Component = require('../../../../lib').Component;
+var Component = require('../../../lib').Component;
 
 var Results = Component.extend({
   els: {

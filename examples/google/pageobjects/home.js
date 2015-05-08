@@ -1,6 +1,7 @@
 'use strict';
 
-var Page = require('../../../../lib').Page;
+// it should be `require('protractor-pageobject').Page;
+var Page = require('../../../lib').Page;
 
 var Home = Page.extend({
   url: 'http://www.google.com/',
@@ -8,7 +9,7 @@ var Home = Page.extend({
     searchBox: by.name('q'),
     resultContainer: by.id('ires')
   },
-  components: {
+  comps: {
     searchBox: {
       model: require('./search-box')
     },

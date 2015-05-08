@@ -77,7 +77,7 @@ describe('Base class', function() {
           el1: 'elm1', // should be something like by.css('selector')
           el2: 'elm2'
         },
-        components: {
+        comps: {
           el1: SubComponent,
           el2: {
             model: SubComponent,

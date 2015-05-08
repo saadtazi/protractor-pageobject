@@ -1,14 +1,18 @@
 TODOs:
   
   features:
-    ☐ add setFields({elName: value, ...}) method:
+    ✔ add setFields({elName: value, ...}) method: @done (15-05-08 10:05)
         * if method `setElName` exist, use it
         * otherwise, detect the input field type and use sendKeys or other
     ☐ add ItemList class
 
   add tests:
+    ✔ unit @done (15-05-08 10:05)
+    ✔ integration @done (15-05-08 10:05)
+
+ add more test coverage:
     ☐ unit
-    ☐ e2e
+    ☐ integration
 
   prepare release:
     ☐ plug saucelabs and ci (travis)

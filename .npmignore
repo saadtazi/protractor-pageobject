@@ -4,8 +4,13 @@
 node_modules/
 npm-debug.log
 tests/
+timeline/
 doc/
+examples/
+protractor.config.js
+TODO.todo
 .travis.yml
+.gitignore
 .coveralls.yml
 .jshintrc
 gulpfile.js
