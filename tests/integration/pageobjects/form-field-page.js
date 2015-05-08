@@ -6,7 +6,16 @@ var Page = require('../../../lib/page');
 var fieldIds = [
   'button-field',
   'text-field',
+  'email-field',
   'password-field',
+  'number-field',
+  'search-field',
+  'tel-field',
+  'url-field',
+  'checkbox-field-1',
+  'checkbox-field-2',
+  'radio-field-1',
+  'radio-field-2',
   'select-field',
   'multiselect-field',
 ];
@@ -15,7 +24,8 @@ var FormFieldPage = Page.extend({
   els: _.reduce(fieldIds, function(memo, val) {
     memo[val] = by.id(val);
     return memo;
-  }, {})
+  }, {}),
+  fieldIds: fieldIds
 });
 
 module.exports = FormFieldPage;

@@ -1,42 +1,16 @@
 'use strict';
 
 var gulp = require('gulp');
+var spawn = require('child_process').spawn;
 
 // load plugins
 var $ = require('gulp-load-plugins')();
-var protractor = $.protractor.protractor;
-
-/* jshint camelcase: false */
-var webdriverStandalone = $.protractor.webdriver_standalone;
-/* jshint camelcase: true */
 
 gulp.task('lint', function() {
   return gulp.src(['gulpfile.js', './lib/*.js', './tests/**/*.js'])
     .pipe($.jshint())
     .pipe($.jshint.reporter('default'));
 });
-
-gulp.task('protractor', function() {
-  gulp.src(['./tests/integration/specs/**/*.spec.js'])
-    .pipe(protractor({
-      configFile: './protractor.config.js'
-    }))
-    .on('error', function(e) {
-      throw e;
-    });
-});
-
-
-var spawn = require('child_process').spawn;
-
-gulp.task('kk', function(cb) {
-  console.log('cici');
-  spawn('node_modules/.bin/protractor', ['protractor.config.js'], {
-    stdio: 'inherit'
-  }).once('close', cb);
-});
-
-
 
 gulp.task('integration', function(cb) {
   var server = require('./tests/test-server/app');
@@ -63,5 +37,15 @@ gulp.task('watch', function() {
   gulp.watch(['tests/unit/**/*', 'lib/**/*'], ['lint', 'unit']);
 });
 
+function wdManagerTask(type) {
+  return function(cb) {
+    spawn('node_modules/.bin/webdriver-manager', [type], {
+      stdio: 'inherit'
+    }).once('close', function(exitCode) {
+      cb(exitCode);
+    });
+  };
+}
 
-gulp.task('webdriver_standalone', webdriverStandalone);
+gulp.task('webdriver-manager-update', wdManagerTask('update'));
+gulp.task('webdriver-manager-start', wdManagerTask('start'));
