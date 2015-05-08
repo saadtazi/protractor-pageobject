@@ -18,6 +18,7 @@ var fieldIds = [
   'radio-field-2',
   'select-field',
   'multiselect-field',
+  'date-field'
 ];
 var FormFieldPage = Page.extend({
   url: 'http://127.0.0.1:3000/form-fields',

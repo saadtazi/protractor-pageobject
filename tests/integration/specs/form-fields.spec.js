@@ -9,21 +9,22 @@ var ResultsPage = require('../pageobjects/form-field-results-page');
 describe.only('Form Fields', function() {
   var page, resultsPage;
   var fields = {
-    'text-field': 'text-field-value',
-    'email-field': 'email@field.value',
-    'password-field': 'password-field-value',
-    'number-field': '102938475',
-    'search-field': 'search-field-value',
-    'tel-field': 'tel-field-value',
-    'url-field': 'http://url-field-value.com',
-    'checkbox-field-1': false,
-    'checkbox-field-2': 'checkbox-field-2-value',
-    'radio-field-2': 'radio-field-value-2', // use true
-    'select-field': 'select-field-value-1',
-    'multiselect-field': [
-      'multiselect-field-value-2',
-      'multiselect-field-value-4'
-    ]
+    // 'text-field': 'text-field-value',
+    // 'email-field': 'email@field.value',
+    // 'password-field': 'password-field-value',
+    // 'number-field': '102938475',
+    // 'search-field': 'search-field-value',
+    // 'tel-field': 'tel-field-value',
+    // 'url-field': 'http://url-field-value.com',
+    // 'checkbox-field-1': false,
+    // 'checkbox-field-2': 'checkbox-field-2-value',
+    // 'radio-field-2': 'radio-field-value-2', // use true
+    // 'select-field': 'select-field-value-1',
+    // 'multiselect-field': [
+    //   'multiselect-field-value-2',
+    //   'multiselect-field-value-4'
+    // ],
+    'date-field': '2014-12-13'
   };
 
   before(function() {
