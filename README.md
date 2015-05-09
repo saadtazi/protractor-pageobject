@@ -117,6 +117,10 @@ A property or a method that is used to navigate using the `get()` method below.
 
 Navigate to the `url` property.
 
+### afterGet()
+
+Hook that is called after get(), which can be used to wait for elements (time to use `isElementPresent()`?...).
+
 ### title()
 
 returns a promise that will resolve with the current page title (usually the `<title>` tag in `<head>`). Alias  of `browser.getTitle()`.
