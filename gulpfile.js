@@ -33,6 +33,7 @@ gulp.task('unit', function() {
     }));
 });
 
+
 gulp.task('watch', function() {
   gulp.watch(['tests/unit/**/*', 'lib/**/*'], ['lint', 'unit']);
 });
@@ -49,3 +50,5 @@ function wdManagerTask(type) {
 
 gulp.task('webdriver-manager-update', wdManagerTask('update'));
 gulp.task('webdriver-manager-start', wdManagerTask('start'));
+
+gulp.task('test', ['unit', 'integration']);
