@@ -14,7 +14,7 @@ exports.config = {
   seleniumAddress: 'http://localhost:4444/wd/hub',
   framework: 'mocha',
   mochaOpts: {
-    timeout: 60000
+    timeout: 20000
   },
   directConnect: true,
   suites: {

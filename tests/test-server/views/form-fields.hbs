@@ -1,134 +1,132 @@
 
 <div class="jumbotron">
   <h1>Test - Form fields</h1>
-  <p>This page is used in the integration tests for testing <code>Base.setFieldValue()</code>.</p>
+  <p>This page is used in the integration tests for testing <code>Base.setFieldValue()</code> and <code>setFields()</code>.</p>
 </div>
 
 
-<div class="container">
-  <h2>Those fields should work</h2>
-  <form action="/form-fields-results">
-    <div class="form-group">
-      <label for="text-field">Text Field</label>
-      <input name="text-field" type="text" class="form-control" id="text-field" placeholder="Enter text">
-    </div>
-    <div class="form-group">
-      <label for="email-field">Email address</label>
-      <input name="email-field" type="email" class="form-control" id="email-field" placeholder="Enter email">
-    </div>
-    <div class="form-group">
-      <label for="password-field">Password</label>
-      <input name="password-field" type="password" class="form-control" id="password-field" placeholder="Password">
-    </div>
-    <div class="form-group">
-      <label for="file-input">File input</label>
-      <input name="file-field" type="file" id="file-input">
-    </div>
-    <div class="form-group">
-      <label for="number-field">number Field</label>
-      <input name="number-field" type="number" class="form-control" id="number-field" placeholder="Enter a Number">
-    </div>
-    <div class="form-group">
-      <label for="search-field">search Field</label>
-      <input name="search-field" type="search" class="form-control" id="search-field" placeholder="Enter a search">
-    </div>
-    <div class="form-group">
-      <label for="tel-field">Tel Field</label>
-      <input name="tel-field" type="tel" class="form-control" id="tel-field" placeholder="Enter a Tel">
-    </div>
-    <div class="form-group">
-      <label for="url-field">url Field</label>
-      <input name="url-field" type="url" class="form-control" id="url-field" placeholder="Enter a url">
-    </div>
-    <!-- CHECKBOXES -->
-    <div class="checkbox">
-      <label>
-        <input name="checkbox-field-1" type="checkbox" id="checkbox-field-1" value="checkbox-field-1-value" checked> Checkbox 1
-      </label>
-    </div>
-    <div class="checkbox">
-      <label>
-        <input name="checkbox-field-2" type="checkbox" id="checkbox-field-2" value="checkbox-field-2-value"> Checkbox 2
-      </label>
-    </div>
-    <!-- /CHECKBOXES -->
-    
-    <!-- RADIOs -->
-    <div class="radio">
-      <label>
-        <input name="radio-field" type="radio" id="radio-field-1" value="radio-field-value-1" checked> Radio 1
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input name="radio-field" type="radio" id="radio-field-2" value="radio-field-value-2"> Radio 2
-      </label>
-    </div>
-    <!-- /RADIOs -->
-    
-    <!-- SELECT (single) -->
-    <div class="form-group">
-      <label for="select-field">Select Field</label>
-      <select id="select-field" name="select-field" class="form-control">
-        <option value="select-field-value-1">1</option>
-        <option value="select-field-value-2">2</option>
-        <option value="select-field-value-3">3</option>
-        <option value="select-field-value-4">4</option>
-        <option value="select-field-value-5">5</option>
-      </select>
-    </div>  
-    <!-- /SELECT (single) -->
 
-    <!-- SELECT (multi) -->
-    <div class="form-group">
-      <label for="multiselect-field">Multi-Select Field</label>
-      <select id="multiselect-field" multiple name="multiselect-field" class="form-control">
-        <option value="multiselect-field-value-1">Option 1</option>
-        <option value="multiselect-field-value-2">Option 2</option>
-        <option value="multiselect-field-value-3">Option 3</option>
-        <option value="multiselect-field-value-4">Option 4</option>
-        <option value="multiselect-field-value-5">Option 5</option>
-      </select>
-    </div>  
-    <!-- /SELECT (multi) -->
-    
-    <div class="form-group">
-      <label for="date-field">Date Field</label>
-      <input name="date-field" type="date" class="form-control" id="date-field" placeholder="Enter a Date">
-    </div>
-
-    <button type="submit" class="btn btn-default" id="button-field">Submit</button>
-  </form>
+<h2>Those fields should work</h2>
+<form action="/form-fields-results">
+  <div class="form-group">
+    <label for="text-field">Text Field</label>
+    <input name="text-field" type="text" class="form-control" id="text-field" placeholder="Enter text">
+  </div>
+  <div class="form-group">
+    <label for="email-field">Email address</label>
+    <input name="email-field" type="email" class="form-control" id="email-field" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="password-field">Password</label>
+    <input name="password-field" type="password" class="form-control" id="password-field" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="file-input">File input</label>
+    <input name="file-field" type="file" id="file-input">
+  </div>
+  <div class="form-group">
+    <label for="number-field">number Field</label>
+    <input name="number-field" type="number" class="form-control" id="number-field" placeholder="Enter a Number">
+  </div>
+  <div class="form-group">
+    <label for="search-field">search Field</label>
+    <input name="search-field" type="search" class="form-control" id="search-field" placeholder="Enter a search">
+  </div>
+  <div class="form-group">
+    <label for="tel-field">Tel Field</label>
+    <input name="tel-field" type="tel" class="form-control" id="tel-field" placeholder="Enter a Tel">
+  </div>
+  <div class="form-group">
+    <label for="url-field">url Field</label>
+    <input name="url-field" type="url" class="form-control" id="url-field" placeholder="Enter a url">
+  </div>
+  <!-- CHECKBOXES -->
+  <div class="checkbox">
+    <label>
+      <input name="checkbox-field-1" type="checkbox" id="checkbox-field-1" value="checkbox-field-1-value" checked> Checkbox 1
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input name="checkbox-field-2" type="checkbox" id="checkbox-field-2" value="checkbox-field-2-value"> Checkbox 2
+    </label>
+  </div>
+  <!-- /CHECKBOXES -->
   
-  <h2>Those fields are not implemented... yet...</h2>
-  <div class="alert alert-warning" role="alert">To test: Date and time fields might work if we use <code>sendKeys()</code> with <code>tab</code> charater.</div>
-
-  <form>
-    <div class="form-group">
-      <label for="color-field">Color Field</label>
-      <input name="color-field" type="color" id="color-field" placeholder="Enter a color">
-    </div>
-    <div class="form-group">
-      <label for="datetime-field">Datetime Field</label>
-      <input name="datetime-field" type="datetime" class="form-control" id="datetime-field" placeholder="Enter a datetime">
-    </div>
-    <div class="form-group">
-      <label for="month-field">Month Field</label>
-      <input name="month-field" type="month" class="form-control" id="month-field" placeholder="Enter a Month">
-    </div>
-    <div class="form-group">
-      <label for="range-field">Range Field</label>
-      <input name="range-field" type="range" id="range-field" placeholder="Enter a Range" min="-10" max="10">
-    </div>
-    <div class="form-group">
-      <label for="time-field">time Field</label>
-      <input name="time-field" type="time" class="form-control" id="time-field" placeholder="Enter a Time">
-    </div>
-    
-    <div class="form-group">
-      <label for="week-field">week Field</label>
-      <input name="week-field" type="week" class="form-control" id="week-field" placeholder="Enter a week">
-    </div>
-    
+  <!-- RADIOs -->
+  <div class="radio">
+    <label>
+      <input name="radio-field" type="radio" id="radio-field-1" value="radio-field-value-1" checked> Radio 1
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input name="radio-field" type="radio" id="radio-field-2" value="radio-field-value-2"> Radio 2
+    </label>
+  </div>
+  <!-- /RADIOs -->
   
-</div> <!-- /container -->
+  <!-- SELECT (single) -->
+  <div class="form-group">
+    <label for="select-field">Select Field</label>
+    <select id="select-field" name="select-field" class="form-control">
+      <option value="select-field-value-1">1</option>
+      <option value="select-field-value-2">2</option>
+      <option value="select-field-value-3">3</option>
+      <option value="select-field-value-4">4</option>
+      <option value="select-field-value-5">5</option>
+    </select>
+  </div>  
+  <!-- /SELECT (single) -->
+
+  <!-- SELECT (multi) -->
+  <div class="form-group">
+    <label for="multiselect-field">Multi-Select Field</label>
+    <select id="multiselect-field" multiple name="multiselect-field" class="form-control">
+      <option value="multiselect-field-value-1">Option 1</option>
+      <option value="multiselect-field-value-2">Option 2</option>
+      <option value="multiselect-field-value-3">Option 3</option>
+      <option value="multiselect-field-value-4">Option 4</option>
+      <option value="multiselect-field-value-5">Option 5</option>
+    </select>
+  </div>  
+  <!-- /SELECT (multi) -->
+  
+  <div class="form-group">
+    <label for="date-field">Date Field</label>
+    <input name="date-field" type="date" class="form-control" id="date-field" placeholder="Enter a Date">
+  </div>
+
+  <button type="submit" class="btn btn-default" id="button-field">Submit</button>
+</form>
+
+<h2>Those fields are not implemented... yet...</h2>
+<div class="alert alert-warning" role="alert">To test: Date and time fields might work if we use <code>sendKeys()</code> with <code>tab</code> charater.</div>
+
+<form>
+  <div class="form-group">
+    <label for="color-field">Color Field</label>
+    <input name="color-field" type="color" id="color-field" placeholder="Enter a color">
+  </div>
+  <div class="form-group">
+    <label for="datetime-field">Datetime Field</label>
+    <input name="datetime-field" type="datetime" class="form-control" id="datetime-field" placeholder="Enter a datetime">
+  </div>
+  <div class="form-group">
+    <label for="month-field">Month Field</label>
+    <input name="month-field" type="month" class="form-control" id="month-field" placeholder="Enter a Month">
+  </div>
+  <div class="form-group">
+    <label for="range-field">Range Field</label>
+    <input name="range-field" type="range" id="range-field" placeholder="Enter a Range" min="-10" max="10">
+  </div>
+  <div class="form-group">
+    <label for="time-field">time Field</label>
+    <input name="time-field" type="time" class="form-control" id="time-field" placeholder="Enter a Time">
+  </div>
+  
+  <div class="form-group">
+    <label for="week-field">week Field</label>
+    <input name="week-field" type="week" class="form-control" id="week-field" placeholder="Enter a week">
+  </div>
+    

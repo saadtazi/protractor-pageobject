@@ -1,0 +1,14 @@
+
+<div class="jumbotron">
+  <h1>Test - ItemList</h1>
+  <p>This page is used in the integration tests for testing <code>ItemList</code>.</p>
+</div>
+
+{{#each items}}
+<div class="item panel panel-default">
+  <div class="item-title panel-heading">{{title}}</div>
+  <div class="item-description panel-body">
+    {{description}}
+  </div>
+</div>
+{{/each}}

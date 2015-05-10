@@ -2,6 +2,7 @@
 'use strict';
 
 var express = require('express'),
+  _ = require('lodash'),
   path = require('path'),
   exphbs = require('express-handlebars');
 
@@ -30,6 +31,21 @@ app.get('/form-fields-results', function(req, res) {
   res.render('form-fields-results', {
     values: req.query,
     title: 'Test - Form Fields - Results'
+  });
+});
+
+app.get('/list', function(req, res) {
+  // console.log(req.query);
+  res.render('list', {
+    values: req.query,
+    // from 1 to 10
+    items: _.range(1, 11).map(function(val) {
+      return {
+        title: 'Title #' + val,
+        description: 'This is the description of item #' + val
+      };
+    }),
+    title: 'Test - ItemList'
   });
 });
 

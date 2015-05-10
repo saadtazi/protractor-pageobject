@@ -9,7 +9,11 @@ chai.should();
 chai.use(sinonChai);
 
 global.browser = {
-  global: 'browser'
+  global: 'browser',
+  element: function(bySelector) {
+    return bySelector + '-element';
+  }
+
 };
 
 beforeEach(function() {
