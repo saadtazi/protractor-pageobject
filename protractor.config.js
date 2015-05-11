@@ -27,7 +27,15 @@ exports.config = {
   sauceUser: useSauceLabs ? process.env.SAUCE_USERNAME : false,
   sauceKey: useSauceLabs ? process.env.SAUCE_ACCESS_KEY : false,
   // sauceAgent: useSauceLabs ? true : false,
+  capabilities: {
+    browserName: 'chrome',
 
+    // Name of the process executing this capability.  Not used directly by
+    // protractor or the browser, but instead pass directly to third parties
+    // like SauceLabs as the name of the job running this test
+    name: 'protractor-test',
+    'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER
+  },
   beforeLaunch: function() {},
   onPrepare: function() {
     // do not run scripts that waits for angular...
@@ -47,7 +55,5 @@ exports.config = {
       get: Object.prototype.__lookupGetter__('should'),
       set: Object.prototype.__lookupSetter__('should')
     });
-
-
   }
 };
