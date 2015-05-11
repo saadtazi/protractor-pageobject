@@ -4,7 +4,7 @@ TODOs:
     ✔ add setFields({elName: value, ...}) method: @done (15-05-08 10:05)
         * if method `setElName` exist, use it
         * otherwise, detect the input field type and use sendKeys or other
-    ☐ add ItemList class
+    ✔ add ItemList class @done (15-05-10 22:32)
 
   add tests:
     ✔ unit @done (15-05-08 10:05)
@@ -12,7 +12,10 @@ TODOs:
 
  add more test coverage:
     ☐ unit
-    ☐ integration
+    ✔ integration @done (15-05-10 22:32)
 
   prepare release:
-    ☐ plug saucelabs and ci (travis)
+    ✔ plug saucelabs and ci (travis) @done (15-05-10 22:32)
+
+  to fix:
+    ☐ POST a file does not work on travis-ci / saucelabs (corresponding test is skipped)

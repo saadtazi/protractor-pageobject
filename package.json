@@ -1,6 +1,6 @@
 {
   "name": "protractor-pageobject",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Page object pattern implementation for protractor and webdriverjs.",
   "homepage": "https://github.com/saadtazi/protractor-pageobject",
   "main": "./lib/index.js",
