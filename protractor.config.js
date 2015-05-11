@@ -16,7 +16,7 @@ exports.config = {
   seleniumAddress: useSauceLabs ? false : 'http://localhost:4444/wd/hub',
   framework: 'mocha',
   mochaOpts: {
-    timeout: 20000
+    timeout: 40000
   },
   directConnect: useSauceLabs ? false : true,
   suites: {
