@@ -70,12 +70,12 @@ describe('Form Fields', function() {
       .then(function() {
         page.element('button-field-2').click();
 
-        resultsPage.waitForElement('results', 5000);
+        resultsPage.waitForElement('results', 10000);
         return resultsPage.element('file-field').getText()
           .should.eventually.be.eql(fs.readFileSync(path.join(__dirname, './uploaded-file.txt'), {
           encoding: 'utf8'
         }));
-    });
+      });
 
   });
 
