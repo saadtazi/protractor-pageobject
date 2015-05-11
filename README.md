@@ -2,6 +2,10 @@
 
 > Protractor Page Object pattern for [Protractor](http://angular.github.io/protractor/).
 
+[![Build Status](https://travis-ci.org/saadtazi/protractor-pageobject.png)](https://travis-ci.org/saadtazi/protractor-pageobject)
+[![Dependency Status](https://david-dm.org/saadtazi/protractor-pageobject.png)](https://david-dm.org/saadtazi/protractor-pageobject)
+
+
 ## Features
 
 * encapsulate your page or components interactions and selectors in classes
