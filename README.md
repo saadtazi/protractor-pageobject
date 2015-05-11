@@ -140,7 +140,16 @@ When creating a new instance of a component, you need to at least provide one pr
 
 ### ItemList
 
-TODO
+Adds a way to retrieve items (as `Component`s_ from a list.
+
+Required configuration properties:
+
+* itemsEl: the name of the selector that needs to be present in `els`.
+* itemClass: the `Component` class that represent an item in the list.
+
+#### items()
+
+Returns a list of `Component`s.
 
 
 ## License
