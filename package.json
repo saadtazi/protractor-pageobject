@@ -24,6 +24,7 @@
     "gulp-load-plugins": "^0.10.0",
     "gulp-mocha": "^2.0.1",
     "mocha": "^2.2.4",
+    "multer": "^0.1.8",
     "protractor": "^2.0.0",
     "sinon": "^1.14.1",
     "sinon-chai": "^2.7.0"

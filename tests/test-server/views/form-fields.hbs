@@ -21,10 +21,6 @@
     <input name="password-field" type="password" class="form-control" id="password-field" placeholder="Password">
   </div>
   <div class="form-group">
-    <label for="file-input">File input</label>
-    <input name="file-field" type="file" id="file-input">
-  </div>
-  <div class="form-group">
     <label for="number-field">number Field</label>
     <input name="number-field" type="number" class="form-control" id="number-field" placeholder="Enter a Number">
   </div>
@@ -98,6 +94,15 @@
   </div>
 
   <button type="submit" class="btn btn-default" id="button-field">Submit</button>
+</form>
+
+<h2>File Field</h2>
+<form method="POST" action="/form-fields-results" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="file-field">File input</label>
+    <input name="file-field" type="file" id="file-field">
+  </div>
+  <input type="submit" id="button-field-2" name="btn btn-default" value="Upload">
 </form>
 
 <h2>Those fields are not implemented... yet...</h2>

@@ -4,10 +4,15 @@
 var express = require('express'),
   _ = require('lodash'),
   path = require('path'),
-  exphbs = require('express-handlebars');
+  exphbs = require('express-handlebars'),
+  multer = require('multer');
 
 
 var app = express();
+
+app.use(multer({
+  inMemory: true
+}))
 
 var viewsDir = path.join(__dirname, 'views');
 
@@ -26,13 +31,26 @@ app.get('/form-fields', function(req, res) {
   });
 });
 
-app.get('/form-fields-results', function(req, res) {
-  // console.log(req.query);
-  res.render('form-fields-results', {
-    values: req.query,
-    title: 'Test - Form Fields - Results'
+app.route('/form-fields-results')
+  .get(function(req, res) {
+    // console.log(req.query);
+    res.render('form-fields-results', {
+      values: req.query,
+      title: 'Test - Form Fields - Results'
+    });
+  })
+  .post(function(req, res) {
+    var fileContent;
+    if (req.files['file-field']) {
+      fileContent = req.files['file-field'].buffer.toString('utf8');
+    }
+    res.render('form-fields-results', {
+      values: {
+        'file-field': fileContent
+      },
+      title: 'Test - Form Fields - Results'
+    });
   });
-});
 
 app.get('/list', function(req, res) {
   // console.log(req.query);

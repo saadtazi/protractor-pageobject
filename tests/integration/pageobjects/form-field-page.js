@@ -7,6 +7,7 @@ var fieldIds = [
   'button-field',
   'text-field',
   'email-field',
+  'file-field',
   'password-field',
   'number-field',
   'search-field',
@@ -18,7 +19,8 @@ var fieldIds = [
   'radio-field-2',
   'select-field',
   'multiselect-field',
-  'date-field'
+  'date-field',
+  'button-field-2',
 ];
 var FormFieldPage = Page.extend({
   url: 'http://127.0.0.1:3000/form-fields',
