@@ -16,7 +16,6 @@
 ## Installation
 
 ```
-# not published to npm yet...
 npm install --save-dev protractor-pageobject
 ```
 
